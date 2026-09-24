@@ -1,0 +1,37 @@
+{
+  "name": "Sparkle Police",
+  "short_name": "Sparkle Police",
+  "description": "Christina's glittery Clearwater patrol game. Drive, fly, sparkle!",
+  "start_url": "/sparkle-police/",
+  "scope": "/sparkle-police/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ff69b4",
+  "theme_color": "#ff69b4",
+  "icons": [
+    {
+      "src": "/sparkle-police/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/sparkle-police/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/sparkle-police/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/sparkle-police/pier60-launch.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "label": "Pier 60 launch art"
+    }
+  ]
+}
