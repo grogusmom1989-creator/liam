@@ -1,4 +1,4 @@
-const CACHE='sparkle-police-v1';
+const CACHE='sparkle-police-v2';
 const ASSETS=['/sparkle-police/','/sparkle-police/index.html','/sparkle-police/manifest.json',
 '/sparkle-police/icons/icon-192.png','/sparkle-police/icons/icon-512.png',
 '/sparkle-police/icons/icon-maskable-512.png','/sparkle-police/icons/apple-touch-icon.png',
