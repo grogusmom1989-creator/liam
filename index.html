@@ -2481,6 +2481,30 @@ var quests=Array.prototype.slice.call(root.querySelectorAll('.music10-quest')),q
     <article class="card full brain-fart-song">
       <div class="silly-song-layout">
         <div class="silly-song-player">
+          <div class="note-mark" aria-hidden="true">🧦</div>
+          <span class="tag">Silly Song Factory · Song #7 · September 30, 2026</span>
+          <h3>🧦 The Missing Sock Shuffle</h3>
+          <p>All-ages clean fun about socks mysteriously disappearing in the dryer — press play and shuffle along!</p>
+          <audio controls preload="none">
+            <source src="assets/missing-sock-shuffle-2026-09-30.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+          </audio>
+        </div>
+        <div class="silly-song-lyrics" aria-label="Full lyrics for The Missing Sock Shuffle">
+          <h4>Verse 1</h4>
+          <p>I opened up the dryer with a happy song,<br>The clothes were all warm but one sock was gone!<br>I counted the pairs like a laundry detective,<br>One, two, three... hey, this just ain't connected!<br>One sock was polka dots, its partner took flight,<br>Did the dryer gobble it up in the middle of the night?<br>I checked in the washer, I looked on the floor,<br>Then one lonely sock knocked on my laundry room door!</p>
+          <h4>Chorus</h4>
+          <p>Socky, socky, where did you go?<br>Did you sneak off to a sock rodeo?<br>One went left and one went right,<br>Now they're dancing in the moonlight!<br>Socky, socky, shuffle, shuffle, shuffle,<br>Mystery socks in a jiggly juggle!</p>
+          <h4>Verse 2</h4>
+          <p>I called in the plushies to help solve the crime,<br>Angel panda and boo bear showed up right on time!<br>Snuggle bug peeked in the linty abyss,<br>And said, &quot;Your sock went out on a shoe-less trip!&quot;<br>Maybe it sailed off to a faraway land,<br>Where one-sock pirates rule the sea and sand!<br>So grab your Zip Fizz and sing along,<br>A one-sock party can never be wrong!</p>
+          <h4>Chorus (repeat)</h4>
+          <p>Socky, socky, where did you go?<br>Did you sneak off to a sock rodeo?<br>One went left and one went right,<br>Now they're dancing in the moonlight!<br>Socky, socky, shuffle, shuffle, shuffle,<br>Mystery socks in a jiggly juggle!</p>
+        </div>
+      </div>
+    </article>
+    <article class="card full brain-fart-song">
+      <div class="silly-song-layout">
+        <div class="silly-song-player">
           <div class="note-mark" aria-hidden="true">🥤</div>
           <span class="tag">Silly Song Factory · Song #5 · September 25, 2026</span>
           <h3>🥤 The Zip Fizz Fizz</h3>
@@ -5701,6 +5725,7 @@ function loadPlatform(){var data=state.platforms[platform.value];followers.value
 <p class="lead">Christina’s movement and calm corner for the playful all-ages universe: walking, swimming, tai chi, yoga, reiki healing, workout videos, and dance-fitness. Choose your energy, move at your own pace, and take a break whenever your body asks.</p>
 <p class="travel-note"><strong>Workout setting:</strong> a local community fitness space.</p>
 <div class="grid">
+<article class="card wide" id="long-center"><span class="tag">🏠 Kiki’s local hub · Clearwater, FL</span><h3>The Long Center — Clearwater’s Community Wellness Hub</h3><p><em>“Where Community • Wellness • Connection Thrive”</em> — this is Kiki’s home turf for moving, grooving, and making wonderful new friends, right here in Clearwater, Florida! ✨</p><ul class="mg-stats-list"><li><strong>Address:</strong> 1501 N Belcher Rd, Clearwater FL 33765</li><li><strong>Phone:</strong> <a href="tel:+17275624905">727-562-4905</a></li><li><strong>Website:</strong> <a href="https://myclearwaterparks.com" target="_blank" rel="noopener noreferrer">myclearwaterparks.com</a></li><li><strong>Hours:</strong> Mon–Thu 6am–9pm · Fri 6am–7pm · Sat 8am–5pm · Closed Sunday</li></ul><p><strong>🥳 Amenities:</strong> Fitness Center, Gymnasium (Basketball • Volleyball), 3 indoor Pickleball courts, Soccer Fields &amp; Playground, and Aging Well Center programs — something sparkly for every energy level!</p><p class="small">💦 Splash news, friends: the pool is taking a cozy nap for renovations and reopens in 2026. Everything else in the hub is twinkling and ready for fitness fun! 💖</p></article>
 <article class="card activity-picker" id="fitness-picker"><span class="tag">choose today’s vibe</span><h3>What feels good right now?</h3><div class="activity-choices" role="group" aria-label="Choose a fitness activity"><button class="activity-choice" type="button" data-fitness="walking" aria-pressed="false">Walking</button><button class="activity-choice" type="button" data-fitness="swimming" aria-pressed="false">Swimming</button><button class="activity-choice" type="button" data-fitness="tai-chi" aria-pressed="false">Tai chi flow</button><button class="activity-choice" type="button" data-fitness="yoga" aria-pressed="false">Cozy yoga</button><button class="activity-choice" type="button" data-fitness="reiki" aria-pressed="false">Reiki reset</button><button class="activity-choice" type="button" data-fitness="workout" aria-pressed="false">Workout boost</button><button class="activity-choice" type="button" data-fitness="dance" aria-pressed="false">Dance-fitness</button></div><div class="activity-result" id="fitnessResult" aria-live="polite"><h3>Pick a movement mood</h3><p>Your playful mini-session will appear here.</p></div><p class="small">Keep it gentle, use a clear space, and stop if anything hurts or feels wrong.</p></article>
 <article class="card wide" id="mg-video-library"><span class="tag">Christina’s fitness content</span><h3>Move, breathe &amp; recharge</h3><p>Christina’s movement videos and calming sessions belong together here, ready for every energy level.</p>
 <!-- AUTO-SYNC: fitness videos — inject latest library videos tagged workouts/tai chi/yoga/reiki/dance-fitness below -->
@@ -8876,6 +8901,71 @@ const now=new Date(),dayKey=Number(String(now.getFullYear())+String(now.getMonth
 .sports93-facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.sports93-fact{padding:17px;border-radius:7px 18px 7px 18px;background:color-mix(in srgb,var(--sports-gold) 12%,var(--paper));border:2px solid color-mix(in srgb,var(--sports-gold) 48%,var(--line))}.sports93-fact strong{display:block;margin-bottom:7px;color:var(--plum)}.sports93-fact p{margin:0 0 10px;line-height:1.5}.sports93-fact a{color:var(--sports-blue);font-weight:900}
 .sports93-game{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.72fr);gap:18px;align-items:stretch}.sports93-picker-panel,.sports93-cheer-panel{padding:clamp(20px,3vw,30px);border-radius:20px 8px 20px 8px}.sports93-picker-panel{background:var(--sports-green-deep);color:#fff}.sports93-picker-panel h4,.sports93-cheer-panel h4{margin:0 0 8px;font:800 1.45rem/1.15 "Baloo 2",sans-serif}.sports93-picker-panel h4{color:#fff}.sports93-picker-panel p{color:#d8efe6}.sports93-action{border-color:var(--sports-gold);background:var(--sports-gold);color:#2b2411}.sports93-result{min-height:88px;margin-top:17px;padding:15px;border:2px dashed color-mix(in srgb,#fff 48%,transparent);border-radius:11px;background:rgba(255,255,255,.09);font-weight:800}.sports93-result strong{display:block;color:var(--sports-gold);font-size:1.15rem}.sports93-cheer-panel{background:color-mix(in srgb,var(--sports-red) 13%,var(--paper));border:2px solid color-mix(in srgb,var(--sports-red) 46%,var(--line))}.sports93-cheer-result{min-height:70px;margin:14px 0 0;color:var(--plum);font-weight:900;font-size:1.08rem}
 .sports93-wwe-route{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:20px 22px;border-left:8px solid var(--sports-red);background:color-mix(in srgb,var(--sports-red) 9%,var(--paper))}.sports93-wwe-route h3{margin:0 0 5px;color:var(--plum)}.sports93-wwe-route p{margin:0}.sports93-wwe-links{display:flex;flex-wrap:wrap;gap:8px;flex:0 0 auto}
+.long93-kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:9px;background:var(--sports-green);color:#fff;font-weight:900;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
+.long93-poster{margin:20px 0 26px;padding:clamp(20px,3.4vw,32px);border:3px solid var(--sports-green);border-radius:28px 10px 28px 10px;background:linear-gradient(120deg,color-mix(in srgb,var(--sports-blue) 14%,var(--paper)),color-mix(in srgb,var(--sports-gold) 12%,var(--paper)));box-shadow:var(--shadow)}
+.long93-poster h4{margin:0 0 6px;color:var(--plum);font:800 clamp(1.45rem,3.4vw,2.1rem)/1.08 "Baloo 2",sans-serif}
+.long93-poster>p{max-width:72ch;margin:6px 0 16px}
+.long93-chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+.long93-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:2px solid color-mix(in srgb,var(--sports-blue) 55%,var(--line));border-radius:999px;background:var(--paper);font-weight:800;font-size:.9rem}
+.long93-chip.hot{background:var(--sports-board);color:var(--sports-chalk);border-color:var(--sports-board)}
+.long93-quickgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.long93-tile{padding:13px 11px;border:2px solid color-mix(in srgb,var(--sports-green) 42%,var(--line));border-radius:11px;background:var(--paper);text-align:center}
+.long93-tile strong{display:block;color:var(--plum);font:800 1rem/1.15 "Baloo 2",sans-serif}
+.long93-tile span{display:block;margin-top:3px;color:var(--muted);font-size:.84rem;font-weight:750}
+.long93-subhead{margin:36px 0 14px;color:var(--plum);font:800 clamp(1.35rem,3vw,1.75rem)/1.12 "Baloo 2",sans-serif}
+.long93-subhead small{display:block;margin-top:4px;color:var(--muted);font:700 1rem/1.45 ui-sans-serif,system-ui,sans-serif}
+.long93-factsrow{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:16px}
+.long93-table{padding:6px 18px 14px;border:2px solid color-mix(in srgb,var(--sports-green) 42%,var(--line));border-radius:18px 7px 18px 7px;background:var(--paper)}
+.long93-table>div{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.96rem}
+.long93-table>div:last-child{border-bottom:0}
+.long93-table dt{margin:0;color:var(--sports-green-deep);font-weight:900}
+.long93-table dd{margin:0;color:var(--ink)}
+.long93-hours{padding:20px;border-radius:7px 18px 7px 18px;background:color-mix(in srgb,var(--sports-gold) 13%,var(--paper));border:2px solid color-mix(in srgb,var(--sports-gold) 50%,var(--line))}
+.long93-hours h5,.long93-tags h5{margin:0 0 10px;color:var(--plum);font:800 1.1rem/1.2 "Baloo 2",sans-serif}
+.long93-hours ul{margin:0 0 12px;padding:0;list-style:none}
+.long93-hours li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-weight:700}
+.long93-hours li:last-child{border-bottom:0}
+.long93-hours li span:last-child{color:var(--plum)}
+.long93-tags{margin-top:14px;padding:20px;border:2px solid color-mix(in srgb,var(--sports-blue) 42%,var(--line));border-radius:18px 7px 18px 7px;background:var(--paper)}
+.long93-tagrow{display:flex;flex-wrap:wrap;gap:8px}
+.long93-tag{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:color-mix(in srgb,var(--sports-green) 12%,var(--paper));border:1.5px solid color-mix(in srgb,var(--sports-green) 45%,var(--line));font-weight:800;font-size:.88rem}
+.long93-note{background:color-mix(in srgb,var(--sports-blue) 9%,var(--paper));border:2px solid color-mix(in srgb,var(--sports-blue) 40%,var(--line));border-radius:12px 22px 12px 22px;padding:14px 18px}
+.long93-note p{margin:0;max-width:76ch}
+.long93-copycards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
+.long93-copycard{display:flex;flex-direction:column;padding:18px;border:2px solid color-mix(in srgb,var(--sports-green) 38%,var(--line));border-radius:18px 7px 18px 7px;background:var(--paper);box-shadow:0 9px 22px color-mix(in srgb,var(--sports-green) 10%,transparent)}
+.long93-copycard[data-tone="family"]{border-top:7px solid var(--sports-red)}
+.long93-copycard[data-tone="community"]{border-top:7px solid var(--sports-blue)}
+.long93-copycard[data-tone="wellness"]{border-top:7px solid var(--sports-green)}
+.long93-copycard h5{margin:0;color:var(--plum);font:800 1.15rem/1.15 "Baloo 2",sans-serif}
+.long93-copycard small{color:var(--muted);font-weight:750}
+.long93-area{display:block;width:100%;box-sizing:border-box;resize:vertical;flex:1;margin:10px 0;padding:11px 12px;border:2px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--sports-cream) 55%,var(--paper));color:var(--ink);font:650 .94rem/1.6 ui-sans-serif,system-ui,sans-serif;white-space:pre-wrap}
+.long93-copyrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.long93-copybtn{display:inline-flex;align-items:center;min-height:44px;padding:9px 15px;border:2px solid var(--sports-green);border-radius:10px;background:var(--sports-gold);color:#2b2411;font:inherit;font-weight:900;cursor:pointer}
+.long93-copybtn.copied{background:var(--sports-green);color:#fff}
+.long93-copybtn:hover,.long93-copybtn:focus-visible,.long93-area:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.long93-carousel{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:16px}
+.long93-slide{padding:15px;border:2px solid color-mix(in srgb,var(--sports-blue) 45%,var(--line));border-radius:7px 15px 7px 15px;background:var(--paper)}
+.long93-slide b{display:inline-block;margin-bottom:6px;color:var(--sports-blue);font:900 .78rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;font-weight:900}
+.long93-slide h6{margin:0 0 6px;color:var(--plum);font:800 1.05rem/1.15 "Baloo 2",sans-serif}
+.long93-slide p{margin:0 0 8px;font-size:.9rem;font-weight:650;white-space:pre-wrap}
+.long93-slide em{display:block;color:var(--muted);font-size:.82rem;font-weight:700}
+.long93-wide{margin-top:16px;padding:clamp(18px,3vw,26px);border:2px solid color-mix(in srgb,var(--sports-green) 42%,var(--line));border-radius:18px 7px 18px 7px;background:var(--paper)}
+.long93-wide h5{margin:0 0 6px;color:var(--plum);font:800 1.2rem/1.15 "Baloo 2",sans-serif}
+.long93-wide>p{margin:0;color:var(--muted);font-weight:700}
+.long93-flyer{background:color-mix(in srgb,var(--sports-red) 9%,var(--paper));border:2px solid color-mix(in srgb,var(--sports-red) 45%,var(--line));border-radius:12px 24px 12px 24px}
+.long93-flyer ul{margin:10px 0 14px;padding-left:22px;line-height:1.7}
+.long93-flyer ol{margin:6px 0 0;padding-left:22px;color:var(--muted);font-weight:700;line-height:1.65}
+.long93-event{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.long93-flow{margin:10px 0 0;padding:0;list-style:none}
+.long93-flow li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.long93-flow li:last-child{border-bottom:0}
+.long93-flow b{color:var(--sports-green-deep);font-weight:900;white-space:pre-wrap}
+.long93-bring{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.long93-bring ul{margin:8px 0 0;padding-left:22px;line-height:1.75}
+.long93-keys{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.long93-foot{margin:28px 0 6px;padding:16px 20px;border:2px dashed color-mix(in srgb,var(--sports-green) 50%,var(--line));border-radius:16px;text-align:center;color:var(--muted);font-weight:800}
+@media(max-width:920px){.long93-quickgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.long93-factsrow,.long93-copycards,.long93-event,.long93-bring{grid-template-columns:1fr}.long93-carousel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.long93-quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.long93-carousel{grid-template-columns:1fr}.long93-table>div{grid-template-columns:110px 1fr}.long93-copybtn{width:100%;justify-content:center}.long93-flow li{grid-template-columns:1fr;gap:2px}}
 @media(prefers-color-scheme:dark){.sports93-hub{--sports-green:#54b88f;--sports-green-deep:#0d3b2f;--sports-red:#ff826f;--sports-blue:#67b9df;--sports-gold:#ffd16a;--sports-cream:#2d281c;--sports-board:#0d1c17;--sports-chalk:#fff5d4}.sports93-scoreboard{border-color:#345a4c;box-shadow:8px 9px 0 rgba(255,130,111,.24)}}
 @media(max-width:920px){.sports93-shelf{grid-template-columns:repeat(2,minmax(0,1fr))}.sports93-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.sports93-fact:last-child{grid-column:1/-1}.sports93-slots{grid-template-columns:1fr}}
 @media(max-width:720px){.sports93-hero,.sports93-locker,.sports93-game{grid-template-columns:1fr}.sports93-section-head,.sports93-wwe-route{align-items:flex-start;flex-direction:column}.sports93-wwe-links{flex:1}.sports93-wwe-links a{width:100%;text-align:center}.sports93-scoreboard{max-width:430px;width:100%;margin-inline:auto}}
@@ -8883,7 +8973,7 @@ const now=new Date(),dayKey=Number(String(now.getFullYear())+String(now.getMonth
 @media(prefers-reduced-motion:reduce){.sports93-hub *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
 <section id="hub-sports" class="content-hub hub-sports sports93-hub" aria-labelledby="sports93-title">
-<header class="hub-heading"><p class="hub-kicker">Hub 93 · the big colorful stadium</p><h2 id="sports93-title">Sports</h2><p>Kick open a whole arena beyond WWE: discover what to watch, try out game-day moods, save temporary picks for this visit, and leave room for Kiki’s real favorite teams when she names them.</p><nav class="hub-local sports93-local" aria-label="Sports Hub sections"><a href="#sports93-watch">Watch shelf</a><a href="#sports93-teams">Favorite teams</a><a href="#sports93-facts">Fun facts</a><a href="#sports93-picker">Tonight’s picker</a><a href="#sports93-wwe">WWE route</a></nav></header>
+<header class="hub-heading"><p class="hub-kicker">Hub 93 · the big colorful stadium</p><h2 id="sports93-title">Sports</h2><p>Kick open a whole arena beyond WWE: discover what to watch, try out game-day moods, save temporary picks for this visit, and leave room for Kiki’s real favorite teams when she names them.</p><nav class="hub-local sports93-local" aria-label="Sports Hub sections"><a href="#sports93-watch">Watch shelf</a><a href="#sports93-teams">Favorite teams</a><a href="#sports93-facts">Fun facts</a><a href="#sports93-picker">Tonight’s picker</a><a href="#sports93-wwe">WWE route</a><a href="#sports93-longcenter">Play it local</a></nav></header>
 <div class="sports93-hero"><div class="sports93-copy"><span class="sports93-badge">Beyond WWE</span><h3>Pick a lane. Make some noise.</h3><p>This is a discovery stadium, not a made-up favorites list. Try a sport, build a temporary game-night shortlist, and let Kiki’s true team colors arrive only when she chooses them.</p></div><div class="sports93-scoreboard" aria-label="Sports Hub scoreboard"><div class="sports93-scoreboard-top"><span>Hub 93</span><span>Game night</span></div><div class="sports93-scoreboard-main"><strong>YOU</strong><b>★</b><strong>PICK</strong></div><small>EIGHT SPORTS · ZERO PRESSURE · BIG CHEERS</small></div></div>
 
 <section id="sports93-watch" class="sports93-section" aria-labelledby="sports93-watch-title"><div class="sports93-section-head"><div><h3 id="sports93-watch-title">Sports Watch Shelf</h3><p>Filter the field, then mark anything you might watch. Picks last for this visit only.</p></div><span class="sports93-whistle" aria-hidden="true">PLAY!</span></div>
@@ -8912,6 +9002,251 @@ const now=new Date(),dayKey=Number(String(now.getFullYear())+String(now.getMonth
 <section id="sports93-picker" class="sports93-section" aria-labelledby="sports93-picker-title"><div class="sports93-section-head"><div><h3 id="sports93-picker-title">What Should We Watch Tonight?</h3><p>Let the stadium choose a discovery lane, then give the room a cheer.</p></div></div><div class="sports93-game"><div class="sports93-picker-panel"><h4>Game-night draw</h4><p>Every pick is a suggestion, not a claim about Kiki’s favorites.</p><div class="sports93-actions"><button class="sports93-action" id="sports93Randomize" type="button">Pick tonight’s sport</button></div><div class="sports93-result" id="sports93Result" aria-live="polite"><strong>Ready at the whistle</strong><span>Press the button for a sport and a game-night mood.</span></div></div><div class="sports93-cheer-panel"><h4>Cheer generator</h4><p>Ridiculous support is still support.</p><button class="sports93-action" id="sports93Cheer" type="button">Make a cheer</button><p class="sports93-cheer-result" id="sports93CheerResult" aria-live="polite">The crowd is warming up.</p></div></div></section>
 
 <section id="sports93-wwe" class="sports93-section sports93-wwe-route" aria-labelledby="sports93-wwe-title"><div><h3 id="sports93-wwe-title">WWE still has its own spotlight</h3><p>WWE is already one of Kiki’s confirmed favorites. This new stadium simply opens more doors beyond it.</p></div><div class="sports93-wwe-links"><a class="linkbtn secondary" href="#sports">Visit the original Sports Arena</a><a class="linkbtn secondary" href="#where-to-watch">Find WWE in Watch Party</a></div></section>
+
+<section id="sports93-longcenter" class="sports93-section" aria-labelledby="sports93-longcenter-title">
+<div class="sports93-section-head"><div><span class="long93-kicker">Play it local · Clearwater, FL</span><h3 id="sports93-longcenter-title" style="margin-top:9px">The Long Center Corner</h3><p>From watching sports to playing them: everything about The Long Center, Clearwater&#8217;s 4.5-star community recreation and wellness center. Fitness center, gymnasium, three indoor pickleball courts, soccer fields, a playground, mindful movement, and Aging Well Center programs — all inexpensive and welcoming for every age.</p></div><span class="sports93-whistle" aria-hidden="true">GO!</span></div>
+
+<div class="long93-poster" role="region" aria-label="The Long Center quick info">
+<h4>The Long Center — Clearwater&#8217;s Community Wellness Hub</h4>
+<p>An inexpensive, 4.5-star recreation center where fitness, family, and mindful community meet. Created for Christina — reiki practitioner &amp; wellness guide in Clearwater.</p>
+<div class="long93-chips"><span class="long93-chip">📍 1501 N Belcher Rd, Clearwater, FL 33765</span><span class="long93-chip">🕒 Mon–Thu 6am–9pm · Fri 6am–7pm · Sat 8am–5pm</span><span class="long93-chip hot">⭐ 4.5 stars • Inexpensive</span><span class="long93-chip">📞 727-562-4905</span></div>
+<div class="long93-quickgrid">
+<div class="long93-tile"><strong>Fitness Center</strong><span>Indoor</span></div>
+<div class="long93-tile"><strong>Gymnasium</strong><span>Basketball / Volleyball</span></div>
+<div class="long93-tile"><strong>Pickleball</strong><span>3 indoor courts</span></div>
+<div class="long93-tile"><strong>Outdoors</strong><span>Soccer fields, playground</span></div>
+<div class="long93-tile"><strong>Aging Well</strong><span>Programs · all ages</span></div>
+<div class="long93-tile"><strong>Pool</strong><span>Closed for upgrades till 2026</span></div>
+</div>
+</div>
+
+<h4 class="long93-subhead">At-a-Glance<small>Everything in one place, made to copy.</small></h4>
+<div class="long93-factsrow">
+<div><dl class="long93-table" aria-label="The Long Center facts">
+<div><dt>Address</dt><dd>1501 N Belcher Rd, Clearwater, FL 33765</dd></div>
+<div><dt>Phone</dt><dd>727-562-4905</dd></div>
+<div><dt>Rating &amp; Price</dt><dd>4.5 ★ • Inexpensive</dd></div>
+<div><dt>Fitness Center</dt><dd>Indoor, strength + cardio</dd></div>
+<div><dt>Gymnasium</dt><dd>Basketball &amp; volleyball</dd></div>
+<div><dt>Pickleball</dt><dd>3 indoor courts</dd></div>
+<div><dt>Outdoors</dt><dd>Soccer fields, playground</dd></div>
+<div><dt>Programs</dt><dd>Aging Well Center — all ages</dd></div>
+<div><dt>Pool</dt><dd>Olympic-size — closed for renovations until 2026</dd></div>
+<div><dt>Good For</dt><dd>Kids, families, seniors, all ages</dd></div>
+</dl></div>
+<div>
+<div class="long93-hours"><h5>Hours Card</h5><ul>
+<li><span>Monday – Thursday</span><span>6:00 AM – 9:00 PM</span></li>
+<li><span>Friday</span><span>6:00 AM – 7:00 PM</span></li>
+<li><span>Saturday</span><span>8:00 AM – 5:00 PM</span></li>
+<li><span>Sunday</span><span>Closed</span></li>
+</ul><div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93HoursCopy">Copy text</button></div>
+<textarea class="long93-area" id="long93HoursCopy" rows="4" readonly aria-label="Copyable hours text">Monday – Thursday: 6:00 AM – 9:00 PM
+Friday: 6:00 AM – 7:00 PM
+Saturday: 8:00 AM – 5:00 PM
+Sunday: Closed</textarea>
+</div>
+<div class="long93-tags"><h5>Best For Tags</h5><div class="long93-tagrow">
+<span class="long93-tag">Kids ✓</span><span class="long93-tag">All Ages ✓</span><span class="long93-tag">Family Fitness</span><span class="long93-tag">Inexpensive</span><span class="long93-tag">Wellness</span><span class="long93-tag">Community</span><span class="long93-tag">Pickleball</span><span class="long93-tag">Aging Well</span>
+</div></div>
+</div>
+</div>
+
+<h4 class="long93-subhead">Social Media Pack<small>Captions, carousel &amp; reel — ready to post, written in Christina&#8217;s voice: warm, grounded, community-first.</small></h4>
+<div class="long93-note"><p><strong>Note:</strong> soft wellness tone, no hard sell. Just hit copy on any card below to grab the text for Instagram, Facebook, or a newsletter.</p></div>
+<div class="long93-copycards">
+<article class="long93-copycard" data-tone="wellness">
+<h5>1. Wellness Angle</h5><small>Calm · Grounding · Reiki-aligned</small>
+<textarea class="long93-area" id="long93Cap1" rows="14" readonly aria-label="Copyable wellness caption">Your wellness doesn't have to be expensive to be powerful. 💙
+
+The Long Center in Clearwater is our community's hidden gem for mindful movement — fitness center, gymnasium, 3 indoor pickleball courts, soccer fields, and space to just breathe.
+
+Inexpensive, inclusive, and open to all ages. Proof that healing happens in community.
+
+Have you been?
+
+📍 1501 N Belcher Rd, Clearwater
+#ClearwaterWellness #TheLongCenter #ReikiHealing #MindfulMovement #CommunityWellness #ClearwaterFL #HolisticClearwater #WellnessOnABudget #ChristinaHeals</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Cap1">Copy text</button></div>
+</article>
+<article class="long93-copycard" data-tone="family">
+<h5>2. Family Fitness Angle</h5><small>Warm · Active · Kid-friendly</small>
+<textarea class="long93-area" id="long93Cap2" rows="14" readonly aria-label="Copyable family fitness caption">Looking for somewhere the whole family can actually move together?
+
+The Long Center has an indoor fitness center, basketball &amp; volleyball gym, indoor pickleball (3 courts!), playground, and soccer fields — all rated 4.5 stars and super affordable.
+
+Perfect for rainy Florida afternoons or just getting the kids off screens. 🏀✨
+
+Mon-Thu 6am-9pm | Fri 6am-7pm | Sat 8am-5pm
+📍 1501 N Belcher Rd, Clearwater
+
+Save this for your next family day!
+#ClearwaterFamilies #FamilyFitness #TheLongCenterClearwater #KidsOfClearwater #PickleballFL #ClearwaterMoms #ActiveFamilies #ClearwaterRec</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Cap2">Copy text</button></div>
+</article>
+<article class="long93-copycard" data-tone="community">
+<h5>3. Community Angle</h5><small>Inclusive · Neighborly · Heart-led</small>
+<textarea class="long93-area" id="long93Cap3" rows="14" readonly aria-label="Copyable community caption">Clearwater is more than beaches — it's community centers like this. 💙
+
+The Long Center (1501 N Belcher Rd) brings together fitness, Aging Well Center programs, youth sports, and connection for all ages. Inexpensive. Welcoming. Real.
+
+Currently the Olympic-size pool is closed for renovations until 2026, but there's still SO much to do.
+
+Let's support the spaces that support us. Tag someone who needs to see this!
+
+#SupportLocal #ClearwaterCommunity #TheLongCenter #ClearwaterFL #CommunityFirst #AgingWell #ClearwaterRecreation #LoveClearwater</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Cap3">Copy text</button></div>
+</article>
+</div>
+
+<h4 class="long93-subhead">Carousel Outline<small>Five slides for Instagram or Facebook.</small></h4>
+<div class="long93-carousel">
+<article class="long93-slide"><b>01</b><h6>Cover</h6><p>Clearwater&#8217;s Community Wellness Hub
+The Long Center
+1501 N Belcher Rd • 4.5 ★ • Inexpensive</p><em>Visual: soft blue gradient, aerial of rec center + heart icon</em></article>
+<article class="long93-slide"><b>02</b><h6>Fitness Center</h6><p>Indoor Fitness Center
+Affordable memberships
+Strength + cardio for all levels</p><em>Visual: clean gym photo, light &amp; airy</em></article>
+<article class="long93-slide"><b>03</b><h6>Gym / Pickleball</h6><p>Move How You Love To
+Basketball • Volleyball
+3 Indoor Pickleball Courts</p><em>Visual: pickleball paddles / gym lines</em></article>
+<article class="long93-slide"><b>04</b><h6>Aging Well + Outdoors</h6><p>Wellness For Every Generation
+Aging Well Center programs
+Soccer fields • Playground</p><em>Visual: seniors + kids graphic, inclusive</em></article>
+<article class="long93-slide"><b>05</b><h6>Info</h6><p>Visit This Week
+Mon-Thu 6a-9p • Fri 6a-7p • Sat 8a-5p
+727-562-4905 • 1501 N Belcher Rd</p><em>Visual: map pin, hours list, QR</em></article>
+</div>
+
+<div class="long93-wide"><h5>Reel Script — 15-20 seconds</h5><p>Soft lo-fi wellness beat, 85 BPM · burned-in large high-contrast captions</p>
+<textarea class="long93-area" id="long93Reel" rows="15" readonly aria-label="Copyable reel script">HOOK (0-3s): [On-screen text: "Clearwater's most affordable wellness hub?"] You, walking into The Long Center — "I found Clearwater's best-kept wellness secret and it's not the beach."
+
+SHOT 2 (3-7s): Quick cuts — fitness center, gymnasium, pickleball courts. VO: "Indoor fitness, basketball, volleyball, and three indoor pickleball courts..."
+
+SHOT 3 (7-12s): Playground + soccer fields + Aging Well sign. VO: "Playground, soccer fields, and programs for all ages through their Aging Well Center."
+
+SHOT 4 (12-17s): You smiling outside, holding water bottle. VO: "Inexpensive, 4.5 stars, and right on Belcher Road. Pool is closed till 2026 for upgrades, but there's so much more to explore."
+
+CTA (17-20s): [Text overlay: Address + Hours] VO: "Save this, share it with a friend, and I'll see you there?"
+
+AUDIO: Soft lo-fi wellness beat, 85 BPM. Captions: Burned-in, large, high contrast.</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Reel">Copy text</button></div>
+</div>
+
+<div class="long93-wide"><h5>Facebook Post Draft</h5><p>All copy is free to use, copy-paste, and adapt.</p>
+<textarea class="long93-area" id="long93Fb" rows="26" readonly aria-label="Copyable Facebook post">💙 DISCOVER CLEARWATER'S COMMUNITY WELLNESS HUB 💙
+
+Have you been to The Long Center yet? If you're looking for affordable, welcoming space to move your body and connect with community — this is it.
+
+📍 1501 N Belcher Rd, Clearwater, FL 33765
+📞 727-562-4905
+⭐ 4.5 Stars • Inexpensive
+
+What you'll find:
+✓ Indoor Fitness Center
+✓ Gymnasium (basketball &amp; volleyball)
+✓ 3 Indoor Pickleball Courts
+✓ Soccer Fields &amp; Playground
+✓ Aging Well Center Programs
+✓ Good for kids, great for all ages
+
+🕒 Hours:
+Mon-Thu: 6am-9pm
+Fri: 6am-7pm
+Sat: 8am-5pm
+
+Note: Olympic-size pool is currently closed for renovations until 2026.
+
+Whether you're a parent looking for family activities, new to pickleball, or simply craving community wellness — The Long Center is worth a visit this week.
+
+Have you been? Let me know your favorite part in the comments! 👇
+
+#ClearwaterFL #TheLongCenter #ClearwaterRecreation</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Fb">Copy text</button></div>
+</div>
+
+<h4 class="long93-subhead">Printable Flyer<small>Flyer is 8.5×11 — print via browser.</small></h4>
+<div class="long93-wide long93-flyer"><h5>Clearwater Community · The Long Center</h5>
+<p>Clearwater&#8217;s Community Wellness Hub — inexpensive, inclusive, 4.5 stars</p>
+<ul>
+<li>Indoor Fitness Center — affordable &amp; welcoming</li>
+<li>Gymnasium: basketball &amp; volleyball</li>
+<li>3 indoor pickleball courts</li>
+<li>Soccer fields &amp; playground</li>
+<li>Aging Well Center programs</li>
+<li>Family-friendly &amp; all ages welcome</li>
+<li>📍 1501 N Belcher Rd, Clearwater · 📞 727-562-4905 · 🕒 Mon–Thu 6a–9p · Fri 6a–7p · Sat 8a–5p</li>
+</ul>
+<ol>
+<li>Leave bottom 0.5&#8221; blank for Long Center stamp / approval</li>
+<li>Keep blues soft — avoid neon to stay on-brand</li>
+</ol>
+</div>
+
+<h4 class="long93-subhead">Event Idea for Christina: Mindful Movement &amp; Reiki Reset<small>A free, heart-led community wellness meetup concept at The Long Center.</small></h4>
+<div class="long93-event">
+<div class="long93-wide"><h5>Event One-Sheet</h5><p>A free, heart-led community gathering to reconnect body, breath, and energy — right here at Clearwater&#8217;s most welcoming wellness hub.</p>
+<p style="margin-top:10px;color:var(--ink);font-weight:650">Christina, Reiki healing practitioner in Clearwater, invites you to 30 minutes of gentle mindful movement, breathwork, and a group Reiki reset. No experience needed. Come as you are. Meet outdoors by the soccer fields (or the indoor multipurpose space if needed), move slowly, and close with a guided energy clearing — you&#8217;ll leave grounded, lighter, and more connected to your community.</p>
+<p style="margin-top:10px;color:var(--muted)">This is a proposed collaboration with The Long Center — a way to bring holistic wellness into our public spaces.</p></div>
+<div class="long93-wide"><h5>Proposal Pitch — copy to email The Long Center</h5><p>All copy is free to use, copy-paste, and adapt.</p>
+<textarea class="long93-area" id="long93Pitch" rows="15" readonly aria-label="Copyable proposal email">Subject: Free Community Wellness Meetup Proposal — Mindful Movement &amp; Reiki Reset at The Long Center
+
+Hi Long Center team,
+
+I'm Christina, a Reiki healing practitioner based in Clearwater. I love what The Long Center offers our community — affordable, inclusive wellness for all ages.
+
+I'd love to propose a free 30-minute community gathering: "Mindful Movement &amp; Reiki Reset" — gentle movement, breathwork, and a group Reiki reset outdoors by the soccer fields or in a multipurpose room.
+
+No cost to the center or attendees, no selling, just community care. I'd handle waivers, mats, and promotion. Happy to align with your Aging Well Center programming.
+
+Would you be open to a 15-min call next week to explore a pilot date?
+
+Warmly,
+Christina
+[Your phone / Instagram]</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Pitch">Copy text</button></div>
+</div>
+</div>
+
+<div class="long93-wide"><h5>30-Min Flow</h5><p>The run of the meetup, end to end.</p>
+<ul class="long93-flow">
+<li><b>00:00–05:00</b><span><strong>Welcome &amp; Intention Circle</strong> — name, one word for how you want to feel</span></li>
+<li><b>05:00–12:00</b><span><strong>Gentle Mindful Movement &amp; Stretch</strong> — neck, shoulders, hips</span></li>
+<li><b>12:00–18:00</b><span><strong>Breathwork + Grounding</strong> — 4-4-6 breath, feet on grass</span></li>
+<li><b>18:00–26:00</b><span><strong>Group Reiki Reset</strong> — seated or lying, hands-on or distant</span></li>
+<li><b>26:00–30:00</b><span><strong>Closing Gratitude &amp; Community Connections</strong></span></li>
+</ul>
+</div>
+
+<div class="long93-bring">
+<div class="long93-wide"><h5>What to Bring</h5><ul><li>Yoga mat or towel</li><li>Water bottle</li><li>Light layers</li><li>Journal (optional)</li></ul></div>
+<div class="long93-wide"><h5>Benefits</h5><ul><li>Reduce stress &amp; anxiety</li><li>Improve circulation</li><li>Clear stagnant energy</li><li>Meet like-minded neighbors</li></ul></div>
+</div>
+
+<h4 class="long93-subhead">Blog / SEO Blurb<small>150-word search-friendly description, ready to paste.</small></h4>
+<div class="long93-wide"><h5>SEO Blurb • 150 words</h5>
+<textarea class="long93-area" id="long93Seo" rows="9" readonly aria-label="Copyable SEO blurb">Discover The Long Center in Clearwater, Florida — a 4.5-star community recreation center at 1501 N Belcher Rd that makes wellness accessible for everyone. Located just off Belcher Road, The Long Center offers an indoor fitness center, full gymnasium for basketball and volleyball, three indoor pickleball courts, soccer fields, and a playground, plus inclusive Aging Well Center programs for seniors and families. Open Monday through Thursday 6am-9pm, Friday 6am-7pm, and Saturday 8am-5pm, it's an inexpensive, family-friendly hub for all ages. While the Olympic-size pool is closed for renovations until 2026, the center remains a vibrant space for fitness, connection, and community wellness in Clearwater. Perfect for affordable workouts, youth sports, and mindful movement.</textarea>
+<div class="long93-copyrow"><button class="long93-copybtn" type="button" data-long93-copy="long93Seo">Copy text</button></div>
+<div class="long93-keys">
+<span class="long93-tag">Clearwater recreation center</span><span class="long93-tag">The Long Center Clearwater</span><span class="long93-tag">affordable fitness Clearwater</span><span class="long93-tag">pickleball Clearwater</span><span class="long93-tag">community wellness Clearwater</span><span class="long93-tag">family activities Clearwater FL</span>
+</div>
+</div>
+
+<div class="long93-foot">Made for Christina • Clearwater Reiki &amp; Community Wellness<br>All copy is free to use, copy-paste, and adapt. No login, no tracking.</div>
+</section>
+<script>
+(function setupLongCenter93(){
+const root=document.getElementById('sports93-longcenter');if(!root)return;
+function flash(btn,ok){const label=ok?'Copied!':'Selection copy — long-press if needed';btn.textContent=label;btn.classList.toggle('copied',ok);setTimeout(function(){btn.textContent='Copy text';btn.classList.remove('copied')},2200)}
+root.querySelectorAll('[data-long93-copy]').forEach(function(btn){
+btn.addEventListener('click',function(){
+const target=document.getElementById(btn.getAttribute('data-long93-copy'));
+const text=target?(target.value||target.textContent):'';
+if(!text){flash(btn,false);return}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){flash(btn,true)},function(){flash(btn,false)})}
+else{const ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.position='absolute';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){ok=false}document.body.removeChild(ta);flash(btn,ok)}})});
+})();
+</script>
 <script>
 (function setupSports93(){
 const root=document.getElementById('hub-sports');if(!root)return;
