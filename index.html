@@ -1880,7 +1880,7 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 </section>
 
 <section id="social-links" class="section">
-<figure class="visual-brand-header"><img src="https://grogusmom1989-creator.github.io/liam/assets/fbebcd8d50f54678e55b851082ee911d94a40b6d96717841657bfc2ae7646084.webp" alt="Bold One Direction Healing HQ logo with angel panda and bright pink stage lights" loading="lazy" decoding="async"><figcaption>One Direction Healing HQ · bold edition</figcaption></figure>
+<figure class="visual-brand-header"><img src="assets/fbebcd8d50f54678e55b851082ee911d94a40b6d96717841657bfc2ae7646084.webp" alt="Bold One Direction Healing HQ logo with angel panda and bright pink stage lights" loading="lazy" decoding="async"><figcaption>One Direction Healing HQ · bold edition</figcaption></figure>
 <h2>Find Christina online 💫</h2>
 <p class="lead">Every live channel in one bright place — no mystery URLs and no guesswork. When Christina confirms new profiles, they will appear here.</p>
 <div class="hub4-expansion">
@@ -1905,7 +1905,7 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 <article class="card" id="hub4-clapper"><span class="tag">branding-verified</span><h3>Clapper</h3><p><strong>@Empresskiki1dhealinghq</strong><br>Christina’s creator profile on Clapper.</p><div class="home-actions"><a class="linkbtn secondary" href="https://www.clapperapp.com/Empresskiki1dhealinghq" target="_blank" rel="noopener noreferrer">Open profile ↗</a></div></article>
 <article class="card" id="hub4-twitch"><span class="tag">going-live</span><h3>Twitch</h3><p><strong>@mrshope2021</strong><br>Watch Christina live and browse her past broadcasts.</p><div class="home-actions"><a class="linkbtn secondary" href="https://www.twitch.tv/mrshope2021" target="_blank" rel="noopener noreferrer">Live &amp; past broadcasts ↗</a></div></article>
 <article class="card" id="hub4-instagram-contact"><span class="tag">branding-verified</span><h3>Instagram contact</h3><p><strong>@onedirectionhealing</strong><br>Contact Christina and One Direction Healing HQ.</p><div class="home-actions"><a class="linkbtn secondary" href="https://www.instagram.com/onedirectionhealing" target="_blank" rel="noopener noreferrer">Message on Instagram ↗</a></div></article>
-<article class="card" id="hub4-whatsapp"><span class="tag">official business chat</span><h3>WhatsApp Business</h3><p><strong>One Direction Healing HQ</strong><br><a href="https://wa.me/message/GZKSOVWIWFL7G1" target="_blank" rel="noopener noreferrer">Chat on WhatsApp Business ↗</a></p><div class="home-actions"><a class="linkbtn" href="https://wa.me/message/GZKSOVWIWFL7G1" target="_blank" rel="noopener noreferrer" aria-label="Chat with One Direction Healing HQ on WhatsApp Business">Chat on WhatsApp ↗</a></div></article>
+<article class="card" id="hub4-whatsapp"><span class="tag">official business chat</span><h3>WhatsApp Business</h3><p><strong>One Direction Healing HQ</strong><br>Tap below to start a friendly business chat.</p><div class="home-actions"><a class="linkbtn" href="https://wa.me/message/GZKSOVWIWFL7G1" target="_blank" rel="noopener noreferrer" aria-label="Chat with One Direction Healing HQ on WhatsApp Business">Chat on WhatsApp ↗</a></div></article>
 </div>
 </section>
 <section id="fave-follows" class="section">
@@ -12940,7 +12940,7 @@ details.append(neighborhoods);grid.append(details);
     support:{title:'Patreon: help the next idea happen',copy:'This is the support door for following Kiki’s connected creator page.',href:'#hub4-patreon',label:'See the official Patreon card'}
   };
   const signalResult=document.getElementById('hub4SignalResult');
-  root.querySelectorAll('.hub4-signal').forEach(function(button){button.addEventListener('click',function(){root.querySelectorAll('.hub4-signal').forEach(function(other){other.setAttribute('aria-pressed','false')});button.setAttribute('aria-pressed','true');const pick=signalData[button.dataset.signal];signalResult.innerHTML='<h4>'+pick.title+'</h4><p>'+pick.copy+'</p><a href="https://grogusmom1989-creator.github.io/liam/'+pick.href+'">'+pick.label+' →</a>'})});
+  root.querySelectorAll('.hub4-signal').forEach(function(button){button.addEventListener('click',function(){root.querySelectorAll('.hub4-signal').forEach(function(other){other.setAttribute('aria-pressed','false')});button.setAttribute('aria-pressed','true');const pick=signalData[button.dataset.signal];signalResult.innerHTML='<h4>'+pick.title+'</h4><p>'+pick.copy+'</p><a href="'+pick.href+'">'+pick.label+' →</a>'})});
   const quests=Array.from(root.querySelectorAll('.hub4-quest')),questStatus=document.getElementById('hub4QuestStatus');
   quests.forEach(function(button){button.addEventListener('click',function(){button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));const count=quests.filter(function(item){return item.getAttribute('aria-pressed')==='true'}).length;questStatus.textContent=count===quests.length?'All 5 complete — you mapped the whole creator signal!':count+' of '+quests.length+' signal missions complete.'})});
   const remixSeeds=[
