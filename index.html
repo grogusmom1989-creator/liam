@@ -803,6 +803,51 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 </head>
 <body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
 <div class="wrap"><div class="topline"><a class="back" href="#home">← Back to the welcome</a><a class="pillbtn" href="#fake-call-prank">Fake Call Prank</a><a class="pillbtn" href="#kiki-isms">Kiki’s Dictionary</a><span class="handle">@onedirectionhealinghq</span></div>
+<style>
+#expansion-pinned-faves-2026-10-02{position:sticky;top:8px;z-index:60;margin:16px 0 10px}
+.expansion-pinned-faves-2026-10-02-board{position:relative;background-color:color-mix(in srgb,var(--gold2) 20%,var(--paper));background-image:radial-gradient(color-mix(in srgb,var(--ink) 10%,transparent) 1.2px,transparent 1.3px);background-size:18px 18px;border:2px solid var(--line);border-radius:20px;padding:16px 14px 12px;box-shadow:var(--shadow);overflow:hidden}
+.expansion-pinned-faves-2026-10-02-board::before,.expansion-pinned-faves-2026-10-02-board::after{content:"";position:absolute;width:72px;height:16px;background:color-mix(in srgb,var(--pink2) 55%,transparent);border-radius:3px;pointer-events:none}
+.expansion-pinned-faves-2026-10-02-board::before{top:-2px;left:18px;transform:rotate(-5deg)}
+.expansion-pinned-faves-2026-10-02-board::after{top:-2px;right:18px;transform:rotate(5deg);background:color-mix(in srgb,var(--gold2) 62%,transparent)}
+.expansion-pinned-faves-2026-10-02-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.expansion-pinned-faves-2026-10-02-title{font:800 clamp(1.25rem,3.2vw,1.7rem)/1.12 "Baloo 2",sans-serif;color:var(--plum);margin:0}
+.expansion-pinned-faves-2026-10-02-blurb{margin:0;color:var(--ink);font-weight:700;font-size:.95rem}
+.expansion-pinned-faves-2026-10-02-pins{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.expansion-pinned-faves-2026-10-02-pin{display:inline-flex;align-items:center;gap:6px;max-width:100%;background:var(--paper);border:2px solid var(--line);border-radius:999px;padding:4px 5px 4px 12px;box-shadow:0 3px 10px rgba(83,33,90,.10)}
+.expansion-pinned-faves-2026-10-02-pin a{display:inline-flex;align-items:center;gap:7px;min-width:0;text-decoration:none;font-weight:900;color:var(--plum);overflow-wrap:anywhere}
+.expansion-pinned-faves-2026-10-02-pin a:hover{text-decoration:underline}
+.expansion-pinned-faves-2026-10-02-pin a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:999px}
+.expansion-pinned-faves-2026-10-02-toggle{flex:0 0 auto;display:inline-grid;place-items:center;width:32px;height:32px;border:2px solid transparent;border-radius:999px;background:var(--gold2);color:#3a2410;font-size:1rem;line-height:1;cursor:pointer}
+.expansion-pinned-faves-2026-10-02-toggle[aria-pressed="true"]{background:var(--gold);border-color:color-mix(in srgb,var(--plum) 35%,var(--gold))}
+.expansion-pinned-faves-2026-10-02-toggle:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.expansion-pinned-faves-2026-10-02-count{margin:10px 2px 0;font-size:.88rem;font-weight:800;color:var(--plum);min-height:1.3em}
+.expansion-pinned-faves-2026-10-02-more-wrap{margin-top:10px;border-top:2px dashed var(--line);padding-top:10px}
+.expansion-pinned-faves-2026-10-02-more-label{margin:0 0 7px;font-weight:900;font-size:.86rem;color:var(--muted)}
+.expansion-pinned-faves-2026-10-02-more{display:flex;flex-wrap:wrap;gap:7px}
+.expansion-pinned-faves-2026-10-02-add{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:7px 11px;border:2px dashed var(--line);border-radius:999px;background:color-mix(in srgb,var(--paper) 86%,transparent);color:var(--ink);font-weight:800;font-size:.88rem;cursor:pointer;overflow-wrap:anywhere}
+.expansion-pinned-faves-2026-10-02-add:hover{border-color:var(--pink);color:var(--plum)}
+.expansion-pinned-faves-2026-10-02-add:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.expansion-pinned-faves-2026-10-02-empty{margin:2px;font-weight:700;color:var(--muted)}
+.expansion-pinned-faves-2026-10-02-reset{margin-top:10px;border:0;border-radius:999px;padding:8px 13px;background:var(--plum);color:#fff;font-weight:900;font-size:.86rem;cursor:pointer}
+.expansion-pinned-faves-2026-10-02-reset:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+@media(max-width:560px){#expansion-pinned-faves-2026-10-02{top:6px}.expansion-pinned-faves-2026-10-02-board{padding:14px 11px 11px}.expansion-pinned-faves-2026-10-02-pin{padding-left:10px}.expansion-pinned-faves-2026-10-02-pin a{font-size:.92rem}}
+@media(prefers-reduced-motion:reduce){.expansion-pinned-faves-2026-10-02-toggle,.expansion-pinned-faves-2026-10-02-add{transition:none}}
+</style>
+<section id="expansion-pinned-faves-2026-10-02" class="expansion-pinned-faves-2026-10-02" aria-labelledby="expansion-pinned-faves-2026-10-02-title">
+<div class="expansion-pinned-faves-2026-10-02-board">
+<div class="expansion-pinned-faves-2026-10-02-head">
+<h2 id="expansion-pinned-faves-2026-10-02-title" class="expansion-pinned-faves-2026-10-02-title">📌 Kiki's Pinned Favorites!</h2>
+<p class="expansion-pinned-faves-2026-10-02-blurb">Your faves, one tap away! Tap 📌 to pin your own! 💕</p>
+</div>
+<div id="expansion-pinned-faves-2026-10-02-board" class="expansion-pinned-faves-2026-10-02-pins" role="list" aria-label="Kiki's pinned favorite hubs"></div>
+<p id="expansion-pinned-faves-2026-10-02-count" class="expansion-pinned-faves-2026-10-02-count" role="status" aria-live="polite"></p>
+<div class="expansion-pinned-faves-2026-10-02-more-wrap">
+<p class="expansion-pinned-faves-2026-10-02-more-label">Even more to pin:</p>
+<div id="expansion-pinned-faves-2026-10-02-more" class="expansion-pinned-faves-2026-10-02-more" aria-label="More favorites to pin"></div>
+</div>
+<button id="expansion-pinned-faves-2026-10-02-reset" class="expansion-pinned-faves-2026-10-02-reset" type="button">Reset to Kiki's faves</button>
+</div>
+</section>
 <div class="season-note"><span class="season-leaf" aria-hidden="true"></span><strong>October Spooky Fun Month! </strong><span>Featured Hub of the Month: Friendly Ghost Tea Party (Hub 130) — pull up a chair for ghostly sips and giggles!</span></div>
 <a class="oct-featured-strip" href="#hub-friendly-ghost-tea-party" aria-label="October Featured Hub of the Month: Friendly Ghost Tea Party — Hub 130. Open it."><span class="oct-featured-inner"><span class="oct-ghost-face" aria-hidden="true">👻</span><span class="oct-featured-copy"><strong>🎃 Featured Hub of the Month — October 🎃</strong><span>☕ Friendly Ghost Tea Party (Hub 130) — float on over for ghostly sips and giggles! Tap to join the party →</span></span><span class="oct-moons" aria-hidden="true">🌙✨🌙</span></span></a>
 <section id="featured-shoutout" class="featured-shoutout" aria-labelledby="featured-shoutout-title"><div class="featured-shoutout-inner"><div class="featured-shoutout-mark" aria-hidden="true">📣</div><div><p class="featured-shoutout-kicker">Celebration shoutout</p><h2 id="featured-shoutout-title">Reiki Fairy &amp; Marcelo Wang</h2><p>Big love to TikTok creator <strong>Reiki Fairy (@reikifairy)</strong> for her reiki and energy-healing content — <strong>protect your energy</strong> — and a special cheer for <strong>Marcelo Wang</strong>!</p></div><a class="linkbtn" href="https://pro.tiktok.com/t/ZP8T7N9eC/" target="_blank" rel="noopener noreferrer" aria-label="Watch Reiki Fairy on TikTok">Watch Reiki Fairy ↗</a></div></section>
@@ -16233,6 +16278,98 @@ setupBossThirteenExpansion();
     if(!btn||!root.contains(btn))return;
     fixNowLine();
   });
+})();
+</script>
+<script>
+(function(){
+var root=document.getElementById('expansion-pinned-faves-2026-10-02');
+if(!root||root.getAttribute('data-expansion-pinned-faves-ready')==='1')return;
+root.setAttribute('data-expansion-pinned-faves-ready','1');
+var KEY='expansion-pinned-faves-2026-10-02-picks';
+var CATALOG=[
+{key:'kitchen',emoji:'🍳',label:"Kiki's Kitchen",href:'#hub-kikis-kitchen'},
+{key:'music',emoji:'🎵',label:'Music',href:'#music-links'},
+{key:'healing',emoji:'🌿',label:'Healing HQ Affirmations',href:'#hub-healing-hq-affirmations'},
+{key:'shoutout',emoji:'📣',label:'Shoutout Wall',href:'#mix-shoutout-wall'},
+{key:'tiktok',emoji:'🎤',label:'TikTok Corner',href:'#hub-tiktok-corner'},
+{key:'plush',emoji:'🧸',label:'Plush Crew',href:'#plush-crew-hq'},
+{key:'map',emoji:'🗺️',label:'Universe Map',href:'#universe-map'},
+{key:'daily',emoji:'✨',label:'Daily Affirmations',href:'#healing-daily-affirmations'},
+{key:'games',emoji:'🎮',label:'Game Zone',href:'#hub-game-zone'},
+{key:'movies',emoji:'🎬',label:'Movies',href:'#hub-movies'},
+{key:'goals',emoji:'🌟',label:'Goals & Dreams',href:'#hub-dream-board'},
+{key:'fave',emoji:'⭐',label:'Creator Cosmos',href:'#fave-follows'}
+];
+var DEFAULTS=['kitchen','music','healing','shoutout','tiktok','plush'];
+function storeGet(){try{var raw=localStorage.getItem(KEY);if(!raw)return null;var v=JSON.parse(raw);if(!Array.isArray(v))return null;return v.filter(function(k){return CATALOG.some(function(c){return c.key===k;});});}catch(e){return null;}}
+function storeSet(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){}}
+var pinned=storeGet();
+if(!pinned)pinned=DEFAULTS.slice();
+pinned=pinned.filter(function(k,i){return pinned.indexOf(k)===i;});
+var board=document.getElementById('expansion-pinned-faves-2026-10-02-board');
+var moreBox=document.getElementById('expansion-pinned-faves-2026-10-02-more');
+var countEl=document.getElementById('expansion-pinned-faves-2026-10-02-count');
+var resetBtn=document.getElementById('expansion-pinned-faves-2026-10-02-reset');
+function isPinned(k){return pinned.indexOf(k)!==-1;}
+function render(){
+if(!board||!moreBox)return;
+board.innerHTML='';
+moreBox.innerHTML='';
+var shown=0;
+CATALOG.forEach(function(item){
+if(!isPinned(item.key))return;
+shown++;
+var wrap=document.createElement('div');
+wrap.setAttribute('role','listitem');
+wrap.className='expansion-pinned-faves-2026-10-02-pin';
+var a=document.createElement('a');
+a.href=item.href;
+a.textContent=item.emoji+' '+item.label;
+var b=document.createElement('button');
+b.type='button';
+b.className='expansion-pinned-faves-2026-10-02-toggle';
+b.textContent='📌';
+b.setAttribute('aria-pressed','true');
+b.setAttribute('aria-label','Unpin '+item.label);
+b.setAttribute('data-expansion-pinned-faves-toggle',item.key);
+wrap.appendChild(a);
+wrap.appendChild(b);
+board.appendChild(wrap);
+});
+if(!shown){
+var em=document.createElement('p');
+em.className='expansion-pinned-faves-2026-10-02-empty';
+em.textContent='No pins yet — pick one below to stick it on your board! 💕';
+board.appendChild(em);
+}
+CATALOG.forEach(function(item){
+if(isPinned(item.key))return;
+var mb=document.createElement('button');
+mb.type='button';
+mb.className='expansion-pinned-faves-2026-10-02-add';
+mb.textContent='📌 '+item.emoji+' '+item.label;
+mb.setAttribute('data-expansion-pinned-faves-toggle',item.key);
+mb.setAttribute('aria-label','Pin '+item.label);
+moreBox.appendChild(mb);
+});
+if(countEl)countEl.textContent=shown===1?'1 fave pinned · tap a pin to jump, tap 📌 to change it! ✨':shown+' faves pinned · tap a pin to jump, tap 📌 to change it! ✨';
+}
+function toggle(k){
+var i=pinned.indexOf(k);
+if(i===-1)pinned.push(k);else pinned.splice(i,1);
+var order=CATALOG.map(function(c){return c.key;});
+pinned.sort(function(x,y){return order.indexOf(x)-order.indexOf(y);});
+storeSet(pinned);
+render();
+}
+root.addEventListener('click',function(ev){
+var t=ev.target&&ev.target.closest?ev.target.closest('[data-expansion-pinned-faves-toggle]'):null;
+if(!t||!root.contains(t))return;
+var k=t.getAttribute('data-expansion-pinned-faves-toggle');
+if(k)toggle(k);
+});
+if(resetBtn)resetBtn.addEventListener('click',function(){pinned=DEFAULTS.slice();storeSet(pinned);render();});
+render();
 })();
 </script>
 </body></html>
