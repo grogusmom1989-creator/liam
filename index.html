@@ -759,6 +759,18 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 .kiki-radio-2026-10-02-fmcard .linkbtn{margin-top:10px}
 @media(max-width:560px){.kiki-radio-2026-10-02-stations{flex-direction:column}.kiki-radio-2026-10-02-btn{width:100%}}
 @media(prefers-reduced-motion:reduce){.kiki-radio-2026-10-02-panel.is-active{animation:none}}
+/* Kiki Radio expansion 2 (2026-10-02): Midnight Charms FM · Plushie Party Radio · Cozy Night FM */
+.expansion-kiki-radio-2-2026-10-02-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.expansion-kiki-radio-2-2026-10-02-links .linkbtn{margin-top:0}
+.expansion-kiki-radio-2-2026-10-02-roster{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:12px 0 4px;text-align:left}
+.expansion-kiki-radio-2-2026-10-02-roster span{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:color-mix(in srgb,var(--paper) 88%,transparent);font-size:.92rem;line-height:1.35}
+.expansion-kiki-radio-2-2026-10-02-roster strong{display:block;color:var(--plum);font-family:"Baloo 2",sans-serif}
+.expansion-kiki-radio-2-2026-10-02-note{font-size:.86rem;color:var(--muted);margin:8px 0 0}
+.expansion-kiki-radio-2-2026-10-02-cozy{border:2px dashed color-mix(in srgb,var(--plum) 45%,var(--line));border-radius:16px;padding:20px;background:linear-gradient(160deg,color-mix(in srgb,var(--blue) 38%,var(--paper)),color-mix(in srgb,var(--pink2) 14%,var(--paper)) 65%,color-mix(in srgb,var(--gold2) 14%,var(--paper)));text-align:center}
+.expansion-kiki-radio-2-2026-10-02-cozy .kiki-radio-2026-10-02-blurb{margin-bottom:6px}
+.expansion-kiki-radio-2-2026-10-02-timer{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:color-mix(in srgb,var(--paper) 85%,transparent);margin:12px auto 4px;max-width:520px}
+.expansion-kiki-radio-2-2026-10-02-timer p{margin:4px 0}
+.expansion-kiki-radio-2-2026-10-02-cozy .expansion-kiki-radio-2-2026-10-02-links{justify-content:center}
 </style>
 </head>
 <body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
@@ -2604,6 +2616,9 @@ document.querySelectorAll('.scoop-poll-btn').forEach(function(btn){
 <button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="spotify" aria-pressed="true">🎧 Spotify Radio</button>
 <button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="kikifm" aria-pressed="false">📻 Kiki FM</button>
 <button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="healing" aria-pressed="false">🌙 Healing Vibes</button>
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="charms" aria-pressed="false">🎸 Midnight Charms FM</button>
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="plushie" aria-pressed="false">🧸 Plushie Party Radio</button>
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="cozy" aria-pressed="false">🌙 Cozy Night FM</button>
 </div>
 <p class="kiki-radio-2026-10-02-now" aria-live="polite">📡 Now tuned to: Spotify Radio</p>
 <div class="kiki-radio-2026-10-02-panel is-active" data-kiki-radio-panel="spotify">
@@ -2623,6 +2638,61 @@ document.querySelectorAll('.scoop-poll-btn').forEach(function(btn){
 <p class="kiki-radio-2026-10-02-blurb">Soft ambient calm for sleep, rest &amp; recharging.</p>
 <iframe class="kiki-radio-2026-10-02-frame" data-kiki-radio-src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYILo9WhOOw6?utm_source=generator&theme=0" title="Healing Vibes — Binaural Beats: Deeper Sleep playlist player" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <p class="kiki-radio-2026-10-02-open"><a href="https://open.spotify.com/playlist/37i9dQZF1DWYILo9WhOOw6" target="_blank" rel="noopener noreferrer">Open this playlist in Spotify ↗</a></p>
+</div>
+<div class="kiki-radio-2026-10-02-panel" data-kiki-radio-panel="charms" hidden>
+<div class="kiki-radio-2026-10-02-fmcard">
+<p class="kiki-radio-2026-10-02-fmbig">🎸 The Midnight Charms</p>
+<p class="kiki-radio-2026-10-02-blurb">Kiki's very own boy band, all day every day! 🎸✨</p>
+<p>Five original stars, one legendary manager — <strong>Boss Christina</strong>, Manager of the Midnight Charms, calls the setlist while the boys bring the sparkle.</p>
+<div class="expansion-kiki-radio-2-2026-10-02-roster">
+<span><strong>🎸 Liam</strong>The charming leader — guitar in hand, heart on his sleeve.</span>
+<span><strong>💃 Theo</strong>The funny one — dancer, joker, and chief chaos gremlin.</span>
+<span><strong>💌 Kai</strong>The sweet romantic — vocals that could melt a marshmallow.</span>
+<span><strong>✍️ Rex</strong>The edgy one — songwriter with the sharpest hooks.</span>
+<span><strong>⭐ Finn</strong>The baby of the group — scene-stealer, every single time.</span>
+</div>
+<div class="expansion-kiki-radio-2-2026-10-02-links">
+<a class="linkbtn" href="#midnight-charms">🎤 Band Spotlight</a>
+<a class="linkbtn secondary" href="#hub-midnight-charms-concert">🎟️ Midnight Charms Concert</a>
+<a class="linkbtn secondary" href="#midnight-charms-world-deep">🌙 Charms World</a>
+</div>
+</div>
+</div>
+<div class="kiki-radio-2026-10-02-panel" data-kiki-radio-panel="plushie" hidden>
+<div class="kiki-radio-2026-10-02-fmcard">
+<p class="kiki-radio-2026-10-02-fmbig">🧸 Plushie Party Radio</p>
+<p class="kiki-radio-2026-10-02-blurb">Five tiny DJs, zero chill, maximum snuggles — every plushie's pick, straight from the blanket fort!</p>
+<div class="expansion-kiki-radio-2-2026-10-02-roster">
+<span><strong>🐼 Angel Panda, DJ Pick:</strong>“Slow songs and soft hugs — paws up for every gentle chorus!”</span>
+<span><strong>🐛 Snuggle Bug, DJ Pick:</strong>“If it doesn't sound like a warm blanket, I'm not playing it!”</span>
+<span><strong>🦁 Hazza, DJ Pick:</strong>“Big dramatic ballads only — I need to feel it in my mane!”</span>
+<span><strong>🎧 DJ Malik, DJ Pick:</strong>“If the beat doesn't bounce, the fort doesn't dance!”</span>
+<span><strong>🧸 Boo Bear, DJ Pick:</strong>“Lullabies. All lullabies. Wake me when the snack break starts.”</span>
+</div>
+<div class="expansion-kiki-radio-2-2026-10-02-links">
+<a class="linkbtn" href="#plush-crew-hq">🧸 Plush Crew HQ</a>
+<a class="linkbtn secondary" href="#plush-origins">📖 Plush Origins</a>
+<a class="linkbtn secondary" href="#sing">🎤 Sing-Along Studio</a>
+</div>
+</div>
+</div>
+<div class="kiki-radio-2026-10-02-panel" data-kiki-radio-panel="cozy" hidden>
+<div class="expansion-kiki-radio-2-2026-10-02-cozy">
+<p class="kiki-radio-2026-10-02-fmbig">🌙 Cozy Night FM</p>
+<p class="kiki-radio-2026-10-02-blurb">The sleepy-time station — soft voices, slow breaths, and blanket-fort dreams.</p>
+<p>When the day winds down, Cozy Night FM walks you to dreamland: a gentle meditation, a cozy story, and a whole crew of plushies already yawning in harmony.</p>
+<div class="expansion-kiki-radio-2-2026-10-02-timer">
+<p><strong>😴 Sleep timer tip</strong></p>
+<p>Set a sleep timer on your phone or music app for about 30 minutes, press play on something gentle below, and let the sounds carry you off — the music stops on its own so nothing blares at 3am.</p>
+</div>
+<div class="expansion-kiki-radio-2-2026-10-02-links">
+<a class="linkbtn" href="#hub-guided-meditation">◌ Guided Meditation Corner</a>
+<a class="linkbtn secondary" href="#meditation-library">🌙 Guided Meditations</a>
+<a class="linkbtn secondary" href="#breathing-room">🫧 Breathing Room</a>
+<a class="linkbtn secondary" href="#bath-dreamland-grwm">🛁 Cozy Sleepover Pamper</a>
+</div>
+<p class="expansion-kiki-radio-2-2026-10-02-note">Sweet dreams, sleepyhead — the Plush Crew saved you the best pillow. 💤</p>
+</div>
 </div>
 </article>
 <article class="card wide"><span class="tag">Kiki's favorite musical act 🎵</span><h3>Gregorian — “Join Me”</h3><p>Gregorian is one of Kiki’s very favorite musical acts — those sweeping, glowing chants make her whole heart hum. This one’s pure cozy-healing magic. 💛</p><div class="home-actions"><a class="linkbtn" href="https://www.youtube.com/watch?v=HwxH1oJZ3Vs" target="_blank" rel="noopener noreferrer">Watch “Join Me” on YouTube ↗</a></div></article>
@@ -14884,6 +14954,28 @@ setupBossThirteenExpansion();
       loadFrame(initialPanel);
     }
   }
+})();
+</script>
+<script>
+(function(){
+  var root=document.getElementById('kiki-radio-2026-10-02');
+  if(!root||root.getAttribute('data-expansion-kiki-radio-2-2026-10-02')==='1')return;
+  root.setAttribute('data-expansion-kiki-radio-2-2026-10-02','1');
+  var nowLine=root.querySelector('.kiki-radio-2026-10-02-now');
+  var names={charms:'Midnight Charms FM',plushie:'Plushie Party Radio',cozy:'Cozy Night FM'};
+  var base='📡 Now tuned to: ';
+  function fixNowLine(){
+    if(!nowLine)return;
+    var active=root.querySelector('[data-kiki-radio-station][aria-pressed="true"]');
+    if(!active)return;
+    var key=active.getAttribute('data-kiki-radio-station');
+    if(names[key])nowLine.textContent=base+names[key];
+  }
+  root.addEventListener('click',function(event){
+    var btn=event.target&&event.target.closest?event.target.closest('[data-kiki-radio-station]'):null;
+    if(!btn||!root.contains(btn))return;
+    fixNowLine();
+  });
 })();
 </script>
 </body></html>
