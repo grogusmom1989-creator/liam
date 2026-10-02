@@ -733,6 +733,29 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 /* App credits */
 .credits-section{scroll-margin-top:24px}.credits-shell{position:relative;overflow:hidden;padding:clamp(22px,4vw,40px);border:1px solid var(--line);border-radius:26px 10px 26px 10px;background:linear-gradient(145deg,color-mix(in srgb,var(--gold2) 16%,var(--paper)),var(--paper) 48%,color-mix(in srgb,var(--pink2) 10%,var(--paper)));box-shadow:var(--shadow)}.credits-shell::before{content:"";position:absolute;inset:0 0 auto;height:8px;background:linear-gradient(90deg,var(--gold),var(--pink),var(--plum))}.credits-intro{max-width:820px;margin:0 0 24px}.credits-intro h2{margin-top:3px}.credits-kicker{margin:0;color:var(--plum);font-weight:900}.credits-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.credit-block{min-width:0;padding:19px;border:1px solid var(--line);border-radius:16px 7px 16px 7px;background:color-mix(in srgb,var(--paper) 92%,transparent)}.credit-block.primary{grid-column:1/-1;background:color-mix(in srgb,var(--gold2) 24%,var(--paper));border-color:color-mix(in srgb,var(--gold) 45%,var(--line))}.credit-block h3{margin:0 0 10px;color:var(--plum);font:800 1.3rem/1.15 "Baloo 2",sans-serif}.credit-block p{margin:6px 0}.credit-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:0;padding:0;list-style:none}.credit-list li{padding:11px 12px;border-radius:10px;background:color-mix(in srgb,var(--blue) 33%,var(--paper));line-height:1.4}.credit-list strong{display:block;color:var(--plum)}.credit-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.credit-tags span{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--paper);font-weight:850}.credits-note{margin:17px 0 0;color:var(--muted);font-size:.9rem;font-weight:700}.footer .credit-link{display:inline-flex;margin-top:8px}
 @media(max-width:700px){.credits-grid{grid-template-columns:1fr}.credit-block.primary{grid-column:auto}.credit-list{grid-template-columns:1fr}}@media(max-width:520px){.credits-shell{padding:20px 16px;border-radius:20px 7px 20px 7px}}
+/* Kiki Radio (2026-10-02) */
+.kiki-radio-2026-10-02-card{overflow:hidden}
+.kiki-radio-2026-10-02-title{font:800 clamp(1.7rem,3.4vw,2.3rem)/1.05 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 6px}
+.kiki-radio-2026-10-02-intro{margin:0 0 16px;color:var(--muted);max-width:640px}
+.kiki-radio-2026-10-02-stations{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.kiki-radio-2026-10-02-btn{border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:10px 16px;border-radius:999px;font:800 1rem/1.2 "Baloo 2",sans-serif;min-height:48px}
+.kiki-radio-2026-10-02-btn:hover{border-color:var(--pink)}
+.kiki-radio-2026-10-02-btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.kiki-radio-2026-10-02-btn[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff;box-shadow:0 6px 18px rgba(83,33,90,.25)}
+.kiki-radio-2026-10-02-now{margin:8px 0 14px;font-weight:800;color:var(--plum);min-height:1.5em}
+.kiki-radio-2026-10-02-panel[hidden]{display:none}
+.kiki-radio-2026-10-02-panel.is-active{animation:kiki-radio-2026-10-02-in .35s ease both}
+@keyframes kiki-radio-2026-10-02-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.kiki-radio-2026-10-02-blurb{font-weight:800;margin:0 0 12px}
+.kiki-radio-2026-10-02-frame{display:block;width:100%;border:0;border-radius:14px;background:#121212}
+.kiki-radio-2026-10-02-open{margin:10px 0 0;font-size:.86rem}
+.kiki-radio-2026-10-02-open a{color:var(--plum);font-weight:800}
+.kiki-radio-2026-10-02-fmcard{border:2px dashed color-mix(in srgb,var(--gold) 55%,var(--line));border-radius:16px;padding:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--gold2) 32%,var(--paper)),color-mix(in srgb,var(--pink2) 18%,var(--paper)));text-align:center}
+.kiki-radio-2026-10-02-fmbig{font:800 1.5rem/1.15 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 4px}
+.kiki-radio-2026-10-02-fmcard p{margin:6px 0}
+.kiki-radio-2026-10-02-fmcard .linkbtn{margin-top:10px}
+@media(max-width:560px){.kiki-radio-2026-10-02-stations{flex-direction:column}.kiki-radio-2026-10-02-btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.kiki-radio-2026-10-02-panel.is-active{animation:none}}
 </style>
 </head>
 <body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
@@ -2391,6 +2414,34 @@ document.querySelectorAll('.scoop-poll-btn').forEach(function(btn){
 <div class="grid">
 <article class="card wide"><span class="tag">music-and-sing-alongs</span><h3>Christina on Spotify</h3><p>Open her Spotify profile for playlists and quick listens.</p><div class="home-actions"><a class="linkbtn" href="https://open.spotify.com/user/31kk26zqhwhxr3icemdnu2yhm5hi" target="_blank" rel="noopener noreferrer">Listen on Spotify ↗</a><a class="linkbtn secondary" href="#sing">Sing-Along Studio</a></div></article>
 <article class="card wide"><span class="tag">24 silly song tracks</span><h3>My own silly songs lol 🎤</h3><p><strong>djkikipayne</strong> <span class="small">(@sweetsugarcookie)</span></p><p>“hey guys christina here i just do this for fun lol”</p><div class="home-actions"><a class="linkbtn" href="https://rapch.at/L0Rscs3WN6b" target="_blank" rel="noopener noreferrer">Hear my Rapchat songs ↗</a></div></article>
+<article class="card full kiki-radio-2026-10-02-card" id="kiki-radio-2026-10-02">
+<h3 class="kiki-radio-2026-10-02-title">🎙️ Kiki Radio</h3>
+<p class="kiki-radio-2026-10-02-intro">One happy little radio with three stations — your playlists, your videos, and your calm. Tap a station to tune in!</p>
+<div class="kiki-radio-2026-10-02-stations" role="group" aria-label="Kiki Radio stations">
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="spotify" aria-pressed="true">🎧 Spotify Radio</button>
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="kikifm" aria-pressed="false">📻 Kiki FM</button>
+<button type="button" class="kiki-radio-2026-10-02-btn" data-kiki-radio-station="healing" aria-pressed="false">🌙 Healing Vibes</button>
+</div>
+<p class="kiki-radio-2026-10-02-now" aria-live="polite">📡 Now tuned to: Spotify Radio</p>
+<div class="kiki-radio-2026-10-02-panel is-active" data-kiki-radio-panel="spotify">
+<p class="kiki-radio-2026-10-02-blurb">Your playlists, radio-style — press play and vibe.</p>
+<iframe class="kiki-radio-2026-10-02-frame" data-kiki-radio-src="https://open.spotify.com/embed/playlist/37i9dQZEVXbwcN7gRjnWLD?utm_source=generator&theme=0" title="Spotify Radio — Kiki's Release Radar playlist player" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p class="kiki-radio-2026-10-02-open"><a href="https://open.spotify.com/playlist/37i9dQZEVXbwcN7gRjnWLD" target="_blank" rel="noopener noreferrer">Open this playlist in Spotify ↗</a></p>
+</div>
+<div class="kiki-radio-2026-10-02-panel" data-kiki-radio-panel="kikifm" hidden>
+<div class="kiki-radio-2026-10-02-fmcard">
+<p class="kiki-radio-2026-10-02-fmbig">📻 Starring YOU!</p>
+<p class="kiki-radio-2026-10-02-blurb">Kiki's own videos, all day every day!</p>
+<p>Whacky Videos is Kiki FM headquarters — home of <strong>Kiki's Fresh Videos</strong> and the whole video collection.</p>
+<a class="linkbtn" href="#hub-whacky-videos">🎬 Jump to Whacky Videos</a>
+</div>
+</div>
+<div class="kiki-radio-2026-10-02-panel" data-kiki-radio-panel="healing" hidden>
+<p class="kiki-radio-2026-10-02-blurb">Soft ambient calm for sleep, rest &amp; recharging.</p>
+<iframe class="kiki-radio-2026-10-02-frame" data-kiki-radio-src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYILo9WhOOw6?utm_source=generator&theme=0" title="Healing Vibes — Binaural Beats: Deeper Sleep playlist player" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p class="kiki-radio-2026-10-02-open"><a href="https://open.spotify.com/playlist/37i9dQZF1DWYILo9WhOOw6" target="_blank" rel="noopener noreferrer">Open this playlist in Spotify ↗</a></p>
+</div>
+</article>
 </div>
 </section>
 <section id="music-playlists-deep" class="section">
@@ -14159,4 +14210,63 @@ setupBossThirteenExpansion();
 })();
 </script>
 
+<script>
+(function(){
+  var root=document.getElementById('kiki-radio-2026-10-02');
+  if(!root||root.getAttribute('data-kiki-radio-ready')==='1')return;
+  root.setAttribute('data-kiki-radio-ready','1');
+  var buttons=Array.prototype.slice.call(root.querySelectorAll('[data-kiki-radio-station]'));
+  var panels=Array.prototype.slice.call(root.querySelectorAll('[data-kiki-radio-panel]'));
+  var nowLine=root.querySelector('.kiki-radio-2026-10-02-now');
+  var names={spotify:'Spotify Radio',kikifm:'Kiki FM',healing:'Healing Vibes'};
+  function loadFrame(panel){
+    var frame=panel.querySelector('iframe[data-kiki-radio-src]');
+    if(frame&&!frame.getAttribute('src'))frame.setAttribute('src',frame.getAttribute('data-kiki-radio-src'));
+  }
+  function unloadFrame(panel){
+    var frame=panel.querySelector('iframe[data-kiki-radio-src]');
+    if(frame&&frame.getAttribute('src'))frame.removeAttribute('src');
+  }
+  function activate(name){
+    buttons.forEach(function(btn){btn.setAttribute('aria-pressed',btn.getAttribute('data-kiki-radio-station')===name?'true':'false');});
+    panels.forEach(function(panel){
+      var on=panel.getAttribute('data-kiki-radio-panel')===name;
+      if(on){
+        panel.hidden=false;
+        panel.classList.remove('is-active');
+        void panel.offsetWidth;
+        panel.classList.add('is-active');
+        loadFrame(panel);
+      }else{
+        panel.hidden=true;
+        panel.classList.remove('is-active');
+        unloadFrame(panel);
+      }
+    });
+    if(nowLine)nowLine.textContent='📡 Now tuned to: '+(names[name]||name);
+  }
+  buttons.forEach(function(btn){
+    btn.addEventListener('click',function(){activate(btn.getAttribute('data-kiki-radio-station'));});
+  });
+  var initialPanel=null;
+  panels.forEach(function(panel){if(!panel.hidden)initialPanel=panel;});
+  if(initialPanel){
+    if('IntersectionObserver' in window){
+      var seen=false;
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting&&!seen){
+            seen=true;
+            if(!initialPanel.hidden)loadFrame(initialPanel);
+            io.disconnect();
+          }
+        });
+      },{rootMargin:'400px 0px'});
+      io.observe(root);
+    }else{
+      loadFrame(initialPanel);
+    }
+  }
+})();
+</script>
 </body></html>
