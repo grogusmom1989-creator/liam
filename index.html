@@ -2996,11 +2996,11 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 <h3 id="front-door-spotlight-title" class="silly-heading">Fresh sparks &amp; favorite throwbacks ✨</h3>
 <p class="lead">New arrivals and older Library gems share the spotlight.</p>
 <div class="spotlight-grid">
-<a class="spotlight-card" href="#hub-friendly-ghost-tea-party"><h3>☕ Friendly Ghost Tea Party</h3><p>Pull up a floating chair and sip giggly ghost tea with the friendliest spirits around — cozy, spooky, and 100% boo-tiful! October's featured hub of the month!</p><span class="spotlight-go">Steep some fun →</span></a>
-<a class="spotlight-card" href="#hub-cozy-autumn-cottage"><h3>🍂 Cozy Autumn Cottage</h3><p>Crisp air outside, warm mugs inside! Snuggle into fall with playful pumpkins, movie-night magic, and the coziest cottage vibes ever.</p><span class="spotlight-go">Come on in →</span></a>
-<a class="spotlight-card" href="#hub-dramatic-readings"><h3>🎭 Dramatic Readings: The Grocery List</h3><p>Milk. Eggs. Bread. Like you've NEVER heard them before! An ordinary grocery list gets the full Shakespearean treatment — giggles guaranteed.</p><span class="spotlight-go">Take your seat →</span></a>
-<a class="spotlight-card" href="#hub-kindness-sprinkles"><h3>Kindness Sprinkles 🧁💛</h3><p>Step right up to the cupcake counter! Collect a warm, silly compliment made just for YOU — extra sprinkles, zero calories.</p><span class="spotlight-go">Grab a compliment →</span></a>
-<a class="spotlight-card" href="#hub-favorite-apps"><h3>📱 Kiki's Favorite Apps</h3><p>Free apps, big fun! Peek at the apps Christina actually uses every day — the creative essentials and the just-plain-silly ones.</p><span class="spotlight-go">Take a peek →</span></a>
+<a class="spotlight-card" href="#hub-whacky-videos"><h3>🎬 Whacky Videos</h3><p>Where the weird goes WHEEE! Press play on Kiki's silliest video pile — surprises, giggles, and zero chill.</p><span class="spotlight-go">Press play →</span></a>
+<a class="spotlight-card" href="#hub-one-direction-tributes"><h3>🎵 1D Tributes</h3><p>Five boys, a million memories! Sing along, wave your glowsticks, and celebrate every single era.</p><span class="spotlight-go">Celebrate 1D →</span></a>
+<a class="spotlight-card" href="#hub-plushie-morning-news"><h3>🌅 Plushie Morning News</h3><p>Wake up with Tigger, Grogu, and the whole Plush Crew — breaking news: breakfast is cute!</p><span class="spotlight-go">Watch the morning show →</span></a>
+<a class="spotlight-card" href="#hub-smartwatch-dance-test"><h3>⌚ Smartwatch Silly-Dance Step Test</h3><p>Wiggle those steps up! Dance, bounce, and test your watch the Kiki way.</p><span class="spotlight-go">Start dancing →</span></a>
+<a class="spotlight-card" href="#hub-kiki-earns"><h3>💪 How Kiki Earns Her Own Money</h3><p>Budget wins and money-saving tricks — Kiki's favorite ways to make her own magic happen!</p><span class="spotlight-go">See Kiki's hustle →</span></a>
 </div>
 </section>
 <div class="home-actions"><a class="linkbtn" href="#going-live">🎥 Watch AI Christina</a><a class="linkbtn secondary" href="#social-links">Find Christina online</a><a class="linkbtn secondary" href="#ideas">Explore the idea galaxy</a></div>
@@ -10774,6 +10774,134 @@ cards.forEach(function(card){const revealButton=card.querySelector('.snack-revea
 const checks=Array.from(root.querySelectorAll('.film-check')),filmStatus=document.getElementById('filmOpeningStatus');checks.forEach(function(button){button.addEventListener('click',function(){button.setAttribute('aria-pressed',String(button.getAttribute('aria-pressed')!=='true'));const ready=checks.filter(function(item){return item.getAttribute('aria-pressed')==='true'}).length;filmStatus.textContent=ready===checks.length?'4 of 4 ready — cameras up, Plush Crew seated, let the opening begin!':ready+' of '+checks.length+' ready — '+(checks.length-ready)+' prep card'+(checks.length-ready===1?'':'s')+' to go.'})});
 })();
 </script>
+
+<style>
+#expansion-thrift-mystery-bag-2026-10-03{margin:42px 0 14px;padding-top:34px;border-top:3px dashed color-mix(in srgb,var(--battle-gold) 55%,var(--line));scroll-margin-top:96px}
+#expansion-thrift-mystery-bag-2026-10-03>h3{margin:0 0 8px;color:var(--plum);font:800 clamp(1.75rem,3.6vw,2.5rem)/1.06 "Baloo 2",sans-serif}
+#expansion-thrift-mystery-bag-2026-10-03 .expansion-blurb{max-width:720px;color:var(--muted)}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-lineup{margin-top:22px}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-lineup>h4,#expansion-thrift-mystery-bag-2026-10-03 .kiki-math h4,#expansion-thrift-mystery-bag-2026-10-03 .bargain-or-bizarre h4{margin:0 0 8px;color:var(--plum);font:800 1.35rem/1.15 "Baloo 2",sans-serif}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:16px}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-card{min-width:0;overflow:hidden;border:2px solid color-mix(in srgb,var(--battle-pink) 34%,var(--line));border-radius:18px;background:var(--paper);box-shadow:var(--shadow)}
+#expansion-thrift-mystery-bag-2026-10-03 .reveal-btn{display:grid;place-items:center;align-content:center;width:100%;min-height:150px;border:0;background:linear-gradient(145deg,color-mix(in srgb,var(--gold2) 24%,var(--paper)),color-mix(in srgb,var(--pink2) 16%,var(--paper)));color:var(--plum);font:900 1.05rem/1.3 "Baloo 2",sans-serif}
+#expansion-thrift-mystery-bag-2026-10-03 .reveal-btn:hover,#expansion-thrift-mystery-bag-2026-10-03 .reveal-btn:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-reveal.hidden{display:none}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-reveal{padding:18px;text-align:center}
+#expansion-thrift-mystery-bag-2026-10-03 .item-emoji{display:block;font-size:2.6rem;line-height:1;margin-bottom:8px}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-reveal strong{display:block;color:var(--plum);font:800 1.15rem/1.15 "Baloo 2",sans-serif}
+#expansion-thrift-mystery-bag-2026-10-03 .thrift-reveal p{margin:8px 0 0;color:var(--muted);font-size:.92rem}
+#expansion-thrift-mystery-bag-2026-10-03 .kiki-math{margin-top:22px;padding:20px;border-radius:18px;border:2px solid color-mix(in srgb,var(--battle-teal) 42%,var(--line));background:color-mix(in srgb,var(--mint) 52%,var(--paper))}
+#expansion-thrift-mystery-bag-2026-10-03 .kiki-math p{margin:0}
+#expansion-thrift-mystery-bag-2026-10-03 .bargain-or-bizarre{margin-top:22px;padding:20px;border-radius:18px;border:2px solid color-mix(in srgb,var(--battle-pink) 34%,var(--line));background:var(--paper)}
+#expansion-thrift-mystery-bag-2026-10-03 .bargain-or-bizarre p{margin:0 0 10px}
+#expansion-thrift-mystery-bag-2026-10-03 .bargain-or-bizarre ul{margin:0;padding-left:22px}
+#expansion-thrift-mystery-bag-2026-10-03 .bargain-or-bizarre li{margin:6px 0}
+#expansion-thrift-mystery-bag-2026-10-03 .film-checklist{display:block;margin:22px 0 0;padding:20px;border-radius:18px;background:var(--battle-navy);color:#fff}
+#expansion-thrift-mystery-bag-2026-10-03 .film-checklist h4{margin:0 0 8px;color:#fff;font:800 1.35rem/1.15 "Baloo 2",sans-serif}
+#expansion-thrift-mystery-bag-2026-10-03 .film-checklist ol{margin:0;padding-left:22px}
+#expansion-thrift-mystery-bag-2026-10-03 .film-checklist li{margin:6px 0;color:#fff}
+@media(max-width:850px){#expansion-thrift-mystery-bag-2026-10-03 .thrift-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#expansion-thrift-mystery-bag-2026-10-03{margin-top:34px;padding-top:28px}#expansion-thrift-mystery-bag-2026-10-03 .thrift-grid{grid-template-columns:1fr}}
+</style>
+<div class="expansion expansion-thrift-mystery-bag" id="expansion-thrift-mystery-bag-2026-10-03">
+  <h3>📦 Thrift Store Mystery Bag Unboxing — Bargain or Bizarre?!</h3>
+  <p class="expansion-blurb">
+    The thrift store handed her a MYSTERY BAG and she has NO idea what's inside! 🛍️
+    Six surprise treasures (and maybe one total mystery), rated by the Plush Crew as
+    "BARGAIN!" or "BIZARRE?!" — with Kiki math showing the savings on every single find.
+  </p>
+  <div class="thrift-lineup">
+    <h4>🎁 The Mystery Bag Lineup (tap to reveal each find!)</h4>
+    <div class="thrift-grid">
+      <div class="thrift-card" data-item="mug">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">☕</span>
+          <strong>The Giant Glitter Mug</strong>
+          <p>A mug SO big it could hold an entire pot of cocoa! Snuggle bug already claimed it as a swimming pool. Bargain or bizarre? The Crew votes... BARGAIN! 🏊</p>
+        </div>
+      </div>
+      <div class="thrift-card" data-item="scarf">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">🧣</span>
+          <strong>The Infinite Rainbow Scarf</strong>
+          <p>Every color in the universe, wound up in one scarf. Wrap the whole Plush Crew in it at once! Angel panda declares it "the official flag of Cozy Vibes." 🏳️‍🌈</p>
+        </div>
+      </div>
+      <div class="thrift-card" data-item="frame">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">🖼️</span>
+          <strong>The Fancy Gold Frame (mystery art inside!)</strong>
+          <p>Someone's old painting... of a potato?! Boo bear is mesmerized. Do we keep the potato art or put a plushie family photo in it? The comments decide! 🥔</p>
+        </div>
+      </div>
+      <div class="thrift-card" data-item="hat">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">👒</span>
+          <strong>The Mystery Brim Hat</strong>
+          <p>A hat with a brim SO wide it doubles as a sun shield for four plushies. Hazza models it at three dramatic angles. Verdict: absolutely BARGAIN. 🎩</p>
+        </div>
+      </div>
+      <div class="thrift-card" data-item="puzzle">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">🧩</span>
+          <strong>The 1000-Piece Puzzle (missing... one piece?)</strong>
+          <p>The classic thrift gamble! DJ Malik vows to find the missing piece by "dropping a beat so good it vibrates the piece out of the couch cushions." BIZARRE — but the fun kind. 🎶</p>
+        </div>
+      </div>
+      <div class="thrift-card" data-item="plush">
+        <button class="reveal-btn">🎁 Tap to reveal!</button>
+        <div class="thrift-reveal hidden">
+          <span class="item-emoji">🧸</span>
+          <strong>The Rescue Plushie</strong>
+          <p>A slightly squished, totally adorable plushie that needed a new mama! Instant family member. The Plush Crew performs the official welcome ceremony (involving glitter). 🥹✨</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="kiki-math">
+    <h4>🧮 Kiki Math Corner</h4>
+    <p>Every thrift find gets the Kiki-math treatment: <strong>store price vs. thrift price</strong> and the total savings at the end! Flash the "savings total" on screen like a game-show jackpot. 💰 Bonus drama: guess each price BEFORE revealing — closest guess wins!</p>
+  </div>
+  <div class="bargain-or-bizarre">
+    <h4>⚖️ Bargain or Bizarre Scoreboard</h4>
+    <p>After each reveal, hold up the verdict card:</p>
+    <ul>
+      <li>💸 <strong>BARGAIN!</strong> — a steal, a treasure, an instant favorite.</li>
+      <li>🤪 <strong>BIZARRE?!</strong> — weird, wonderful, and going on the shelf of honor.</li>
+      <li>👑 <strong>GRAND CHAMPION:</strong> one find gets crowned the Mystery Bag MVP!</li>
+    </ul>
+  </div>
+  <div class="film-checklist">
+    <h4>🎬 Film Your Own Thrift Bag Unboxing</h4>
+    <ol>
+      <li><strong>Bag a mystery</strong> — thrift store, flea market, or garage sale; budget $10–20.</li>
+      <li><strong>NO peeking</strong> — shake the bag on camera for maximum suspense.</li>
+      <li><strong>Reveal + react</strong> — one item at a time, with your full dramatic performance.</li>
+      <li><strong>Plushie appraisal</strong> — a plushie (or pet) judges every single find.</li>
+      <li><strong>Do the Kiki math</strong> 🧮 — show the savings total and crown the MVP find!</li>
+    </ol>
+  </div>
+</div>
+<script>(function setupThriftMysteryBag(){
+const root=document.getElementById('expansion-thrift-mystery-bag-2026-10-03');if(!root)return;
+root.querySelectorAll('.thrift-card').forEach(function(card){
+const btn=card.querySelector('.reveal-btn'),reveal=card.querySelector('.thrift-reveal');if(!btn||!reveal)return;
+btn.type='button';btn.setAttribute('aria-expanded','false');
+btn.addEventListener('click',function(){
+const opening=reveal.classList.contains('hidden');
+reveal.classList.toggle('hidden',!opening);
+btn.setAttribute('aria-expanded',String(opening));
+btn.textContent=opening?'📦 Tap to tuck it away!':'🎁 Tap to reveal!';
+btn.setAttribute('aria-label',opening?'Hide the revealed thrift find':'Tap to reveal the thrift find');
+});
+});
+})();
+</script>
 </section>
 
 <section id="hub-thrifted-halloween-costumes" class="content-hub hub-thrifted-halloween-costumes thrifted-halloween-hub" aria-labelledby="thrifted-halloween-title">
@@ -12959,7 +13087,8 @@ const rounds=[{q:'A dog is pacing, panting, and scratching at the door. What is 
 <section id="derm133-more" class="derm133-panel" aria-labelledby="derm133-more-title"><h3 id="derm133-more-title">More shelves for the Skincare Science</h3><p>Every future topic already has a real home waiting for it.</p><div class="derm133-more-grid"><article class="derm133-more"><strong>Ingredients Library</strong><p>Plain-language explainers for cleansers, moisturizers, sunscreens, and common active ingredients.</p></article><article class="derm133-more"><strong>Hair, Scalp &amp; Nails</strong><p>Foundations for the rest of dermatology, including everyday care and when to ask for help.</p></article><article class="derm133-more"><strong>Skin Across Seasons</strong><p>Practical routine adjustments for heat, humidity, cold, travel, and indoor air.</p></article></div><div class="derm133-sources"><strong>Learning sources:</strong> <a href="https://my.clevelandclinic.org/health/body/10978-skin" target="_blank" rel="noopener noreferrer">Cleveland Clinic: skin layers and functions ↗</a> · <a href="https://www.biospace.com/confused-about-sunscreen-new-american-academy-of-dermatology-survey-shows-americans-need-a-refresher-on-sunscreen-application-and-spf" target="_blank" rel="noopener noreferrer">American Academy of Dermatology sun-protection guidance ↗</a></div></section>
 <div class="hub-return"><a href="#universe-map">Return to the Universe Map ↑</a></div>
 </section>
-<section id="glow-pamper-wing" class="glow-mega-wing glow-pamper-wing glow-hub" aria-labelledby="glow-title"><div class="glow-wing-marker"><span>Sparkle Ratings &amp; Pamper Routines</span><small>Sparkle ratings, glow tests &amp; routines</small></div>
+<section id="glow-pamper-wing" class="glow-mega-wing glow-pamper-wing glow-hub" aria-labelledby="glow-title">
+<div id="hub-glow-lab"><div class="glow-wing-marker"><span>Sparkle Ratings &amp; Pamper Routines</span><small>Sparkle ratings, glow tests &amp; routines</small></div>
 <header class="hub-heading"><p class="hub-kicker">Glow Up HQ · Sparkle Ratings &amp; Pamper Routines</p><h2 id="glow-title">🧴✨ Glow-Up Skincare Lab</h2><p>Welcome to Christina's glow lab, where gentle skincare gets its first impression, every product earns a sparkle rating, and YOU build the pamper routine of dreams. Kind to skin, kind to everyone.</p></header>
 <section id="glow-products" aria-labelledby="glow-products-title"><h3 id="glow-products-title" class="silly-heading">Meet the products</h3><p class="lead">Tap the stars to give each product your sparkle rating — 1 to 5!</p><div class="glow-items">
 <article class="glow-item"><span class="glow-emoji">🌾</span><strong>Gentle Oat Cleanser</strong><p>Soft as a cloud hug. First impression: "My face feels like a baby bunny."</p><div class="glow-stars" data-product="Gentle Oat Cleanser"><button type="button" data-star="1" aria-label="1 star">★</button><button type="button" data-star="2" aria-label="2 stars">★</button><button type="button" data-star="3" aria-label="3 stars">★</button><button type="button" data-star="4" aria-label="4 stars">★</button><button type="button" data-star="5" aria-label="5 stars">★</button></div><p class="glow-rated">Your rating: <span class="glow-score">not yet</span></p></article>
@@ -12984,6 +13113,92 @@ const rounds=[{q:'A dog is pacing, panting, and scratching at the door. What is 
 <button type="button" data-step="Chill with the cucumber calm sheet mask">5 · Mask moment 🥒</button>
 </div><p><button type="button" id="glow-clear">Start over</button></p><div id="glow-routine-out" class="glow-routine" aria-live="polite"><p>Your routine will appear here, glowing and gorgeous.</p></div></section>
 <aside class="glow-film" aria-labelledby="glow-film-title"><h3 id="glow-film-title">Turn it into a video</h3><p>Christina's filming plan: dramatic first-pump reactions, a sparkle-rating ceremony with the plushies as judges, and the grand "glow check" in the mirror. Gentle reminder from the lab: patch-test new products, be kind to your skin, and every skin type is beautiful.</p></aside>
+<div class="expansion expansion-plushie-spa-night" id="expansion-plushie-spa-night-2026-10-03">
+  <h3>🧖‍♀️ Plushie Spa Night — The Coziest Pamper Party!</h3>
+  <p class="expansion-blurb">
+    Welcome to the Plushie Spa, where EVERY plushie gets pampered! 🛁 Face masks,
+    fuzzy socks, cucumber eyes, and the softest blanket in the house. Rate every
+    treatment on the Cozy Meter and drift into the dreamiest night ever. 😴✨
+  </p>
+  <div class="spa-treatments">
+    <h4>💆 The Spa Treatment Menu (tap to reveal each treatment!)</h4>
+    <div class="spa-grid">
+      <div class="spa-card" data-item="mask">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">🧴</span>
+          <strong>Gentle Glitter Face Masks</strong>
+          <p>Soft, sparkly sheet masks for every plushie — apply with tiny dramatic "ahhh" sounds. Angel panda requests extra glitter. Cozy Meter: 10/10! ✨</p>
+        </div>
+      </div>
+      <div class="spa-card" data-item="cucumber">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">🥒</span>
+          <strong>Cucumber Eye Station</strong>
+          <p>Chilled cucumber slices over closed eyes while calm music plays. Snuggle bug fell asleep in 12 seconds flat — a new spa record! 🥇</p>
+        </div>
+      </div>
+      <div class="spa-card" data-item="soak">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">🦶</span>
+          <strong>Warm Foot Soak & Fuzzy Sock Fashion</strong>
+          <p>Cozy warm-water soak with fizzy bath salts, then a fuzzy-sock fashion show on the "spa runway." Hazza's star-print socks win Best in Show. 🧦</p>
+        </div>
+      </div>
+      <div class="spa-card" data-item="asmr">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">🔊</span>
+          <strong>Spa ASMR Sound Bath</strong>
+          <p>Lotion squishes, warm-water splashes, towel fluffs, and whispered affirmations — recorded up close for maximum cozy tingles. Headphones on! 🎧</p>
+        </div>
+      </div>
+      <div class="spa-card" data-item="hair">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">💇</span>
+          <strong>Plushie Hair & Brush Bar</strong>
+          <p>Gentle brushing, silly hairstyles, and bow-tie accessories. DJ Malik debuts the "Spa Mohawk" — spikes of pure relaxation. 💜</p>
+        </div>
+      </div>
+      <div class="spa-card" data-item="blanket">
+        <button class="reveal-btn">💆 Tap to reveal!</button>
+        <div class="spa-reveal hidden">
+          <span class="item-emoji">🛋️</span>
+          <strong>The Grand Blanket Tuck-In</strong>
+          <p>The finale: every plushie gets tucked into the softest blanket with a whispered goodnight wish. Boo bear gets TWO blankets. House rules. 😴</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cozy-meter">
+    <h4>🌡️ The Cozy Meter</h4>
+    <p>Rate every treatment from 1–10 on the Cozy Meter:</p>
+    <ul>
+      <li>😌 <strong>1–3:</strong> cozy-ish. Add a blanket.</li>
+      <li>🥰 <strong>4–7:</strong> properly pampered. Plushie-approved.</li>
+      <li>😴 <strong>8–10:</strong> MAXIMUM COZY. Someone fell asleep (probably snuggle bug).</li>
+    </ul>
+    <p>Goal: a perfect 60/60 spa night — the Coziest Score in spa history!</p>
+  </div>
+  <div class="spa-playlist">
+    <h4>🎵 Spa Night Soundtrack</h4>
+    <p>Pair each treatment with a vibe: soft piano for the masks, rain sounds for the soak, gentle lo-fi for the brush bar. Let viewers vote their favorite spa sound for the next pamper party!</p>
+  </div>
+  <div class="film-checklist">
+    <h4>🎬 Film Your Own Spa Night</h4>
+    <ol>
+      <li><strong>Set the scene</strong> — dim lights, candles (or LED), soft music.</li>
+      <li><strong>Invite the guests</strong> — plushies, stuffies, or your coziest pillows.</li>
+      <li><strong>Run the menu</strong> — one treatment at a time, with full "ahhh" commentary.</li>
+      <li><strong>Rate the Cozy Meter</strong> 🌡️ — every treatment gets a score.</li>
+      <li><strong>The grand tuck-in</strong> 😴 — whisper goodnight wishes and drift off!</li>
+    </ol>
+  </div>
+</div>
+</div>
 <div class="hub-return"><a href="#universe-map">Return to the Universe Map ↑</a></div>
 </section>
 <section id="glow-victory-wing" class="glow-mega-wing glow-victory-wing revenge105-hub" aria-labelledby="revenge105-title"><div class="glow-wing-marker"><span>Glow-Up Victories</span><small>Glow-ups, good living &amp; harmless victories</small></div>
@@ -13750,6 +13965,104 @@ reveal.setAttribute('aria-hidden',String(!opening));
 });
 })();
 </script>
+
+<div class="expansion expansion-hot-cocoa-club" id="expansion-hot-cocoa-club-2026-10-03">
+  <h3>☕ Hot Cocoa Club — The Coziest Cocoa Bar Ever!</h3>
+  <p class="expansion-blurb">
+    The Hot Cocoa Club is OPEN! 🍫 Build your dream cocoa at the ultimate toppings
+    bar, sip every flavor with the Plush Crew judges, and crown the Coziest Cocoa
+    Champion. Blankets required. Whipped cream strongly encouraged. 😋
+  </p>
+  <div class="cocoa-flavors">
+    <h4>🍫 The Cocoa Lineup (tap to reveal each flavor!)</h4>
+    <div class="cocoa-grid">
+      <div class="cocoa-card" data-item="classic">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">🤎</span>
+          <strong>Classic Cozy Cocoa</strong>
+          <p>The one that started it all — rich, chocolatey, hug-in-a-mug energy. Angel panda gives it the official "first-sip happy wiggle." ☕</p>
+        </div>
+      </div>
+      <div class="cocoa-card" data-item="marshmallow">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">☁️</span>
+          <strong>Cloud-Nine Marshmallow Melt</strong>
+          <p>A mountain of mini marshmallows melting into gooey goodness. Snuggle bug tried to swim in it. Rescued. Licked the spoon anyway. 🥄</p>
+        </div>
+      </div>
+      <div class="cocoa-card" data-item="mint">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">🌿</span>
+          <strong>Midnight Mint Chill</strong>
+          <p>Cool mint swirled into warm cocoa — like a cozy hug with a fresh breeze. Hazza declares it "the fancy one." Pinky up while sipping! 🤏</p>
+        </div>
+      </div>
+      <div class="cocoa-card" data-item="caramel">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">🍮</span>
+          <strong>Golden Caramel Drizzle Dream</strong>
+          <p>Caramel drizzle ribbons + a pinch of sea salt = dessert royalty. DJ Malik is already writing a jingle about it. 🎶</p>
+        </div>
+      </div>
+      <div class="cocoa-card" data-item="spicy">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">🌶️</span>
+          <strong>Spicy Aztec Adventure</strong>
+          <p>A whisper of cinnamon and a wink of chili — the DAREDEVIL cocoa! Boo bear braved it and did the dramatic "spicy face." Rating: legendary. 🔥</p>
+        </div>
+      </div>
+      <div class="cocoa-card" data-item="white">
+        <button class="reveal-btn">🍫 Tap to reveal!</button>
+        <div class="cocoa-reveal hidden">
+          <span class="item-emoji">🤍</span>
+          <strong>Vanilla Snowfall White Cocoa</strong>
+          <p>Creamy white chocolate with a snowfall of sprinkles — winter in a mug. The Plush Crew votes it "prettiest cocoa" by a landslide. ❄️</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toppings-bar">
+    <h4>🧁 The Ultimate Toppings Bar</h4>
+    <p>Every club member builds their dream mug! Topping stations:</p>
+    <ul>
+      <li>☁️ <strong>Marshmallow Mountain</strong> — minis, jumbos, star-shaped!</li>
+      <li>🍦 <strong>Whipped Cream Cloud</strong> — the higher the swirl, the better.</li>
+      <li>🍫 <strong>Drizzle Lane</strong> — caramel, chocolate, strawberry syrups.</li>
+      <li>✨ <strong>Sprinkle Station</strong> — because everything is better with sprinkles.</li>
+      <li>🍪 <strong>Crunch Corner</strong> — crushed cookies, toffee bits, candy cane dust.</li>
+    </ul>
+    <p>Challenge: build the TALLEST cocoa — the mug with the most toppings wins the "Tower of Cozy" trophy! 🏆</p>
+  </div>
+  <div class="cocoa-judges">
+    <h4>🧸 Plush Crew Judge Cards</h4>
+    <p>After every sip, each plushie holds up a scorecard:</p>
+    <ul>
+      <li>😋 <strong>YUMMY!</strong> — an instant classic.</li>
+      <li>😐 <strong>COZY ENOUGH</strong> — fine, but needs more marshmallows.</li>
+      <li>🤯 <strong>MIND-BLOWN!</strong> — new favorite alert!</li>
+    </ul>
+    <p>Majority rules: the flavor with the most MIND-BLOWN cards becomes the <strong>Coziest Cocoa Champion</strong> of the night! 👑</p>
+  </div>
+  <div class="movie-pairing">
+    <h4>🎬 Perfect Movie-Night Pairings</h4>
+    <p>Match each cocoa to a cozy movie-night vibe: Classic Cozy + blanket-fort cinema, Midnight Mint + a mystery movie, Spicy Aztec + an adventure flick. The Plush Crew picks the pairings — and the movie! 🍿</p>
+  </div>
+  <div class="film-checklist">
+    <h4>🎬 Film Your Own Hot Cocoa Club</h4>
+    <ol>
+      <li><strong>Stock the bar</strong> — 3+ cocoa flavors and a toppings station.</li>
+      <li><strong>First-sip reactions</strong> — dramatic sips, full sound effects.</li>
+      <li><strong>Build the tallest cocoa</strong> 🧁 — Tower of Cozy challenge!</li>
+      <li><strong>Plushie judging</strong> 🧸 — scorecards up after every flavor.</li>
+      <li><strong>Crown the champion</strong> 👑 — one cocoa takes the Coziest crown!</li>
+    </ol>
+  </div>
+</div>
 
 <div class="hub-return"><a href="#hub-directory">Back to all hubs ↑</a></div>
 </section>
