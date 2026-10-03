@@ -800,6 +800,18 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 .expansion-kiki-radio-2-2026-10-02-timer p{margin:4px 0}
 .expansion-kiki-radio-2-2026-10-02-cozy .expansion-kiki-radio-2-2026-10-02-links{justify-content:center}
 </style>
+
+<style id="october-2026-polish">
+/* Cohesive polish for cards and section rhythm */
+:root{--card-radius:18px 7px 18px 7px;--section-gap:clamp(22px,4vw,42px)}
+.section,.content-hub{scroll-margin-top:92px}.section{margin-block:var(--section-gap)}
+.card{border-radius:var(--card-radius);border-color:color-mix(in srgb,var(--pink) 20%,var(--line));box-shadow:0 10px 26px rgba(74,37,72,.09);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.card:hover{transform:translateY(-2px);box-shadow:0 15px 32px rgba(74,37,72,.13);border-color:color-mix(in srgb,var(--pink) 42%,var(--line))}.section>h2,.hub-heading h2{letter-spacing:-.02em}.grid{gap:clamp(14px,2vw,20px)}
+.jonas-fan-corner{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:22px;align-items:center;overflow:hidden}.jonas-fan-corner>img{width:100%;height:100%;min-height:220px;object-fit:cover;border-radius:14px 5px 14px 5px}.jonas-fan-copy h3{font:800 clamp(1.65rem,3vw,2.35rem)/1.08 "Baloo 2",sans-serif;color:var(--plum);margin:.45rem 0}.jonas-dedication{font-size:1.05rem}
+.birthday-countdown{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:20px;align-items:center;padding:clamp(22px,5vw,42px);border:2px solid color-mix(in srgb,var(--gold) 48%,var(--line));border-radius:28px 10px 28px 10px;background:linear-gradient(145deg,color-mix(in srgb,var(--gold2) 24%,var(--paper)),color-mix(in srgb,var(--pink2) 20%,var(--paper)));box-shadow:var(--shadow)}.birthday-sparkles{position:absolute;right:20px;top:12px;color:var(--gold);font-size:1.4rem;letter-spacing:.35em}.birthday-copy h2{margin:.45rem 0 .2rem;font:800 clamp(1.9rem,4vw,3rem)/1.02 "Baloo 2",sans-serif;color:var(--plum)}.birthday-copy p{margin:0;color:var(--muted);font-weight:800}.birthday-clock{display:grid;grid-template-columns:repeat(4,minmax(70px,1fr));gap:10px}.birthday-clock div{padding:16px 8px;border:1px solid color-mix(in srgb,var(--pink) 35%,var(--line));border-radius:15px 5px 15px 5px;background:var(--paper);text-align:center}.birthday-clock strong{display:block;font:800 clamp(1.75rem,4vw,2.65rem)/1 "Baloo 2",sans-serif;color:var(--plum)}.birthday-clock span{font-size:.78rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.birthday-target{grid-column:2;margin:0;color:var(--plum);font-weight:900;text-align:center}
+.surprise-status{flex:1 1 100%;font-weight:900;color:var(--plum);min-height:1.2em}.tour-overlay[hidden]{display:none}.tour-overlay{position:fixed;z-index:9999;inset:0;display:grid;place-items:center;padding:18px;background:rgba(42,22,46,.72)}.tour-dialog{position:relative;width:min(560px,100%);padding:clamp(24px,5vw,42px);border:3px solid color-mix(in srgb,var(--gold) 58%,var(--line));border-radius:28px 9px 28px 9px;background:var(--paper);box-shadow:0 24px 70px rgba(0,0,0,.35);text-align:center}.tour-close{position:absolute;right:12px;top:10px;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--plum);font:900 1.5rem/1 sans-serif}.tour-step-count{color:var(--muted);font-weight:900}.tour-icon{margin:.45rem 0;font-size:3rem}.tour-dialog h2{margin:.2rem 0 .5rem;color:var(--plum);font:800 clamp(1.7rem,4vw,2.5rem)/1.05 "Baloo 2",sans-serif}.tour-dialog p{font-size:1.05rem;color:var(--ink)}.tour-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+@media(max-width:760px){.jonas-fan-corner,.birthday-countdown{grid-template-columns:1fr}.jonas-fan-corner>img{height:auto;min-height:0}.birthday-target{grid-column:1}.birthday-clock{grid-template-columns:repeat(2,1fr)}.card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
 </head>
 <body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
 <div class="wrap"><div class="topline"><a class="back" href="#home">← Back to the welcome</a><a class="pillbtn" href="#fake-call-prank">Fake Call Prank</a><a class="pillbtn" href="#kiki-isms">Kiki’s Dictionary</a><span class="handle">@onedirectionhealinghq</span></div>
@@ -853,14 +865,172 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 <section id="featured-shoutout" class="featured-shoutout" aria-labelledby="featured-shoutout-title"><div class="featured-shoutout-inner"><div class="featured-shoutout-mark" aria-hidden="true">📣</div><div><p class="featured-shoutout-kicker">Celebration shoutout</p><h2 id="featured-shoutout-title">Reiki Fairy &amp; Marcelo Wang</h2><p>Big love to TikTok creator <strong>Reiki Fairy (@reikifairy)</strong> for her reiki and energy-healing content — <strong>protect your energy</strong> — and a special cheer for <strong>Marcelo Wang</strong>!</p></div><a class="linkbtn" href="https://pro.tiktok.com/t/ZP8T7N9eC/" target="_blank" rel="noopener noreferrer" aria-label="Watch Reiki Fairy on TikTok">Watch Reiki Fairy ↗</a></div></section>
 <section id="welcome-intro" class="welcome-intro-hub" aria-labelledby="welcome-intro-title">
 <div class="welcome-intro-top">
-<div class="welcome-intro-copy"><p class="welcome-eyebrow">Come on in — you’re always welcome here</p><h2 id="welcome-intro-title">Hi, friends — I’m Kiki!</h2><p class="welcome-big">My name is Christina, and I’m the creator behind <strong>One Direction Healing HQ</strong>.</p><p>This app is my universe of everything: videos, music, healing, fun, and all my favorite things, gathered together in one colorful place.</p><div class="welcome-intro-actions"><a class="linkbtn" href="https://wa.me/message/GZKSOVWIWFL7G1" target="_blank" rel="noopener noreferrer" aria-label="Chat with One Direction Healing HQ on WhatsApp Business">Chat on WhatsApp Business ↗</a><a class="linkbtn secondary" href="#share-universe">Share the Universe</a><a class="linkbtn secondary" href="#universe-map">Explore the Universe Map</a><a class="linkbtn secondary" href="#hub-app-directory">Browse all 129 active hubs</a><a class="linkbtn secondary" href="#hub-peace-love-giggles">Find fun healing peace</a><a class="linkbtn secondary" href="#support-kiki">Support Kiki</a></div></div>
+<div class="welcome-intro-copy"><p class="welcome-eyebrow">Come on in — you’re always welcome here</p><h2 id="welcome-intro-title">Hi, friends — I’m Kiki!</h2><p class="welcome-big">My name is Christina, and I’m the creator behind <strong>One Direction Healing HQ</strong>.</p><p>This app is my universe of everything: videos, music, healing, fun, and all my favorite things, gathered together in one colorful place.</p><div class="welcome-intro-actions"><button class="linkbtn" id="openWelcomeTour" type="button">Take the Quick Tour ✨</button><a class="linkbtn" href="https://wa.me/message/GZKSOVWIWFL7G1" target="_blank" rel="noopener noreferrer" aria-label="Chat with One Direction Healing HQ on WhatsApp Business">Chat on WhatsApp Business ↗</a><a class="linkbtn secondary" href="#share-universe">Share the Universe</a><a class="linkbtn secondary" href="#universe-map">Explore the Universe Map</a><a class="linkbtn secondary" href="#hub-app-directory">Browse all 129 active hubs</a><a class="linkbtn secondary" href="#hub-peace-love-giggles">Find fun healing peace</a><a class="linkbtn secondary" href="#support-kiki">Support Kiki</a></div></div>
 <figure class="welcome-crew"><img src="https://grogusmom1989-creator.github.io/liam/assets/6e28952960620d29eb4817320bda12c4c0cf1c31f7381690319d724030d93016.webp" alt="Kiki’s five colorful Plush Crew friends together" loading="eager" fetchpriority="high"><figcaption>Angel panda, snuggle bug, Hazza, DJ Malik, and boo bear are here to welcome you, too.</figcaption></figure>
 </div>
 <div class="welcome-guide"><h3>Your friendly guide to exploring</h3><div class="welcome-guide-grid"><div class="welcome-guide-item"><strong>See the whole universe</strong><p>Open the Universe Map for a colorful view of every corner.</p></div><div class="welcome-guide-item"><strong>Pick what feels fun</strong><p>Choose any of the 129 active themed hubs — there’s no wrong place to begin.</p></div><div class="welcome-guide-item"><strong>Follow your sparkle</strong><p>Jump into videos, music, healing, stories, games, or whatever makes you smile.</p></div></div></div>
 </section>
-<header class="hero"><img class="banner" src="https://grogusmom1989-creator.github.io/liam/assets/06cd88e0ffe08a808e6804ddd8a28202ae90d371a245bb0b15a27a4f66086325.webp" alt="The Plush Crew welcoming everyone with balloons, bunting, and confetti" loading="lazy" decoding="async"><div class="hero-copy"><h1>Kiki's Healing Universe of Everything</h1><p>One Direction Healing HQ’s joyful all-ages universe — bright, kind, and made for everyone, while the music, stories, characters, and fun stay playful and silly for the Healers, Kiki’s Crew, the Charmers, and the Gigglers — packed with music, stories, original characters, creative ideas, and kindness.</p><p class="spark">✨ Kindness is leadership. Silliness is always invited. ✨</p><div class="home-actions"><button id="celebrateBtn" class="pillbtn" type="button">Celebrate! 🎉</button></div></div></header>
+<div id="welcomeTour" class="tour-overlay" hidden><section class="tour-dialog" role="dialog" aria-modal="true" aria-labelledby="tourTitle"><button class="tour-close" id="closeWelcomeTour" type="button" aria-label="Close the welcome tour">×</button><div class="tour-step-count" id="tourStepCount">1 of 4</div><div class="tour-icon" id="tourIcon" aria-hidden="true">🗺️</div><h2 id="tourTitle">Start with the Universe Map</h2><p id="tourText">Pick a themed land, then jump into any of the 129 colorful hubs.</p><div class="tour-actions"><button class="linkbtn secondary" id="tourSkip" type="button">Skip tour</button><button class="linkbtn" id="tourNext" type="button">Next →</button></div></section></div>
+
+<header class="hero"><img class="banner" src="https://grogusmom1989-creator.github.io/liam/assets/06cd88e0ffe08a808e6804ddd8a28202ae90d371a245bb0b15a27a4f66086325.webp" alt="The Plush Crew welcoming everyone with balloons, bunting, and confetti" loading="lazy" decoding="async"><div class="hero-copy"><h1>Kiki's Healing Universe of Everything</h1><p>One Direction Healing HQ’s joyful all-ages universe — bright, kind, and made for everyone, while the music, stories, characters, and fun stay playful and silly for the Healers, Kiki’s Crew, the Charmers, and the Gigglers — packed with music, stories, original characters, creative ideas, and kindness.</p><p class="spark">✨ Kindness is leadership. Silliness is always invited. ✨</p><div class="home-actions"><button id="celebrateBtn" class="pillbtn" type="button">Celebrate! 🎉</button><button id="surpriseMeBtn" class="pillbtn secondary" type="button">Surprise Me! 🎲</button><span id="surpriseStatus" class="surprise-status" aria-live="polite"></span></div></div></header>
 <section class="moodbar" aria-labelledby="mood-title"><img id="currentMood" class="current-mood" src="https://grogusmom1989-creator.github.io/liam/assets/9d4a35a4f94a5aacb1a9f75f32c5cc089527246980926da6619d0d4fd30dd58f.webp" alt="Happy mood icon" loading="lazy" decoding="async"><strong id="mood-title">Pick today’s vibe</strong><button class="mood" data-mood="happy" aria-pressed="true"><img src="https://grogusmom1989-creator.github.io/liam/assets/9d4a35a4f94a5aacb1a9f75f32c5cc089527246980926da6619d0d4fd30dd58f.webp" alt="" loading="lazy" decoding="async"> <span>Happy</span></button><button class="mood" data-mood="cozy" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/e43670634a969441722bcad26818379441fad5c63224ee2579e25e0f9356f0ec.webp" alt="" loading="lazy" decoding="async"> <span>Cozy</span></button><button class="mood" data-mood="boss" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/3061fe7fd3d4ddfa495013ef00cc5fa53e49dc4275dd869a22fed497752b2a57.webp" alt="" loading="lazy" decoding="async"> <span>Boss</span></button><button class="mood" data-mood="silly" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/9dcb01f61f4da6bf60b6577b37c6aded7be004e1e72603bfab3746ad1fd53ea6.webp" alt="" loading="lazy" decoding="async"> <span>Silly</span></button></section>
 <main id="main">
+<section id="expansion-new-this-week-2026-10-02" class="section" aria-labelledby="expansion-new-this-week-2026-10-02-title">
+<style>
+#expansion-new-this-week-2026-10-02{scroll-margin-top:18px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-shell{background:linear-gradient(140deg,color-mix(in srgb,var(--pink2) 16%,var(--paper)),color-mix(in srgb,var(--blue) 24%,var(--paper)) 52%,color-mix(in srgb,var(--gold2) 20%,var(--paper)));border:2px solid color-mix(in srgb,var(--pink) 30%,var(--line));border-radius:24px;padding:clamp(18px,3.5vw,30px);box-shadow:var(--shadow)}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-head{max-width:760px}
+#expansion-new-this-week-2026-10-02 h2{font:800 clamp(1.8rem,4vw,2.8rem)/1.08 "Baloo 2",sans-serif;color:var(--plum);margin:0}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-lead{color:var(--muted);font-weight:700;margin:8px 0 20px;font-size:1.05rem}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-stage{position:relative;min-height:196px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide{display:none;align-items:center;gap:18px;background:var(--paper);border:2px solid color-mix(in srgb,var(--ntw-accent,var(--pink)) 45%,var(--line));border-radius:20px;padding:clamp(18px,3vw,26px);box-shadow:0 10px 26px rgba(83,33,90,.10)}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide.is-active{display:flex}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-emoji{flex:0 0 auto;width:84px;height:84px;display:grid;place-items:center;font-size:2.6rem;border-radius:22px;background:color-mix(in srgb,var(--ntw-accent,var(--pink)) 16%,var(--paper));border:2px solid color-mix(in srgb,var(--ntw-accent,var(--pink)) 40%,var(--line))}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide h3{font:800 clamp(1.35rem,2.6vw,1.8rem)/1.15 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 5px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide p{margin:0 0 14px;color:var(--muted);font-weight:700}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--ntw-accent,var(--pink));color:#fff;font-weight:900;text-decoration:none}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow{min-width:48px;min-height:48px;border-radius:50%;border:2px solid color-mix(in srgb,var(--plum) 40%,var(--line));background:var(--paper);color:var(--plum);font-size:1.2rem;font-weight:900;cursor:pointer}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dots{display:flex;gap:8px;flex-wrap:wrap}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot{width:16px;height:16px;border-radius:50%;border:2px solid color-mix(in srgb,var(--plum) 45%,var(--line));background:var(--paper);padding:0;cursor:pointer}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot[aria-current="true"]{background:var(--pink);border-color:var(--pink)}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-status{color:var(--muted);font-weight:800;font-size:.9rem;margin:0}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:22px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card{display:block;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--ntw-accent,var(--pink));border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 8px 20px rgba(83,33,90,.08)}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card strong{display:block;font:800 1.12rem/1.25 "Baloo 2",sans-serif;color:var(--plum);margin-bottom:5px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card span{color:var(--muted);font-size:.92rem;font-weight:700}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note{margin-top:22px;background:color-mix(in srgb,var(--gold2) 24%,var(--paper));border:2px dashed color-mix(in srgb,var(--gold) 55%,var(--line));border-radius:16px;padding:16px 18px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note strong{display:block;font:800 1.15rem/1.2 "Baloo 2",sans-serif;color:var(--plum);margin-bottom:4px}
+#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note p{margin:0;font-weight:700;color:var(--ink)}
+@media(max-width:560px){#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide{flex-direction:column;align-items:flex-start}#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-stage{min-height:0}#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){#expansion-new-this-week-2026-10-02 *{transition:none!important;animation:none!important}}
+</style>
+<div class="expansion-new-this-week-2026-10-02-shell">
+<div class="expansion-new-this-week-2026-10-02-head">
+<h2 id="expansion-new-this-week-2026-10-02-title">✨ New This Week in Kiki's Universe!</h2>
+<p class="expansion-new-this-week-2026-10-02-lead">Fresh drops! The newest additions — tap to explore! 💕</p>
+</div>
+<div class="expansion-new-this-week-2026-10-02-stage">
+<article class="expansion-new-this-week-2026-10-02-slide is-active" style="--ntw-accent:#cf5a3a">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🍽️</span>
+<div><h3>Kiki's Restaurant &amp; Shop Directory</h3><p>Yummy tables and treasure-filled shops Kiki loves — all in one happy directory!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-restaurant-shop-directory-2026-10-02">Visit the Directory →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#cf4f78" aria-hidden="true">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">💕</span>
+<div><h3>Affirmations Mini-Hub Shelves</h3><p>Five little rooms of kind words — from morning sunshine to sleepy-time dreams!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-affirmations-minihub-2026-10-02">Browse the Shelves →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#b77918" aria-hidden="true">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🌟</span>
+<div><h3>TikTok Spin Quest</h3><p>Tap in and play Spin Quest with Kiki — come win Stars together!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-tiktok-spinquest-2026-10-02">Spin with Kiki →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#2e8577" aria-hidden="true">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🔗</span>
+<div><h3>Kiki's Link Hub</h3><p>Every link Kiki shares, gathered into one happy, easy-to-find place!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-link-hub-2026-10-02">Open the Link Hub →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#3a7f9e" aria-hidden="true">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🗺️</span>
+<div><h3>Master Sitemap</h3><p>Every hub, corner, and hidden gem — the whole universe on one map!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-sitemap-2026-10-02">See the Whole Map →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#8b64a6" aria-hidden="true">
+<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🔍</span>
+<div><h3>Universe Search</h3><p>Can't find a thing? Search the whole universe in a blink!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-universe-search-2026-10-02">Start Searching →</a></div>
+</article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#bc4782" aria-hidden="true"><span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">💎</span><div><h3>Dazzly Corner</h3><p>Play Lucky's 24-level fan edition, admire the finished gallery, and request a future design.</p><a class="expansion-new-this-week-2026-10-02-jump" href="#dazzly-corner">Visit Dazzly Corner →</a></div></article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#277d98" aria-hidden="true"><span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🎸</span><div><h3>Jonas Brothers Fan Corner</h3><p>An original-art dedication with verified official music, shop, tour, and TikTok links.</p><a class="expansion-new-this-week-2026-10-02-jump" href="#jonas-brothers-fan-corner">Visit the Fan Corner →</a></div></article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#3a72a0" aria-hidden="true"><span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">✨</span><div><h3>1D Tattoos &amp; Markings Guide</h3><p>Timelines, matching tattoos, markings, ink stories, and cover-ups across all five boys.</p><a class="expansion-new-this-week-2026-10-02-jump" href="https://muse.ai/s/1d-tattoos-markings-guide-zu6laxuipqexf" target="_blank" rel="noopener noreferrer">Open the Guide ↗</a></div></article>
+<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#9c5b24" aria-hidden="true"><span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🎂</span><div><h3>Kiki's Birthday Countdown</h3><p>A live countdown to January 10 — Capricorn sparkle included!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#kiki-birthday-countdown">See the Countdown →</a></div></article>
+</div>
+<div class="expansion-new-this-week-2026-10-02-controls">
+<button class="expansion-new-this-week-2026-10-02-arrow" type="button" data-ntw-prev aria-label="Previous new thing">←</button>
+<div class="expansion-new-this-week-2026-10-02-dots" role="group" aria-label="Pick a new thing to spotlight">
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="0" aria-current="true" aria-label="Spotlight: Restaurant &amp; Shop Directory"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="1" aria-current="false" aria-label="Spotlight: Affirmations Mini-Hub Shelves"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="2" aria-current="false" aria-label="Spotlight: TikTok Spin Quest"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="3" aria-current="false" aria-label="Spotlight: Kiki's Link Hub"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="4" aria-current="false" aria-label="Spotlight: Master Sitemap"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="5" aria-current="false" aria-label="Spotlight: Universe Search"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="6" aria-current="false" aria-label="Spotlight: Dazzly Corner"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="7" aria-current="false" aria-label="Spotlight: Jonas Brothers Fan Corner"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="8" aria-current="false" aria-label="Spotlight: 1D Tattoos and Markings Guide"></button>
+<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="9" aria-current="false" aria-label="Spotlight: Kiki's Birthday Countdown"></button>
+</div>
+<button class="expansion-new-this-week-2026-10-02-arrow" type="button" data-ntw-next aria-label="Next new thing">→</button>
+<p class="expansion-new-this-week-2026-10-02-status" data-ntw-status aria-live="polite">Now shining: Kiki's Restaurant &amp; Shop Directory</p>
+</div>
+<div class="expansion-new-this-week-2026-10-02-grid">
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#cf5a3a" href="#expansion-restaurant-shop-directory-2026-10-02"><strong>🍽️ Restaurant &amp; Shop Directory</strong><span>Favorite tables and treasure shops, all in one directory.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#cf4f78" href="#expansion-affirmations-minihub-2026-10-02"><strong>💕 Affirmations Mini-Hub Shelves</strong><span>Five little rooms of kind words for every mood.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#b77918" href="#expansion-tiktok-spinquest-2026-10-02"><strong>🌟 TikTok Spin Quest</strong><span>Play Spin Quest with Kiki and win Stars!</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#2e8577" href="#expansion-link-hub-2026-10-02"><strong>🔗 Kiki's Link Hub</strong><span>All of Kiki's links in one happy place.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#3a7f9e" href="#expansion-sitemap-2026-10-02"><strong>🗺️ Master Sitemap</strong><span>Every hub and hidden gem on one big map.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#8b64a6" href="#expansion-universe-search-2026-10-02"><strong>🔍 Universe Search</strong><span>Find anything in the universe in a blink.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#bc4782" href="#dazzly-corner"><strong>💎 Dazzly Corner</strong><span>Game, gallery, and sparkly design requests.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#277d98" href="#jonas-brothers-fan-corner"><strong>🎸 Jonas Brothers Fan Corner</strong><span>Original art plus verified official links.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#3a72a0" href="https://muse.ai/s/1d-tattoos-markings-guide-zu6laxuipqexf" target="_blank" rel="noopener noreferrer"><strong>✨ 1D Tattoos &amp; Markings Guide</strong><span>Every ink story, timeline, match, and cover-up.</span></a>
+<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#9c5b24" href="#kiki-birthday-countdown"><strong>🎂 Kiki's Birthday Countdown</strong><span>Counting down to January 10.</span></a>
+</div>
+<div class="expansion-new-this-week-2026-10-02-note">
+<strong>Want it featured?</strong>
+<p>New things I add show up here automatically! 🌟</p>
+</div>
+</div>
+<script>
+(function(){
+var root=document.getElementById("expansion-new-this-week-2026-10-02");
+if(!root){return;}
+var slides=Array.prototype.slice.call(root.querySelectorAll(".expansion-new-this-week-2026-10-02-slide"));
+var dots=Array.prototype.slice.call(root.querySelectorAll("[data-ntw-dot]"));
+var status=root.querySelector("[data-ntw-status]");
+var names=["Kiki's Restaurant & Shop Directory","Affirmations Mini-Hub Shelves","TikTok Spin Quest","Kiki's Link Hub","Master Sitemap","Universe Search","Dazzly Corner","Jonas Brothers Fan Corner","1D Tattoos & Markings Guide","Kiki's Birthday Countdown"];
+var index=0,timer=null;
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function show(i){
+index=(i+slides.length)%slides.length;
+slides.forEach(function(slide,j){
+var active=j===index;
+slide.classList.toggle("is-active",active);
+slide.setAttribute("aria-hidden",active?"false":"true");
+var link=slide.querySelector("a");
+if(link){link.tabIndex=active?0:-1;}
+});
+dots.forEach(function(dot,j){dot.setAttribute("aria-current",j===index?"true":"false");});
+if(status){status.textContent="Now shining: "+names[index];}
+}
+function stop(){if(timer){window.clearInterval(timer);timer=null;}}
+function start(){
+stop();
+if(reduce||slides.length<2){return;}
+timer=window.setInterval(function(){
+if(document.hidden){return;}
+show(index+1);
+},5000);
+}
+var prev=root.querySelector("[data-ntw-prev]");
+var next=root.querySelector("[data-ntw-next]");
+if(prev){prev.addEventListener("click",function(){show(index-1);start();});}
+if(next){next.addEventListener("click",function(){show(index+1);start();});}
+dots.forEach(function(dot){
+dot.addEventListener("click",function(){
+show(parseInt(dot.getAttribute("data-ntw-dot"),10)||0);
+start();
+});
+});
+root.addEventListener("pointerenter",stop);
+root.addEventListener("pointerleave",start);
+root.addEventListener("focusin",stop);
+root.addEventListener("focusout",start);
+document.addEventListener("visibilitychange",function(){if(document.hidden){stop();}else{start();}});
+show(0);
+start();
+})();
+</script>
+</section>
+<section id="kiki-birthday-countdown" class="section birthday-countdown" aria-labelledby="kiki-birthday-title"><div class="birthday-sparkles" aria-hidden="true">✦ ✨ ✦</div><div class="birthday-copy"><span class="tag">January 10 · Capricorn ♑</span><h2 id="kiki-birthday-title">Kiki's Birthday Countdown! 🎂</h2><p>Every tick brings the next birthday celebration a little closer.</p></div><div class="birthday-clock" aria-live="polite"><div><strong id="birthdayDays">—</strong><span>days</span></div><div><strong id="birthdayHours">—</strong><span>hours</span></div><div><strong id="birthdayMinutes">—</strong><span>minutes</span></div><div><strong id="birthdaySeconds">—</strong><span>seconds</span></div></div><p id="birthdayTarget" class="birthday-target"></p></section>
+
 <section id="universe-map" class="section" aria-labelledby="universe-map-title">
 <div class="universe-map-shell">
 <div class="map-intro"><div><h2 id="universe-map-title">🗺️ Universe Map</h2><p>Start with a themed land, open one of its playful neighborhoods, and jump straight into any hub. Every hub stays separate, and every one has exactly one home on this map.</p></div><aside class="explorer-guide" aria-label="Plush Crew explorer guide"><span class="map-you-are-here">📍 You are here</span><img src="https://grogusmom1989-creator.github.io/liam/assets/6e28952960620d29eb4817320bda12c4c0cf1c31f7381690319d724030d93016.webp" alt="The five colorful Plush Crew friends ready to guide the adventure" loading="lazy" decoding="async"><div><strong>Your Plush Crew guides</strong><p>Angel panda, snuggle bug, Hazza, DJ Malik, and boo bear have the map ready.</p></div></aside></div>
@@ -1146,148 +1316,7 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 <article class="hub-card hub-where-did-my-snacks-go"><span class="hub-number">Hub 135</span><h3>🔍 Where Did My Snacks Go?!</h3><p>Kiki puts the Plush Crew under a very cozy investigation with suspicion meters, a skit builder, ridiculous clues, a snack-thief vote, and one unforgettable plot twist.</p><div class="hub-card-links"><a href="#hub-where-did-my-snacks-go">Open the case</a><a href="#h135-suspects">Meet the suspects</a><a href="#h135-interrogate">Build the skit</a><a href="#h135-clues">Reveal clues &amp; vote</a><a href="#h135-film">Film the chaos</a></div></article>
 </div>
 </section>
-<section id="expansion-new-this-week-2026-10-02" class="section" aria-labelledby="expansion-new-this-week-2026-10-02-title">
-<style>
-#expansion-new-this-week-2026-10-02{scroll-margin-top:18px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-shell{background:linear-gradient(140deg,color-mix(in srgb,var(--pink2) 16%,var(--paper)),color-mix(in srgb,var(--blue) 24%,var(--paper)) 52%,color-mix(in srgb,var(--gold2) 20%,var(--paper)));border:2px solid color-mix(in srgb,var(--pink) 30%,var(--line));border-radius:24px;padding:clamp(18px,3.5vw,30px);box-shadow:var(--shadow)}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-head{max-width:760px}
-#expansion-new-this-week-2026-10-02 h2{font:800 clamp(1.8rem,4vw,2.8rem)/1.08 "Baloo 2",sans-serif;color:var(--plum);margin:0}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-lead{color:var(--muted);font-weight:700;margin:8px 0 20px;font-size:1.05rem}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-stage{position:relative;min-height:196px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide{display:none;align-items:center;gap:18px;background:var(--paper);border:2px solid color-mix(in srgb,var(--ntw-accent,var(--pink)) 45%,var(--line));border-radius:20px;padding:clamp(18px,3vw,26px);box-shadow:0 10px 26px rgba(83,33,90,.10)}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide.is-active{display:flex}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-emoji{flex:0 0 auto;width:84px;height:84px;display:grid;place-items:center;font-size:2.6rem;border-radius:22px;background:color-mix(in srgb,var(--ntw-accent,var(--pink)) 16%,var(--paper));border:2px solid color-mix(in srgb,var(--ntw-accent,var(--pink)) 40%,var(--line))}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide h3{font:800 clamp(1.35rem,2.6vw,1.8rem)/1.15 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 5px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide p{margin:0 0 14px;color:var(--muted);font-weight:700}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--ntw-accent,var(--pink));color:#fff;font-weight:900;text-decoration:none}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow{min-width:48px;min-height:48px;border-radius:50%;border:2px solid color-mix(in srgb,var(--plum) 40%,var(--line));background:var(--paper);color:var(--plum);font-size:1.2rem;font-weight:900;cursor:pointer}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-arrow:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dots{display:flex;gap:8px;flex-wrap:wrap}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot{width:16px;height:16px;border-radius:50%;border:2px solid color-mix(in srgb,var(--plum) 45%,var(--line));background:var(--paper);padding:0;cursor:pointer}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot[aria-current="true"]{background:var(--pink);border-color:var(--pink)}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-dot:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-status{color:var(--muted);font-weight:800;font-size:.9rem;margin:0}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:22px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card{display:block;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--ntw-accent,var(--pink));border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 8px 20px rgba(83,33,90,.08)}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card:hover,#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card strong{display:block;font:800 1.12rem/1.25 "Baloo 2",sans-serif;color:var(--plum);margin-bottom:5px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-card span{color:var(--muted);font-size:.92rem;font-weight:700}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note{margin-top:22px;background:color-mix(in srgb,var(--gold2) 24%,var(--paper));border:2px dashed color-mix(in srgb,var(--gold) 55%,var(--line));border-radius:16px;padding:16px 18px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note strong{display:block;font:800 1.15rem/1.2 "Baloo 2",sans-serif;color:var(--plum);margin-bottom:4px}
-#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-note p{margin:0;font-weight:700;color:var(--ink)}
-@media(max-width:560px){#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-slide{flex-direction:column;align-items:flex-start}#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-stage{min-height:0}#expansion-new-this-week-2026-10-02 .expansion-new-this-week-2026-10-02-jump{width:100%;justify-content:center}}
-@media(prefers-reduced-motion:reduce){#expansion-new-this-week-2026-10-02 *{transition:none!important;animation:none!important}}
-</style>
-<div class="expansion-new-this-week-2026-10-02-shell">
-<div class="expansion-new-this-week-2026-10-02-head">
-<h2 id="expansion-new-this-week-2026-10-02-title">✨ New This Week in Kiki's Universe!</h2>
-<p class="expansion-new-this-week-2026-10-02-lead">Fresh drops! The newest additions — tap to explore! 💕</p>
-</div>
-<div class="expansion-new-this-week-2026-10-02-stage">
-<article class="expansion-new-this-week-2026-10-02-slide is-active" style="--ntw-accent:#cf5a3a">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🍽️</span>
-<div><h3>Kiki's Restaurant &amp; Shop Directory</h3><p>Yummy tables and treasure-filled shops Kiki loves — all in one happy directory!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-restaurant-shop-directory-2026-10-02">Visit the Directory →</a></div>
-</article>
-<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#cf4f78" aria-hidden="true">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">💕</span>
-<div><h3>Affirmations Mini-Hub Shelves</h3><p>Five little rooms of kind words — from morning sunshine to sleepy-time dreams!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-affirmations-minihub-2026-10-02">Browse the Shelves →</a></div>
-</article>
-<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#b77918" aria-hidden="true">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🌟</span>
-<div><h3>TikTok Spin Quest</h3><p>Tap in and play Spin Quest with Kiki — come win Stars together!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-tiktok-spinquest-2026-10-02">Spin with Kiki →</a></div>
-</article>
-<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#2e8577" aria-hidden="true">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🔗</span>
-<div><h3>Kiki's Link Hub</h3><p>Every link Kiki shares, gathered into one happy, easy-to-find place!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-link-hub-2026-10-02">Open the Link Hub →</a></div>
-</article>
-<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#3a7f9e" aria-hidden="true">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🗺️</span>
-<div><h3>Master Sitemap</h3><p>Every hub, corner, and hidden gem — the whole universe on one map!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-sitemap-2026-10-02">See the Whole Map →</a></div>
-</article>
-<article class="expansion-new-this-week-2026-10-02-slide" style="--ntw-accent:#8b64a6" aria-hidden="true">
-<span class="expansion-new-this-week-2026-10-02-emoji" aria-hidden="true">🔍</span>
-<div><h3>Universe Search</h3><p>Can't find a thing? Search the whole universe in a blink!</p><a class="expansion-new-this-week-2026-10-02-jump" href="#expansion-universe-search-2026-10-02">Start Searching →</a></div>
-</article>
-</div>
-<div class="expansion-new-this-week-2026-10-02-controls">
-<button class="expansion-new-this-week-2026-10-02-arrow" type="button" data-ntw-prev aria-label="Previous new thing">←</button>
-<div class="expansion-new-this-week-2026-10-02-dots" role="group" aria-label="Pick a new thing to spotlight">
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="0" aria-current="true" aria-label="Spotlight: Restaurant &amp; Shop Directory"></button>
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="1" aria-current="false" aria-label="Spotlight: Affirmations Mini-Hub Shelves"></button>
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="2" aria-current="false" aria-label="Spotlight: TikTok Spin Quest"></button>
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="3" aria-current="false" aria-label="Spotlight: Kiki's Link Hub"></button>
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="4" aria-current="false" aria-label="Spotlight: Master Sitemap"></button>
-<button class="expansion-new-this-week-2026-10-02-dot" type="button" data-ntw-dot="5" aria-current="false" aria-label="Spotlight: Universe Search"></button>
-</div>
-<button class="expansion-new-this-week-2026-10-02-arrow" type="button" data-ntw-next aria-label="Next new thing">→</button>
-<p class="expansion-new-this-week-2026-10-02-status" data-ntw-status aria-live="polite">Now shining: Kiki's Restaurant &amp; Shop Directory</p>
-</div>
-<div class="expansion-new-this-week-2026-10-02-grid">
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#cf5a3a" href="#expansion-restaurant-shop-directory-2026-10-02"><strong>🍽️ Restaurant &amp; Shop Directory</strong><span>Favorite tables and treasure shops, all in one directory.</span></a>
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#cf4f78" href="#expansion-affirmations-minihub-2026-10-02"><strong>💕 Affirmations Mini-Hub Shelves</strong><span>Five little rooms of kind words for every mood.</span></a>
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#b77918" href="#expansion-tiktok-spinquest-2026-10-02"><strong>🌟 TikTok Spin Quest</strong><span>Play Spin Quest with Kiki and win Stars!</span></a>
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#2e8577" href="#expansion-link-hub-2026-10-02"><strong>🔗 Kiki's Link Hub</strong><span>All of Kiki's links in one happy place.</span></a>
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#3a7f9e" href="#expansion-sitemap-2026-10-02"><strong>🗺️ Master Sitemap</strong><span>Every hub and hidden gem on one big map.</span></a>
-<a class="expansion-new-this-week-2026-10-02-card" style="--ntw-accent:#8b64a6" href="#expansion-universe-search-2026-10-02"><strong>🔍 Universe Search</strong><span>Find anything in the universe in a blink.</span></a>
-</div>
-<div class="expansion-new-this-week-2026-10-02-note">
-<strong>Want it featured?</strong>
-<p>New things I add show up here automatically! 🌟</p>
-</div>
-</div>
-<script>
-(function(){
-var root=document.getElementById("expansion-new-this-week-2026-10-02");
-if(!root){return;}
-var slides=Array.prototype.slice.call(root.querySelectorAll(".expansion-new-this-week-2026-10-02-slide"));
-var dots=Array.prototype.slice.call(root.querySelectorAll("[data-ntw-dot]"));
-var status=root.querySelector("[data-ntw-status]");
-var names=["Kiki's Restaurant & Shop Directory","Affirmations Mini-Hub Shelves","TikTok Spin Quest","Kiki's Link Hub","Master Sitemap","Universe Search"];
-var index=0,timer=null;
-var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-function show(i){
-index=(i+slides.length)%slides.length;
-slides.forEach(function(slide,j){
-var active=j===index;
-slide.classList.toggle("is-active",active);
-slide.setAttribute("aria-hidden",active?"false":"true");
-var link=slide.querySelector("a");
-if(link){link.tabIndex=active?0:-1;}
-});
-dots.forEach(function(dot,j){dot.setAttribute("aria-current",j===index?"true":"false");});
-if(status){status.textContent="Now shining: "+names[index];}
-}
-function stop(){if(timer){window.clearInterval(timer);timer=null;}}
-function start(){
-stop();
-if(reduce||slides.length<2){return;}
-timer=window.setInterval(function(){
-if(document.hidden){return;}
-show(index+1);
-},5000);
-}
-var prev=root.querySelector("[data-ntw-prev]");
-var next=root.querySelector("[data-ntw-next]");
-if(prev){prev.addEventListener("click",function(){show(index-1);start();});}
-if(next){next.addEventListener("click",function(){show(index+1);start();});}
-dots.forEach(function(dot){
-dot.addEventListener("click",function(){
-show(parseInt(dot.getAttribute("data-ntw-dot"),10)||0);
-start();
-});
-});
-root.addEventListener("pointerenter",stop);
-root.addEventListener("pointerleave",start);
-root.addEventListener("focusin",stop);
-root.addEventListener("focusout",start);
-document.addEventListener("visibilitychange",function(){if(document.hidden){stop();}else{start();}});
-show(0);
-start();
-})();
-</script>
-</section>
+
 <section id="expansion-universe-search-2026-10-02" class="section" aria-labelledby="expansion-universe-search-2026-10-02-title">
 <style>
 #expansion-universe-search-2026-10-02 .expansion-universe-search-2026-10-02-card{background:linear-gradient(140deg,color-mix(in srgb,var(--pink2) 14%,var(--paper)),color-mix(in srgb,var(--blue) 22%,var(--paper)) 55%,color-mix(in srgb,var(--gold2) 16%,var(--paper)));border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow);max-width:880px;margin:0 auto}
@@ -1708,8 +1737,8 @@ a.appendChild(kind);
 a.appendChild(name);
 a.appendChild(go);
 var target=item.target;
-var href="#"+(target.id||"");
-if(target.id){a.setAttribute("href",href);}
+var href=["#",target.id||"main"].join("");
+a.setAttribute("href",href);
 a.addEventListener("click",function(ev){
 ev.preventDefault();
 jump(item,tag);
@@ -3115,6 +3144,7 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 <article class="card"><span class="tag">fan collection</span><h3>Directioners fan-sites collection</h3><p>A hand-carried collection of fan-sites for the Directioner community.</p><a class="linkbtn" href="https://www.mrowl.com/user/crystal/one_direction/fan_sites" target="_blank" rel="noopener">Visit collection ↗</a></article>
 <article class="card"><span class="tag">fan account</span><h3>1D Updates</h3><p>A rolling updates feed for 1D news and comings-and-goings.</p><a class="linkbtn" href="https://twstalker.com/1DReport" target="_blank" rel="noopener">Visit fan account ↗</a></article>
 <article class="card"><span class="tag">fan wiki</span><h3>One Direction on Boybands Wiki</h3><p>The boybands fandom wiki page on One Direction.</p><a class="linkbtn" href="https://boybands.fandom.com/wiki/One_Direction" target="_blank" rel="noopener">Visit fan page ↗</a></article>
+<article class="card"><span class="tag">1D portal</span><h3>1D Tattoos &amp; Markings Guide ✨</h3><p>Every tattoo, marking and ink story across the boys — Harry, Liam, Louis, Niall and Zayn — with timelines, matching tattoos and cover-ups!</p><a class="linkbtn" href="https://muse.ai/s/1d-tattoos-markings-guide-zu6laxuipqexf" target="_blank" rel="noopener noreferrer">Open the guide ↗</a></article>
 </div>
 </section>
 <section id="dads-corner" class="section super-dad-universe">
@@ -3430,6 +3460,25 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 <article class="card"><div class="person-avatar" aria-hidden="true" style="--avatar-a:#85378a;--avatar-b:#ca4166"><strong>L</strong><span>🔥</span></div><span class="tag">solo-collaborator</span><h3>Levi Lennox</h3><p>producer · worked with Zayn Malik</p><p>Produced Pillowtalk and There You Are! 🔥</p></article>
 <article class="card"><div class="person-avatar" aria-hidden="true" style="--avatar-a:#b5482c;--avatar-b:#ad802a"><strong>D</strong><span>🎸</span></div><span class="tag">solo-collaborator</span><h3>Dave Cobb</h3><p>producer · worked with Zayn Malik</p><p>Co-produced all of Room Under the Stairs with Zayn! 🎸</p></article>
 </div>
+
+<div id="celeb-corners" class="celeb-corners" aria-labelledby="celeb-corners-title">
+<style>
+.celeb-corners{margin-top:38px;padding-top:30px;border-top:3px solid var(--line)}.celeb-corners-head{max-width:780px;margin-bottom:20px}.celeb-corners-head h3{font:800 clamp(1.7rem,4vw,2.5rem)/1.08 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 7px}.celeb-corners-head p{margin:0;color:var(--muted);font-weight:700}.celeb-corners-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.celeb-corner{min-width:0;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 28px rgba(83,33,90,.11);display:flex;flex-direction:column}.celeb-corner-art{display:block;width:100%;aspect-ratio:4/3;background:color-mix(in srgb,var(--blue) 38%,var(--paper))}.celeb-corner-copy{padding:18px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.celeb-corner-copy h4{font:800 1.28rem/1.15 "Baloo 2",sans-serif;color:var(--plum);margin:0 0 7px}.celeb-corner-copy p{margin:0 0 16px}.celeb-corner-copy .linkbtn{margin-top:auto}.celeb-corner .tag{margin:0 0 10px}.celeb-corner:nth-child(3n+2) .celeb-corner-art{background:color-mix(in srgb,var(--gold2) 26%,var(--paper))}.celeb-corner:nth-child(3n) .celeb-corner-art{background:color-mix(in srgb,var(--pink2) 18%,var(--paper))}@media(max-width:860px){.celeb-corners-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.celeb-corners-grid{grid-template-columns:1fr}.celeb-corner-copy{padding:16px}.celeb-corner-art{aspect-ratio:16/10}}
+</style>
+<header class="celeb-corners-head"><h3 id="celeb-corners-title">Celeb Corners 🌟</h3><p>Step into nine mini fan corners for the stars and creators with confirmed profile links in Fave Follows — each one has its own Kiki-style symbol, a quick cheer, and a direct route to their page.</p></header>
+<div class="celeb-corners-grid">
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-wwe"><title id="celeb-art-wwe">Original championship-bell artwork for WWE</title><rect width="400" height="300" fill="#152e47"/><path d="M58 223h284" stroke="#f6c85f" stroke-width="12" stroke-linecap="round"/><path d="M102 202v-88M298 202v-88" stroke="#f4eff8" stroke-width="8"/><path d="M90 116h220M90 165h220" stroke="#dd4b83" stroke-width="8"/><path d="M171 65h58l18 34-47 34-47-34z" fill="#f6c85f" stroke="#fff" stroke-width="6"/><circle cx="200" cy="98" r="15" fill="#752c83"/><path d="M68 62l8 18 19 8-19 8-8 19-8-19-19-8 19-8zM330 55l6 14 15 6-15 6-6 15-6-15-15-6 15-6z" fill="#ff8ebe"/></svg><div class="celeb-corner-copy"><span class="tag">sports entertainment</span><h4>WWE</h4><p>Kiki loves the giant entrances, unforgettable characters, and full-volume crowd energy.</p><a class="linkbtn secondary" href="https://www.tiktok.com/@wwe" target="_blank" rel="noopener noreferrer">Official TikTok ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-markie"><title id="celeb-art-markie">Original teddy-bear constellation artwork for Batman Markie Tyink</title><rect width="400" height="300" fill="#244f68"/><g fill="#ffe29a"><circle cx="85" cy="70" r="7"/><circle cx="318" cy="63" r="5"/><circle cx="344" cy="204" r="7"/><circle cx="55" cy="230" r="5"/></g><g fill="#c8894a" stroke="#fff5df" stroke-width="6"><circle cx="147" cy="111" r="37"/><circle cx="253" cy="111" r="37"/><circle cx="200" cy="163" r="79"/></g><ellipse cx="200" cy="182" rx="39" ry="31" fill="#f3c483"/><circle cx="176" cy="153" r="7" fill="#2d2432"/><circle cx="224" cy="153" r="7" fill="#2d2432"/><path d="M191 177h18l-9 11zM180 202q20 18 40 0" fill="#2d2432" stroke="#2d2432" stroke-width="4" stroke-linecap="round"/></svg><div class="celeb-corner-copy"><span class="tag">bear fan page</span><h4>Batman Markie Tyink</h4><p>A sweet stop for little-bear pictures and the kind of cozy cuteness that earns an instant smile.</p><a class="linkbtn secondary" href="https://www.facebook.com/batmanmarkie" target="_blank" rel="noopener noreferrer">Official Facebook ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-minnie"><title id="celeb-art-minnie">Original bubbling recipe-pot and rising-star artwork for Minnie Beasley</title><rect width="400" height="300" fill="#4d215e"/><path d="M111 130h178l-16 104H127z" fill="#f6c85f" stroke="#fff" stroke-width="7"/><path d="M90 128h220M137 103h126" stroke="#ff9bc7" stroke-width="14" stroke-linecap="round"/><g fill="#daf7ee"><circle cx="153" cy="75" r="14"/><circle cx="204" cy="56" r="20"/><circle cx="253" cy="78" r="11"/></g><path d="M332 80l9 22 23 9-23 9-9 23-9-23-23-9 23-9z" fill="#f6c85f"/></svg><div class="celeb-corner-copy"><span class="tag">food &amp; business</span><h4>Minnie Beasley</h4><p>Comfort-food creativity meets boss energy — exactly the warm, make-it-happen mix Kiki enjoys.</p><a class="linkbtn secondary" href="https://www.tiktok.com/@minniebeasleys" target="_blank" rel="noopener noreferrer">Official TikTok ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-angela"><title id="celeb-art-angela">Original bright television and spotlight artwork for Angela Deem</title><rect width="400" height="300" fill="#f4b65f"/><rect x="72" y="69" width="256" height="166" rx="18" fill="#243c61" stroke="#fff" stroke-width="7"/><path d="M155 66l45-38 45 38" fill="none" stroke="#752c83" stroke-width="8" stroke-linecap="round"/><path d="M117 107h126v91H117z" fill="#ed6f8c"/><path d="M263 112h29M263 144h29M263 176h29" stroke="#f6c85f" stroke-width="10" stroke-linecap="round"/><path d="M144 128l17 17 35-38M144 174h67" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg><div class="celeb-corner-copy"><span class="tag">reality TV</span><h4>Angela Deem</h4><p>Big personality, quick laughs, and reality-TV moments that never arrive quietly.</p><a class="linkbtn secondary" href="https://www.tiktok.com/@angeladeem3.10.26" target="_blank" rel="noopener noreferrer">Official TikTok ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-boyette"><title id="celeb-art-boyette">Original Highland-cow meadow artwork for Bre and Cam Boyette</title><rect width="400" height="300" fill="#bde7dc"/><circle cx="320" cy="58" r="31" fill="#ffd66b"/><path d="M0 210q85-70 167-12 99-91 233 4v98H0z" fill="#45956e"/><path d="M128 136q-41-30-66 6 42-3 60 28M272 136q41-30 66 6-42-3-60 28" fill="#d89b55" stroke="#70442f" stroke-width="7"/><path d="M117 140q83-43 166 0l-12 93H129z" fill="#c98648" stroke="#70442f" stroke-width="7"/><path d="M134 148q9 58 6 85M165 135q12 75 7 106M200 128v116M235 135q-12 75-7 106M266 148q-9 58-6 85" stroke="#f4c077" stroke-width="8" stroke-linecap="round"/><circle cx="167" cy="175" r="7" fill="#2d2432"/><circle cx="233" cy="175" r="7" fill="#2d2432"/><ellipse cx="200" cy="210" rx="41" ry="25" fill="#efd0a1"/></svg><div class="celeb-corner-copy"><span class="tag">farm-animal creators</span><h4>Bre &amp; Cam Boyette</h4><p>Fluffy mini Highland cows, pasture adventures, and a generous daily serving of animal joy.</p><a class="linkbtn secondary" href="https://www.tiktok.com/@brehillboyette" target="_blank" rel="noopener noreferrer">Official TikTok ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-love"><title id="celeb-art-love">Original heart-letter artwork for I Love You Because</title><rect width="400" height="300" fill="#5c315f"/><rect x="87" y="68" width="226" height="165" rx="13" fill="#fff7fc" stroke="#f6c85f" stroke-width="7" transform="rotate(-3 200 150)"/><path d="M134 112h132M134 145h84M134 178h112" stroke="#c889a8" stroke-width="9" stroke-linecap="round"/><path d="M271 165c-24-29-62 8 0 54 62-46 24-83 0-54z" fill="#e83286"/></svg><div class="celeb-corner-copy"><span class="tag">love quotes</span><h4>I Love You Because</h4><p>Warm words for easy days and hard ones — small reminders that affection deserves to be said aloud.</p><a class="linkbtn secondary" href="https://www.facebook.com/61551720081049/" target="_blank" rel="noopener noreferrer">Official Facebook ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-doug"><title id="celeb-art-doug">Original pug-paw and party-confetti artwork for Doug The Pug</title><rect width="400" height="300" fill="#2b5a72"/><g fill="#ffcf63"><rect x="57" y="56" width="12" height="31" rx="6" transform="rotate(-24 63 71)"/><rect x="328" y="75" width="12" height="31" rx="6" transform="rotate(24 334 90)"/><circle cx="97" cy="104" r="7"/><circle cx="307" cy="54" r="6"/></g><g fill="#d8aa76" stroke="#fff3df" stroke-width="6"><circle cx="145" cy="114" r="34"/><circle cx="203" cy="91" r="34"/><circle cx="260" cy="116" r="34"/><circle cx="200" cy="196" r="74"/></g><path d="M176 177q24-24 48 0-5 23-24 23t-24-23z" fill="#362b32"/><path d="M176 215q24 18 48 0" fill="none" stroke="#362b32" stroke-width="7" stroke-linecap="round"/></svg><div class="celeb-corner-copy"><span class="tag">celebrity pet</span><h4>Doug The Pug</h4><p>Costumes, comic timing, and a famous pug face that turns ordinary moments into pure silliness.</p><a class="linkbtn secondary" href="https://www.facebook.com/100044562334010/" target="_blank" rel="noopener noreferrer">Official Facebook ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-twohearts"><title id="celeb-art-twohearts">Original green home, two hearts, and music-note artwork for Two hearts in one home</title><rect width="400" height="300" fill="#183e3c"/><path d="M82 150l118-91 118 91v95H82z" fill="#e8fff3" stroke="#74c69d" stroke-width="8"/><path d="M158 160c-20-26-54 6 0 48 54-42 20-74 0-48zM242 160c-20-26-54 6 0 48 54-42 20-74 0-48z" fill="#3ca776"/><path d="M291 68v65q-21-8-28 7-7 16 12 21 28 5 28-24V90l31-7v52" fill="none" stroke="#ffcf63" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="celeb-corner-copy"><span class="tag">Niall fan news</span><h4>Two hearts in one home</h4><p>Tour updates, new music, and sweet Niall moments gathered with a fan’s careful eye.</p><a class="linkbtn secondary" href="https://www.facebook.com/100063182083442/" target="_blank" rel="noopener noreferrer">Official Facebook ↗</a></div></article>
+<article class="celeb-corner"><svg class="celeb-corner-art" viewBox="0 0 400 300" role="img" aria-labelledby="celeb-art-1dnews"><title id="celeb-art-1dnews">Original microphone, five stars, and news-card artwork for One Direction And Zayn News</title><rect width="400" height="300" fill="#33224b"/><rect x="73" y="61" width="254" height="178" rx="16" fill="#fff7fc" stroke="#ff8ebe" stroke-width="7"/><g fill="#d49414"><path d="M113 94l6 13 14 2-10 10 3 14-13-7-12 7 2-14-10-10 14-2z"/><path d="M157 94l6 13 14 2-10 10 3 14-13-7-12 7 2-14-10-10 14-2z"/><path d="M201 94l6 13 14 2-10 10 3 14-13-7-12 7 2-14-10-10 14-2z"/><path d="M245 94l6 13 14 2-10 10 3 14-13-7-12 7 2-14-10-10 14-2z"/><path d="M289 94l6 13 14 2-10 10 3 14-13-7-12 7 2-14-10-10 14-2z"/></g><rect x="108" y="160" width="100" height="48" rx="23" fill="#752c83"/><path d="M229 166h57M229 187h42" stroke="#c889a8" stroke-width="9" stroke-linecap="round"/><circle cx="158" cy="176" r="12" fill="#ffcf63"/><path d="M158 188v19" stroke="#ffcf63" stroke-width="8" stroke-linecap="round"/></svg><div class="celeb-corner-copy"><span class="tag">One Direction fan news</span><h4>One Direction And Zayn News</h4><p>Concert clips, fresh updates, and shared fandom moments from across the 1D and Zayn worlds.</p><a class="linkbtn secondary" href="https://www.facebook.com/100063560257941/" target="_blank" rel="noopener noreferrer">Official Facebook ↗</a></div></article>
+</div>
+</div>
+
 <div class="home-actions"><a class="linkbtn" href="#follows">See Christina’s official links</a></div>
 </section>
 <section id="official-merch" class="section">
@@ -3437,11 +3486,16 @@ const drawCard=document.getElementById('affirm86DrawCard'),drawButton=document.g
 <p class="lead">Kiki's official merch stops — only verified official stores and licensed retailers, so every purchase supports the artists! 💖</p>
 <div class="grid">
 <article class="card"><span class="tag">Niall Horan</span><h3>Niall's Official Store</h3><p>Tour tees, hoodies, vinyl &amp; more straight from Niall! 🎸</p><a class="linkbtn" href="https://niallhoran.com/collections/merch" target="_blank" rel="noopener noreferrer">Visit Niall's store</a></article>
+<article class="card"><span class="tag">UNOFFICIAL fan-made merch</span><h3>Niall-Inspired Fan Merch 💛</h3><p><strong>Fan-made with love — not an official store.</strong></p><p>Original text-based designs only: <em>Flicker</em>, <em>Heartbreak Weather</em>, and <em>The Show</em> era typography with guitar-string, clover, and stage-light motifs. No photos or likenesses of Niall or any real person.</p></article>
 <article class="card"><span class="tag">Zayn Malik</span><h3>Zayn's Official Store</h3><p>KONNAKOL merch, tour tees &amp; signed vinyl! 🌙</p><a class="linkbtn" href="https://shop.inzayn.com/" target="_blank" rel="noopener noreferrer">Visit Zayn's store</a></article>
+<article class="card"><span class="tag">UNOFFICIAL fan-made merch</span><h3>Zayn-Inspired Fan Merch 🌙</h3><p><strong>Fan-made with love — not an official store.</strong></p><p>Original text-based designs only: <em>Mind of Mine</em>, <em>Icarus Falls</em>, and <em>Room Under the Stairs</em> era typography with moon, star, wing, and doorway motifs. No photos or likenesses of Zayn or any real person.</p></article>
 <article class="card"><span class="tag">One Direction</span><h3>1D Licensed Merch</h3><p>Officially licensed 1D merch via Merchbar! ✨</p><a class="linkbtn" href="https://www.merchbar.com/pop/one-direction" target="_blank" rel="noopener noreferrer">Shop 1D merch</a></article>
 <article class="card"><span class="tag">Liam Payne</span><h3>Liam's LP1 Vinyl</h3><p>Liam's debut album on vinyl — a forever keepsake 🤍</p><a class="linkbtn" href="https://www.merchbar.com/pop/liam-payne/liam-payne-lp1-vinyl-record-1554007" target="_blank" rel="noopener noreferrer">View Liam's LP1 vinyl</a></article>
+<article class="card"><span class="tag">UNOFFICIAL fan-made merch</span><h3>Liam-Inspired Fan Merch 🤍</h3><p><strong>Fan-made with love — not an official store.</strong></p><p>Original text-based designs only: <em>LP1</em>, “For You,” “Strip That Down,” and “Teardrops” typography with arrow, microphone, and gentle starlight motifs. No photos or likenesses of Liam or any real person.</p></article>
 <article class="card"><span class="tag">Harry Styles</span><h3>Harry's Official Store</h3><p>TPWK hoodies, tour merch &amp; more from Harry's official US store! 🍉</p><a class="linkbtn" href="https://shopus.hstyles.co.uk/" target="_blank" rel="noopener noreferrer">Visit Harry's store</a></article>
+<article class="card"><span class="tag">UNOFFICIAL fan-made merch</span><h3>Harry-Inspired Fan Merch 🍉</h3><p><strong>Fan-made with love — not an official store.</strong></p><p>Original text-based designs only: <em>Fine Line</em> and <em>Harry's House</em> era typography with watermelon, house, flower, and kindness motifs. No photos or likenesses of Harry or any real person.</p></article>
 <article class="card"><span class="tag">Louis Tomlinson</span><h3>Louis's Store (Coming Soon!)</h3><p>Louis's official merch home — popping in here the moment it's live! ⏳</p></article>
+<article class="card"><span class="tag">UNOFFICIAL fan-made merch</span><h3>Louis-Inspired Fan Merch 💙</h3><p><strong>Fan-made with love — not an official store.</strong></p><p>Original text-based designs only: song-title typography inspired by the <em>Walls</em> and <em>Faith in the Future</em> eras, “28” designs, and peaceful dove motifs. No photos or likenesses of Louis or any real person.</p></article>
 </div>
 </section>
 <section id="fave-follows-directory-deep" class="section">
@@ -3865,6 +3919,7 @@ document.querySelectorAll('.scoop-poll-btn').forEach(function(btn){
 </div>
 </article>
 <article class="card wide"><span class="tag">Kiki's favorite musical act 🎵</span><h3>Gregorian — “Join Me”</h3><p>Gregorian is one of Kiki’s very favorite musical acts — those sweeping, glowing chants make her whole heart hum. This one’s pure cozy-healing magic. 💛</p><div class="home-actions"><a class="linkbtn" href="https://www.youtube.com/watch?v=HwxH1oJZ3Vs" target="_blank" rel="noopener noreferrer">Watch “Join Me” on YouTube ↗</a></div></article>
+<article class="card full jonas-fan-corner" id="jonas-brothers-fan-corner"><img src="assets/c56e9e60f80fba5c2ecd7d96a6857ffd88a26a6f73d86af7938c01406cda73c7.webp" alt="Original illustrated Jonas Brothers fan banner with three guitars and three microphones" loading="lazy" decoding="async"><div class="jonas-fan-copy"><span class="tag">original fan art · no likenesses</span><h3>Jonas Brothers Fan Corner 🎸</h3><p class="jonas-dedication">For the songs, the harmonies, and all the brother-band memories — this happy little corner celebrates the Jonas Brothers with original guitar-and-microphone art and real official doorways.</p><div class="home-actions"><a class="linkbtn" href="https://jonasbrothers.com/?contenthome=" target="_blank" rel="noopener noreferrer">Official Website ↗</a><a class="linkbtn secondary" href="https://shop.jonasbrothers.com/" target="_blank" rel="noopener noreferrer">Official Shop ↗</a><a class="linkbtn secondary" href="https://jonasbrothers.com/tour/tickets" target="_blank" rel="noopener noreferrer">Tour Tickets ↗</a><a class="linkbtn secondary" href="https://www.tiktok.com/@jonasbrothers?lang=en" target="_blank" rel="noopener noreferrer">Official TikTok ↗</a><a class="linkbtn secondary" href="https://jonasbrothers.com/listenwhensadspace" target="_blank" rel="noopener noreferrer">Listen to “When You Know” ↗</a></div></div></article>
 </div>
 </section>
 <section id="music-playlists-deep" class="section">
@@ -4968,7 +5023,9 @@ var quests=Array.prototype.slice.call(root.querySelectorAll('.music10-quest')),q
 <figure class="card"><img class="art" src="assets/e6c204d1712053a57f2401a6c9a41aef85c7135764c613875c3ab673f586e29f.jpg" alt="I love you because you are truly special card with two cuddly bears" loading="lazy"><figcaption><span class="tag">I Love You Because</span><h3>You Are Truly Special</h3><p class="small"><time datetime="2026-09-24">September 24, 2026</time></p></figcaption></figure>
 </div>
 </section>
-<section id="play" class="section"><h2>Play corner 🎮</h2><p class="lead">Games, polls, and quizzes happen only on your screen. Nothing is shared — the sparkle jar remembers your count on this device only.</p><div class="grid"><article class="card gamebox"><h3>Dazzly Fan Edition 💎</h3><p>Lucky's fan-made diamond-art game — chakras, beach sunsets, seasons &amp; daily spa puzzles! Wrong color wiggles, right color sparkles! ✨</p><a class="linkbtn" href="dazzly-fan-edition.html" target="_blank" rel="noopener">Play Dazzly Fan Edition</a></article><article class="card gamebox"><h3>Mood-match quiz</h3><p>Pick your perfect activity:</p><div class="choices"><button class="choice" data-answer="A cozy Plush Crew movie night!">Blanket nest</button><button class="choice" data-answer="Boss Christina’s big creative brainstorm!">Idea storm</button><button class="choice" data-answer="A Midnight Charms dance break!">Dance party</button></div><div class="result" aria-live="polite"></div></article><article class="card gamebox"><h3>Quick poll</h3><p>Who gets the next snack?</p><div class="choices"><button class="choice poll">Angel panda</button><button class="choice poll">DJ Malik</button><button class="choice poll">Boo bear</button></div><div class="result" aria-live="polite"></div></article><article class="card gamebox"><h3>Silly idea spinner</h3><p>Need a random creative spark?</p><button id="spin" class="pillbtn">Spin the silliness</button><div id="spinResult" class="result" aria-live="polite"></div></article>
+<section id="play" class="section"><h2>Play corner 🎮</h2><p class="lead">Games, polls, and quizzes happen only on your screen. Nothing is shared — the sparkle jar remembers your count on this device only.</p>
+<div id="dazzly-corner" aria-labelledby="dazzly-corner-title"><h3 class="silly-heading" id="dazzly-corner-title">Dazzly Corner 💎</h3><p class="lead">All the sparkly diamond-art fun in one place!</p><div class="grid"><article class="card gamebox wide"><h3>Dazzly Fan Edition 💎</h3><p>Lucky's fan-made diamond-art game — 24 levels, daily rotation, streaks and a creator mode!</p><a class="linkbtn" href="https://grogusmom1989-creator.github.io/liam/dazzly-fan-edition.html" target="_blank" rel="noopener noreferrer">Play Dazzly Fan Edition ↗</a></article><article class="card gamebox wide"><h3>Kiki's Diamond Dreams 💎 — Coming Soon!</h3><p>Kiki's own diamond-art app is getting its sparkle on — check back soon!</p></article><article class="card full"><h3>Finished Dazzles Gallery 🖼️</h3><p>Starter sparkles from the gem wall. New finished pieces will be added over time!</p><div class="support-gallery"><figure><img src="assets/2799e73500fe01f7d961ab3cd563221c070f8f7889186e0bd72431be58c74e03.jpg" alt="Kiki's finished neon diamond-art LOVE design with a pink heart, green and purple on black" loading="lazy" decoding="async"><figcaption>LOVE 💖 — dazzled by Kiki</figcaption></figure><figure><img src="assets/58595a797c3c1acf9dc17564ac1d45f1f13f72be562337c4618d68fa30dcf846.webp" alt="Original sparkling pink lotus gem artwork" loading="lazy" decoding="async"><figcaption>Lotus Gem</figcaption></figure><figure><img src="assets/0659b190cb30a04c61f3b3e8885e90abe697cecb79c502f2aa9e30a21413066d.webp" alt="Original faceted blue and violet starter gem artwork" loading="lazy" decoding="async"><figcaption>Starter Sapphire</figcaption></figure><figure><img src="assets/1c84f8048e5d627a72c2e333d192d07ee49d39017153ecb58ea5c1a1912d7879.webp" alt="Original blue and pink crystal lotus bloom artwork" loading="lazy" decoding="async"><figcaption>Crystal Bloom</figcaption></figure><figure><img src="assets/80463d6dcb8170e62f4968bb1fd51cbc6b44e6c087dc219af40f5b90ff0128a8.jpg" alt="Kiki's finished diamond-art party popper bursting with colorful confetti" loading="lazy" decoding="async"><figcaption>Party Popper 🎉 — dazzled by Kiki</figcaption></figure><figure><img src="assets/452607304b17becb2ad367270ebf831b2f5d7fb45dfc07b82c8c92e9f3621282.jpg" alt="Kiki's finished diamond-art rainbow arching between two smiling clouds" loading="lazy" decoding="async"><figcaption>Rainbow Clouds 🌈 — dazzled by Kiki</figcaption></figure><figure><img src="assets/7b94b2e30135d48c1e60fae41d8e121bdd61deecf060662daf6f5f791e199c0b.jpg" alt="Kiki's finished diamond-art astronaut sitting on a crescent moon and holding a pink donut" loading="lazy" decoding="async"><figcaption>Moon Donut Astronaut 🚀 — for BTS and Coldplay, dazzled by Kiki</figcaption></figure><figure><img src="assets/aa99a9df97fd26ce6e446ce9cc8bfba36bc8f699b0f6b45ffd5e41a6f9d982ad.jpg" alt="Kiki's finished diamond-art smiling Shiba puppy surrounded by hearts" loading="lazy" decoding="async"><figcaption>Shiba Puppy Love 🐶 — dazzled by Kiki</figcaption></figure></div></article><article class="card full"><span class="tag">fan ideas welcome</span><h3>Request a Design 💌</h3><p>Have a gem design you would love to see? Visit Kiki's Empire Fanmily HQ and share your sparkly suggestion with the fan club.</p><a class="linkbtn" href="#fans-followers">Visit Kiki's Empire Fanmily HQ</a></article></div></div>
+<div class="grid"><article class="card gamebox"><h3>Dazzly Fan Edition 💎</h3><p>Lucky's fan-made diamond-art game — chakras, beach sunsets, seasons &amp; daily spa puzzles! Wrong color wiggles, right color sparkles! ✨</p><a class="linkbtn" href="https://grogusmom1989-creator.github.io/liam/dazzly-fan-edition.html" target="_blank" rel="noopener noreferrer">Play Dazzly Fan Edition</a></article><article class="card gamebox"><h3>Mood-match quiz</h3><p>Pick your perfect activity:</p><div class="choices"><button class="choice" data-answer="A cozy Plush Crew movie night!">Blanket nest</button><button class="choice" data-answer="Boss Christina’s big creative brainstorm!">Idea storm</button><button class="choice" data-answer="A Midnight Charms dance break!">Dance party</button></div><div class="result" aria-live="polite"></div></article><article class="card gamebox"><h3>Quick poll</h3><p>Who gets the next snack?</p><div class="choices"><button class="choice poll">Angel panda</button><button class="choice poll">DJ Malik</button><button class="choice poll">Boo bear</button></div><div class="result" aria-live="polite"></div></article><article class="card gamebox"><h3>Silly idea spinner</h3><p>Need a random creative spark?</p><button id="spin" class="pillbtn">Spin the silliness</button><div id="spinResult" class="result" aria-live="polite"></div></article>
 
 <article class="card gamebox"><h3>Spin the Fun Wheel &#x1F3A1;</h3><p>Eight silly dares, zero pressure. Give it a spin!</p><button id="funWheel" class="pillbtn" type="button">Spin the wheel</button><div id="funWheelResult" class="result" aria-live="polite"></div></article>
 <article class="card gamebox" id="cert-gen"><span class="tag">interactive</span><h3>🎓 Silly Certificate Generator</h3><p>Add a nickname, initials, or fictional character, pick a glorious award, and mint an official certificate. Christina LOVES these! 💖</p><div class="cert-form"><input id="certName" type="text" maxlength="30" placeholder="Nickname, initials, or character" aria-label="Nickname, initials, or fictional character for the certificate"><select id="certAward" aria-label="Choose a silly award"><option>World's Best Giggler</option><option>Champion Napper</option><option>Official Snack Guardian</option><option>Plush Cuddle Expert</option><option>Sneeze of the Year</option><option>Dance Floor Legend</option></select></div><button id="certMake" class="pillbtn" type="button">Make my certificate ✨</button><div id="certResult" aria-live="polite"></div><p class="small">Browser-only privacy: certificate text stays in this browser for this visit and is never sent to a server. Don’t enter someone else’s full name.</p></article>
@@ -14730,7 +14787,7 @@ root.querySelectorAll('.vault12-chamber-toggle').forEach(function(button){button
 
 <section id="mix-shoutout-wall" class="content-hub mix-hub" aria-labelledby="mix-shoutout-title">
   <header class="hub-heading"><p class="hub-kicker">The Mix · full-volume love</p><h2 id="mix-shoutout-title">Shoutout Wall</h2><p>A glowing celebration of the people, creators, bands, original characters, projects, and fan communities Kiki loves. Real people stay text-and-link only here—no generated portraits or videos.</p><nav class="hub-local" aria-label="The Mix shoutout sections"><a href="#mix-shoutout-grid">Celebration wall</a><a href="#corner-moffatts">The Moffatts</a><a href="#mix-favorite-corners">Favorite corners</a><a href="#mix-ideas-universe">Ideas Universe</a><a href="#mix-poster-collections">Poster galleries</a></nav></header>
-  <div id="mix-shoutout-grid" class="mix-shout-grid"><article class="mix-shout-card"><strong>Reiki Fairy</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-reiki-fairy">Open their corner →</a></article><article class="mix-shout-card"><strong>Marcelo Wang</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-marcelo-wang">Open their corner →</a></article><article class="mix-shout-card"><strong>The Moffatts</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-moffatts">Open their corner →</a></article><article class="mix-shout-card"><strong>Westlife</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-westlife">Open their corner →</a></article><article class="mix-shout-card"><strong>Simon Cowell</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-simon-cowell">Open their corner →</a></article><article class="mix-shout-card"><strong>Stacie</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-stacie">Open their corner →</a></article><article class="mix-shout-card"><strong>Spencewa</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-spencewa">Open their corner →</a></article><article class="mix-shout-card"><strong>Armchair Detective</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-armchair-detective">Open their corner →</a></article><article class="mix-shout-card"><strong>The Midnight Charms</strong><span>Kiki sends a full-volume shoutout.</span><a href="#hub-midnight-charms-concert">Open their corner →</a></article><article class="mix-shout-card"><strong>Jesse McCartney</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Mandy Moore</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Shane West</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Taylor Swift</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Travis Kelce</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>I Love You Because</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fresh-fun">Open their corner →</a></article><article class="mix-shout-card"><strong>Healers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Kiki&#x27;s Crew</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Charmers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Gigglers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Aaron Hively 💨</strong><span>Facebook’s fart-comedy legend gets a full-volume Kiki cheer.</span><a href="#corner-aaron-hively">Open his shoutout →</a></article><article class="mix-shout-card"><strong>Batman Markie Tyink 🐻</strong><span>Kiki adores the cutest little bear pics on Facebook.</span><a href="#corner-batman-markie">Open their shoutout →</a></article></div>
+  <div id="mix-shoutout-grid" class="mix-shout-grid"><article class="mix-shout-card"><strong>Reiki Fairy</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-reiki-fairy">Open their corner →</a></article><article class="mix-shout-card"><strong>Marcelo Wang</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-marcelo-wang">Open their corner →</a></article><article class="mix-shout-card"><strong>The Moffatts</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-moffatts">Open their corner →</a></article><article class="mix-shout-card"><strong>Westlife</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-westlife">Open their corner →</a></article><article class="mix-shout-card"><strong>Simon Cowell</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-simon-cowell">Open their corner →</a></article><article class="mix-shout-card"><strong>Stacie</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-stacie">Open their corner →</a></article><article class="mix-shout-card"><strong>Spencewa</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-spencewa">Open their corner →</a></article><article class="mix-shout-card"><strong>Armchair Detective</strong><span>Kiki sends a full-volume shoutout.</span><a href="#corner-armchair-detective">Open their corner →</a></article><article class="mix-shout-card"><strong>The Midnight Charms</strong><span>Kiki sends a full-volume shoutout.</span><a href="#hub-midnight-charms-concert">Open their corner →</a></article><article class="mix-shout-card"><strong>Jesse McCartney</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Mandy Moore</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Shane West</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Taylor Swift</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>Travis Kelce</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article><article class="mix-shout-card"><strong>I Love You Because</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fresh-fun">Open their corner →</a></article><article class="mix-shout-card"><strong>Healers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Kiki&#x27;s Crew</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Charmers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Gigglers</strong><span>Kiki sends a full-volume shoutout.</span><a href="#fans-followers">Open their corner →</a></article><article class="mix-shout-card"><strong>Aaron Hively 💨</strong><span>Facebook’s fart-comedy legend gets a full-volume Kiki cheer.</span><a href="#corner-aaron-hively">Open his shoutout →</a></article><article class="mix-shout-card"><strong>Batman Markie Tyink 🐻</strong><span>Kiki adores the cutest little bear pics on Facebook.</span><a href="#corner-batman-markie">Open their shoutout →</a></article><article class="mix-shout-card"><strong>Donald Trump aka the Trumpster! 🇺🇸</strong><span>Kiki sends a full-volume shoutout.</span><span class="small">Celebrated right here on Kiki’s wall.</span></article></div>
   <article id="corner-aaron-hively" class="mix-moffatts-portal" aria-labelledby="aaron-hively-title"><div class="mix-portal-mark" aria-hidden="true">💨</div><div><span class="tag">Comedy creator shoutout</span><h3 id="aaron-hively-title">Aaron Hively: Facebook’s fart-comedy legend</h3><p>Big love to the guy who can turn one perfectly timed fart into a full-on laugh. Aaron, keep being gloriously silly, warm, and yourself—Kiki’s Shoutout Wall is cheering for you! 💨😂</p><blockquote>“The guy who farts on Facebook lol.” — Christina</blockquote></div><a class="linkbtn" href="#mix-shoutout-grid">Back to the celebration wall</a></article>
   <article id="corner-batman-markie" class="mix-moffatts-portal" aria-labelledby="batman-markie-title"><div class="mix-portal-mark" aria-hidden="true">🐻</div><div><span class="tag">Fan page shoutout</span><h3 id="batman-markie-title">Batman Markie Tyink: the little-bear-pics fan page</h3><p>Big cozy love to the Batman Markie Tyink fan page for sharing the cutest little bear pics on Facebook — tiny bears, big smiles, instant serotonin. Keep the cuddly content coming! 🐻💛</p><blockquote>"It's a fan page for those little bear pics." — Christina</blockquote></div><a class="linkbtn" href="https://www.facebook.com/batmanmarkie" target="_blank" rel="noopener noreferrer">Visit on Facebook ↗</a> <a class="linkbtn secondary" href="#mix-shoutout-grid">Back to the celebration wall</a></article>
   <style>
@@ -16987,7 +17044,13 @@ var CATALOG=[
 {key:'games',emoji:'🎮',label:'Game Zone',href:'#hub-game-zone'},
 {key:'movies',emoji:'🎬',label:'Movies',href:'#hub-movies'},
 {key:'goals',emoji:'🌟',label:'Goals & Dreams',href:'#hub-dream-board'},
-{key:'fave',emoji:'⭐',label:'Creator Cosmos',href:'#fave-follows'}
+{key:'fave',emoji:'⭐',label:'Creator Cosmos',href:'#fave-follows'},
+{key:'dazzly',emoji:'💎',label:'Dazzly Corner',href:'#dazzly-corner'},
+{key:'jonasbrothers',emoji:'🎸',label:'Jonas Brothers Fan Corner',href:'#jonas-brothers-fan-corner'},
+{key:'birthday',emoji:'🎂',label:"Kiki's Birthday Countdown",href:'#kiki-birthday-countdown'},
+{key:'ghosttea',emoji:'👻',label:'Friendly Ghost Tea Party',href:'#hub-friendly-ghost-tea-party'},
+{key:'midnightcharms',emoji:'🌙',label:'Midnight Charms Band',href:'#midnight-charms'},
+{key:'gigglefactory',emoji:'😂',label:'Giggle Factory',href:'#hub-giggle-factory'}
 ];
 var DEFAULTS=['kitchen','music','healing','shoutout','tiktok','plush'];
 function storeGet(){try{var raw=localStorage.getItem(KEY);if(!raw)return null;var v=JSON.parse(raw);if(!Array.isArray(v))return null;return v.filter(function(k){return CATALOG.some(function(c){return c.key===k;});});}catch(e){return null;}}
@@ -17059,6 +17122,43 @@ if(k)toggle(k);
 });
 if(resetBtn)resetBtn.addEventListener('click',function(){pinned=DEFAULTS.slice();storeSet(pinned);render();});
 render();
+})();
+</script>
+
+<script id="october-2026-interactions">
+(function(){
+  var d=document;
+  function birthdayTick(){
+    var now=new Date(),year=now.getFullYear(),target=new Date(year,0,10,0,0,0,0);
+    if(now>=target){target=new Date(year+1,0,10,0,0,0,0);}
+    var diff=Math.max(0,target-now),days=Math.floor(diff/86400000);diff%=86400000;
+    var hours=Math.floor(diff/3600000);diff%=3600000;
+    var minutes=Math.floor(diff/60000),seconds=Math.floor((diff%60000)/1000);
+    var vals={birthdayDays:days,birthdayHours:hours,birthdayMinutes:minutes,birthdaySeconds:seconds};
+    Object.keys(vals).forEach(function(id){var el=d.getElementById(id);if(el){el.textContent=String(vals[id]).padStart(2,"0");}});
+    var targetEl=d.getElementById("birthdayTarget");if(targetEl){targetEl.textContent="Counting down to January 10, "+target.getFullYear()+" ✨";}
+  }
+  birthdayTick();window.setInterval(birthdayTick,1000);
+  var surprise=d.getElementById("surpriseMeBtn"),status=d.getElementById("surpriseStatus");
+  if(surprise){surprise.addEventListener("click",function(){
+    var choices=Array.prototype.slice.call(d.querySelectorAll("main > section[id], main .content-hub[id]")).filter(function(el){return el.offsetParent!==null&&el.id!=="expansion-new-this-week-2026-10-02";});
+    if(!choices.length){return;}var pick=choices[Math.floor(Math.random()*choices.length)];
+    pick.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+    if(history&&history.replaceState){history.replaceState(null,"","#"+pick.id);}if(status){var h=pick.querySelector("h2,h3");status.textContent="Surprise! Jumping to "+(h?h.textContent.trim():pick.id)+".";}
+  });}
+  var tour=d.getElementById("welcomeTour"),open=d.getElementById("openWelcomeTour"),close=d.getElementById("closeWelcomeTour"),skip=d.getElementById("tourSkip"),next=d.getElementById("tourNext");
+  var steps=[
+    {icon:"🗺️",title:"Start with the Universe Map",text:"Pick a themed land, then jump into any of the 129 colorful hubs."},
+    {icon:"✨",title:"See what's new",text:"New This Week keeps the latest corners, guides, games, and celebrations one tap away."},
+    {icon:"🎵",title:"Mix up the fun",text:"Explore music, videos, stories, games, healing, the Plush Crew, and every creative corner."},
+    {icon:"🎲",title:"Let the universe choose",text:"Tap Surprise Me whenever you want a random jump to something fun."}
+  ],step=0,lastFocus=null;
+  function paint(){var v=steps[step];d.getElementById("tourStepCount").textContent=(step+1)+" of "+steps.length;d.getElementById("tourIcon").textContent=v.icon;d.getElementById("tourTitle").textContent=v.title;d.getElementById("tourText").textContent=v.text;next.textContent=step===steps.length-1?"Let's explore!":"Next →";}
+  function showTour(){lastFocus=d.activeElement;step=0;paint();tour.hidden=false;d.body.style.overflow="hidden";close.focus();}
+  function hideTour(){tour.hidden=true;d.body.style.overflow="";if(lastFocus&&lastFocus.focus){lastFocus.focus();}}
+  if(open){open.addEventListener("click",showTour);}if(close){close.addEventListener("click",hideTour);}if(skip){skip.addEventListener("click",hideTour);}if(next){next.addEventListener("click",function(){if(step<steps.length-1){step++;paint();}else{hideTour();}});}if(tour){tour.addEventListener("click",function(e){if(e.target===tour){hideTour();}});}
+  d.addEventListener("keydown",function(e){if(e.key==="Escape"&&tour&&!tour.hidden){hideTour();}});
+  window.setTimeout(function(){if(tour&&tour.hidden){showTour();}},700);
 })();
 </script>
 </body></html>
