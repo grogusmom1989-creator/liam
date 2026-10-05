@@ -814,9 +814,47 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 @media(max-width:760px){.jonas-fan-corner,.birthday-countdown{grid-template-columns:1fr}.jonas-fan-corner>img{height:auto;min-height:0}.birthday-target{grid-column:1}.birthday-clock{grid-template-columns:repeat(2,1fr)}.card:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}}
 </style>
+<style id="homey-house-redesign">
+:root{--home-wall:#fff0d7;--home-wall-2:#f7d9bd;--home-wood:#8a4d37;--home-roof:#b64e43;--home-green:#4f805e;--home-sky:#dff3f7;--home-rug:#d35f65;--home-glow:#ffd27a}
+@media(prefers-color-scheme:dark){:root{--home-wall:#3c2b28;--home-wall-2:#51352e;--home-wood:#d79a74;--home-roof:#8e3e3c;--home-green:#7db88a;--home-sky:#173845;--home-rug:#b75059;--home-glow:#ffc963}}
+.cozy-house-home{position:relative;margin:18px 0 38px;padding:clamp(18px,4vw,38px);border:2px solid color-mix(in srgb,var(--home-wood) 46%,var(--line));border-radius:34px 13px 34px 13px;background:linear-gradient(180deg,var(--home-sky) 0 42%,color-mix(in srgb,var(--home-green) 28%,var(--paper)) 42%);box-shadow:var(--shadow);overflow:hidden;isolation:isolate}.cozy-house-home::before{content:"";position:absolute;inset:auto -10% -34px;height:125px;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--home-green) 72%,var(--paper)) 0 55%,transparent 56%);z-index:-1}.house-welcome{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}.house-welcome h2{margin:0;color:var(--home-wood);font:900 clamp(2rem,5vw,3.7rem)/.98 "Baloo 2",sans-serif}.house-welcome p{max-width:570px;margin:8px 0 0;color:var(--ink);font-weight:800}.house-key{flex:0 0 auto;padding:10px 14px;border:2px solid color-mix(in srgb,var(--home-wood) 42%,var(--line));border-radius:18px 7px 18px 7px;background:var(--paper);color:var(--home-wood);font-weight:950;box-shadow:0 7px 0 color-mix(in srgb,var(--home-wood) 22%,transparent)}
+.house-scene{position:relative;max-width:980px;margin:auto;padding-top:86px}.house-roof{position:absolute;left:5%;right:5%;top:0;height:132px;background:var(--home-roof);clip-path:polygon(50% 0,100% 100%,0 100%);filter:drop-shadow(0 8px 0 color-mix(in srgb,var(--home-wood) 44%,transparent));z-index:0}.house-roof::after{content:"";position:absolute;left:48%;top:45px;width:13px;height:13px;border-radius:50%;background:var(--home-glow);box-shadow:-37px 22px 0 1px var(--home-glow),37px 22px 0 1px var(--home-glow);animation:houseTwinkle 2.8s ease-in-out infinite alternate}.house-chimney{position:absolute;right:18%;top:12px;width:48px;height:92px;border-radius:7px 7px 0 0;background:#92523e;box-shadow:inset 0 0 0 4px color-mix(in srgb,#6d382d 34%,transparent);z-index:-1}.house-smoke,.house-smoke::before,.house-smoke::after{position:absolute;display:block;width:32px;height:32px;border-radius:50%;background:color-mix(in srgb,var(--paper) 70%,transparent)}.house-smoke{right:19%;top:-22px;animation:chimneySmoke 5s ease-in-out infinite}.house-smoke::before,.house-smoke::after{content:""}.house-smoke::before{left:16px;top:-24px;transform:scale(.8)}.house-smoke::after{left:35px;top:-42px;transform:scale(.55)}
+.house-cutaway{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px;border:7px solid var(--home-wood);border-radius:9px 9px 15px 15px;background:var(--home-wood);box-shadow:0 18px 0 color-mix(in srgb,var(--home-wood) 34%,transparent)}.house-room{position:relative;min-height:152px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 18px 15px;border:2px solid color-mix(in srgb,var(--home-wood) 28%,var(--line));border-radius:5px 16px 7px 14px;background:var(--room-bg,var(--home-wall));color:#39231d;text-decoration:none;overflow:hidden;box-shadow:inset 0 -16px 0 color-mix(in srgb,var(--room-floor,#bf835e) 28%,transparent);transition:transform .18s ease,filter .18s ease}.house-room:nth-child(even){border-radius:14px 5px 15px 7px}.house-room:focus-visible{outline:4px solid var(--focus);outline-offset:3px;z-index:3}.house-room:hover{filter:saturate(1.08) brightness(1.02);transform:translateY(-2px)}.house-room strong{position:relative;z-index:2;width:max-content;max-width:100%;padding:6px 10px;border-radius:9px 4px 9px 4px;background:color-mix(in srgb,var(--paper) 89%,transparent);color:var(--home-wood);font:900 1.18rem/1.05 "Baloo 2",sans-serif;box-shadow:0 3px 10px rgba(70,38,29,.12)}.house-room small{position:relative;z-index:2;margin-top:6px;color:#49352e;font-weight:850}.room-window{position:absolute;right:18px;top:17px;width:70px;height:57px;border:6px solid #fff7e5;border-radius:8px;background:linear-gradient(90deg,transparent 46%,#fff7e5 47% 54%,transparent 55%),linear-gradient(transparent 46%,#fff7e5 47% 54%,transparent 55%),var(--home-sky);box-shadow:0 3px 0 rgba(94,54,40,.18)}.room-window::before,.room-window::after{content:"✦";position:absolute;color:#fff;font-size:.78rem;text-shadow:0 0 8px var(--home-glow);animation:houseTwinkle 2.2s ease-in-out infinite alternate}.room-window::before{left:9px;top:2px}.room-window::after{right:7px;bottom:1px;animation-delay:.7s}.room-furnishing{position:absolute;left:18px;top:19px;width:82px;height:44px;border-radius:20px 20px 7px 7px;background:var(--room-object,#c46663);box-shadow:inset 0 -9px 0 color-mix(in srgb,var(--room-object,#c46663) 70%,#492c27),12px 18px 0 -8px #6d4536,-12px 18px 0 -8px #6d4536}.room-furnishing::before,.room-furnishing::after{content:"";position:absolute;top:10px;width:28px;height:21px;border-radius:9px;background:color-mix(in srgb,var(--room-object,#c46663) 72%,#fff)}.room-furnishing::before{left:9px}.room-furnishing::after{right:9px}.room-kitchen{--room-bg:#ffe2b4;--room-floor:#c78b5f;--room-object:#76a271}.room-bedroom{--room-bg:#f4d8df;--room-floor:#b98083;--room-object:#7d75a8}.room-bathroom{--room-bg:#dff2ed;--room-floor:#7ca9a0;--room-object:#7eb8c3}.room-attic{grid-column:1/-1;min-height:126px;--room-bg:#e7c99f;--room-floor:#a56f4c;--room-object:#b5734e}.room-basement{grid-column:1/-1;min-height:126px;--room-bg:#d7d0c7;--room-floor:#7b6657;--room-object:#d49c45}.room-attic .room-furnishing{width:68px;height:51px;border-radius:6px;background:#9b673f;box-shadow:inset 0 6px 0 #c59668}.room-attic .room-furnishing::before{left:28px;top:0;width:6px;height:51px;border-radius:0;background:#6c432d}.room-attic .room-furnishing::after{left:0;right:0;top:22px;width:68px;height:6px;border-radius:0;background:#6c432d}.room-basement .room-furnishing{border-radius:50%;width:65px;height:65px;background:radial-gradient(circle at 35% 35%,#fff 0 7%,#d35f65 8% 20%,#f4c85b 21% 35%,#4e8972 36% 49%,#58416f 50%);box-shadow:12px 10px 0 -7px #6d4536}.room-basement .room-furnishing::before,.room-basement .room-furnishing::after{display:none}.house-yard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:20px}.yard-room{min-height:104px;border:3px solid color-mix(in srgb,var(--home-green) 56%,var(--line));background:color-mix(in srgb,var(--home-green) 20%,var(--paper));color:var(--ink)}.yard-room .room-furnishing{width:72px;height:62px;border-radius:50% 50% 10px 10px;background:var(--home-green);box-shadow:0 24px 0 -14px #74472f}.yard-room .room-furnishing::before,.yard-room .room-furnishing::after{background:#86b86d;border-radius:50%;width:37px;height:37px;top:4px}.porch-room{border-color:color-mix(in srgb,var(--home-wood) 52%,var(--line));background:color-mix(in srgb,var(--home-wall-2) 62%,var(--paper))}.porch-room .room-furnishing{width:57px;height:74px;border-radius:22px 22px 4px 4px;background:#9f5743;box-shadow:inset 0 0 0 7px #74402f}.porch-room .room-furnishing::before{left:36px;top:35px;width:6px;height:6px;border-radius:50%;background:var(--home-glow)}.porch-room .room-furnishing::after{display:none}.empire-zip-plaque{position:relative;z-index:2;width:max-content;max-width:calc(100% - 18px);display:flex;align-items:center;gap:11px;margin:22px auto 0;padding:9px 15px 9px 10px;border:3px solid color-mix(in srgb,var(--home-wood) 68%,var(--line));border-radius:9px 18px 9px 18px;background:linear-gradient(180deg,color-mix(in srgb,var(--home-glow) 28%,var(--paper)),var(--paper));color:var(--home-wood);box-shadow:0 7px 0 color-mix(in srgb,var(--home-wood) 28%,transparent);font:900 clamp(.82rem,2vw,1rem)/1.25 "Baloo 2",sans-serif;text-align:center}.empire-mailbox{position:relative;flex:0 0 auto;width:42px;height:30px;border-radius:16px 16px 5px 5px;background:var(--home-roof);box-shadow:inset -7px 0 0 color-mix(in srgb,var(--home-roof) 72%,#54291f)}.empire-mailbox::before{content:"";position:absolute;left:8px;bottom:-12px;width:6px;height:13px;border-radius:2px;background:var(--home-wood)}.empire-mailbox::after{content:"";position:absolute;right:-7px;top:3px;width:12px;height:6px;border-radius:3px 3px 0 0;background:var(--home-glow);box-shadow:0 6px 0 var(--home-wood)}
+.house-nooks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:30px}.house-nook{position:relative;padding:20px;border:2px solid color-mix(in srgb,var(--home-wood) 28%,var(--line));border-radius:22px 7px 22px 7px;background:var(--paper);box-shadow:0 9px 22px rgba(78,45,36,.1);overflow:hidden}.house-nook:nth-child(even){border-radius:7px 22px 7px 22px}.house-nook h3{margin:0 0 6px;color:var(--home-wood);font:900 1.45rem/1.08 "Baloo 2",sans-serif}.house-nook p,.house-nook blockquote{margin:6px 0}.nook-stage{min-height:72px;display:flex;align-items:center;padding:15px;border-radius:12px 5px 12px 5px;background:color-mix(in srgb,var(--home-wall) 72%,var(--paper));font-weight:850}.nook-button{margin-top:12px;border:0;border-radius:12px 5px 12px 5px;padding:10px 13px;background:var(--home-wood);color:#fff;font-weight:900}.nook-button:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.kitchen-facts{display:grid;gap:7px;margin-top:12px}.kitchen-facts span{padding:9px 11px;border-radius:6px 13px 6px 13px;background:color-mix(in srgb,var(--home-glow) 25%,var(--paper));font-weight:800}.fireplace-stage{position:relative;min-height:118px;display:grid;place-items:end center;padding-bottom:12px;border-radius:24px 24px 6px 6px;background:linear-gradient(#6d4031,#4a2b24);box-shadow:inset 0 0 0 10px #8d5743}.fireplace-flame{width:50px;height:64px;border-radius:60% 45% 55% 48%;background:linear-gradient(#fff4a7 0 28%,#f5a546 29% 67%,#c95b36 68%);transform:rotate(4deg);filter:drop-shadow(0 0 8px #f7b24b)}.fireplace-stage.is-lit .fireplace-flame{animation:fireFlicker .48s ease-in-out infinite alternate}.fireplace-status{min-height:1.4em;color:var(--muted);font-weight:800;font-size:.9rem}
+.content-hub{position:relative;margin-block:clamp(34px,6vw,66px);padding:clamp(18px,3vw,30px);border:2px solid color-mix(in srgb,var(--home-wood) 20%,var(--line));border-radius:28px 8px 28px 8px;background:radial-gradient(ellipse 48% 34px at 50% 100%,color-mix(in srgb,var(--home-rug) 12%,transparent),transparent 72%),linear-gradient(145deg,color-mix(in srgb,var(--home-wall) 38%,var(--paper)),var(--paper) 48%,color-mix(in srgb,var(--home-wall-2) 26%,var(--paper)));box-shadow:inset 12px 0 0 -9px color-mix(in srgb,var(--home-roof) 30%,transparent),inset -12px 0 0 -9px color-mix(in srgb,var(--home-roof) 30%,transparent),var(--shadow)}.room-nameplate{width:max-content;max-width:calc(100% - 12px);margin:-40px auto 24px;padding:9px 18px;border:2px solid color-mix(in srgb,var(--home-wood) 60%,var(--line));border-radius:8px 8px 14px 14px;background:linear-gradient(180deg,#dca56f,#b9784f);color:#352117;text-align:center;font:900 clamp(.9rem,2vw,1.08rem)/1.2 "Baloo 2",sans-serif;box-shadow:0 6px 0 color-mix(in srgb,var(--home-wood) 28%,transparent)}.room-nameplate::before{content:"☘  ";color:#285839}.room-nameplate::after{content:"  ✦";color:#fff0a3}.content-hub:nth-of-type(4n+2) .room-nameplate::before{content:"⌂  ";color:#74422f}.content-hub:nth-of-type(4n+3) .room-nameplate::after{content:"  ◇";color:#fff6d6}.content-hub .hub-heading,.content-hub>h2:first-of-type{position:relative}.content-hub .hub-heading::after{content:"";display:block;width:86px;height:7px;margin-top:10px;border-radius:90% 30% 90% 30%;background:var(--home-rug)}
+@keyframes houseTwinkle{from{opacity:.35;transform:scale(.82)}to{opacity:1;transform:scale(1.16)}}@keyframes chimneySmoke{0%{transform:translate(0,12px) scale(.72);opacity:0}25%{opacity:.7}100%{transform:translate(28px,-58px) scale(1.35);opacity:0}}@keyframes fireFlicker{from{transform:rotate(-4deg) scale(.96);filter:drop-shadow(0 0 6px #f7b24b)}to{transform:rotate(5deg) scale(1.05);filter:drop-shadow(0 0 15px #f7b24b)}}
+@media(max-width:720px){.house-welcome{align-items:flex-start;flex-direction:column}.house-key{align-self:flex-start}.house-scene{padding-top:58px}.house-roof{height:94px}.house-chimney{right:14%;top:4px;width:35px;height:61px}.house-smoke{right:14%;top:-24px}.house-room{min-height:138px;padding:15px}.room-window{width:55px;height:46px;right:12px;top:12px}.room-furnishing{left:13px;top:14px;transform:scale(.82);transform-origin:left top}.house-nooks{grid-template-columns:1fr}}
+@media(max-width:480px){.cozy-house-home{padding:14px 10px 22px;border-radius:22px 7px 22px 7px}.house-cutaway{gap:6px;padding:6px;border-width:5px}.house-room{min-height:128px;padding:12px 10px 11px}.house-room strong{font-size:.98rem;padding:5px 7px}.house-room small{font-size:.76rem;line-height:1.25}.room-window{width:45px;height:39px;border-width:4px}.room-furnishing{transform:scale(.7)}.room-attic,.room-basement{min-height:110px}.house-yard{gap:8px}.yard-room{min-height:112px}.house-nook{padding:16px}.content-hub{padding:16px 12px;border-radius:20px 6px 20px 6px}.room-nameplate{margin-top:-30px;padding:8px 11px}}
+@media(prefers-reduced-motion:reduce){.house-roof::after,.house-smoke,.fireplace-stage.is-lit .fireplace-flame{animation:none}.house-room{transition:none}}
+</style>
 </head>
 <body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
 <div class="wrap"><div class="topline"><a class="back" href="#home">← Back to the welcome</a><a class="pillbtn" href="#fake-call-prank">Fake Call Prank</a><a class="pillbtn" href="#kiki-isms">Kiki’s Dictionary</a><span class="handle">@onedirectionhealinghq</span></div>
+<section id="cozy-house-home" class="cozy-house-home" aria-labelledby="cozy-house-title">
+<div class="house-welcome"><div><h2 id="cozy-house-title">Come into Kiki’s cozy house</h2><p>Every room opens a different corner of the universe. Pick a door, follow the sparkle, and make yourself right at home.</p></div><span class="house-key">No limits, just fun!</span></div>
+<div class="house-scene" aria-label="A clickable cutaway cartoon house with eight rooms">
+<div class="house-roof" aria-hidden="true"></div><div class="house-chimney" aria-hidden="true"></div><span class="house-smoke" aria-hidden="true"></span>
+<div class="house-cutaway">
+<a class="house-room room-attic" href="#fan-vault"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Attic Treasures</strong><small>Memories, stories &amp; vault surprises</small></a>
+<a class="house-room room-living" href="#hub-movies" style="--room-bg:#f7dfca;--room-object:#c46663"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Living Room</strong><small>Movies, shows &amp; game-night fun</small></a>
+<a class="house-room room-kitchen" href="#hub-kikis-kitchen"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Kitchen</strong><small>Cooking, snacks &amp; Healing Bites</small></a>
+<a class="house-room room-bedroom" href="#hub-plush-bedtime"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Bedroom</strong><small>Cozy stories, dreams &amp; sleepy fun</small></a>
+<a class="house-room room-bathroom" href="#hub-cozy-bath-bomb-lab"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Bathroom</strong><small>Pampering, bath fizz &amp; glow time</small></a>
+<a class="house-room room-basement" href="#hub-giggle-factory"><span class="room-furnishing" aria-hidden="true"></span><span class="room-window" aria-hidden="true"></span><strong>Basement Playroom</strong><small>Giggles, silly sounds &amp; secret games</small></a>
+</div>
+<div class="house-yard">
+<a class="house-room yard-room" href="#hub-pet-pals-corner"><span class="room-furnishing" aria-hidden="true"></span><strong>Garden</strong><small>Pets, farm friends &amp; growing things</small></a>
+<a class="house-room yard-room porch-room" href="#home"><span class="room-furnishing" aria-hidden="true"></span><strong>Front Porch</strong><small>Kiki’s original welcome &amp; front door</small></a>
+</div>
+<div class="empire-zip-plaque" aria-label="Kiki Empire, ZIP 01089, Silly District POO00"><span class="empire-mailbox" aria-hidden="true"></span><strong>Kiki Empire • ZIP 01089 • Silly District POO00 💨</strong></div>
+</div>
+<div class="house-nooks">
+<article class="house-nook"><h3>Couch Corner</h3><p>A soft place for kind words.</p><div class="nook-stage" id="couchAffirmation" aria-live="polite">You do not have to rush your sparkle. Cozy progress still counts.</div><button class="nook-button" id="newCouchAffirmation" type="button">New cozy thought</button></article>
+<article class="house-nook"><h3>Kitchen Table</h3><p>Pull up a chair for tiny fun facts.</p><div class="kitchen-facts"><span>Honey never spoils when it is sealed and stored properly.</span><span>Bananas are berries, but strawberries are not botanical berries.</span><span>Octopuses have three hearts — that is a lot of room for kindness.</span></div></article>
+<article class="house-nook"><h3>Window Seat</h3><p>Watch the clouds and turn the quote cushion.</p><blockquote class="nook-stage" id="windowSeatQuote" aria-live="polite">“Make today a little softer, a little sillier, and completely yours.”</blockquote><button class="nook-button" id="newWindowQuote" type="button">Turn the quote cushion</button></article>
+<article class="house-nook"><h3>Fireplace</h3><p>Tap for a gentle in-room crackle made with Web Audio.</p><div class="fireplace-stage" id="fireplaceStage" aria-hidden="true"><span class="fireplace-flame"></span></div><button class="nook-button g109-sound" id="fireplaceToggle" type="button" aria-pressed="false">Light the fireplace</button><p class="fireplace-status" id="fireplaceStatus" aria-live="polite">The hearth is quiet.</p></article>
+</div>
+</section>
 <style>
 #expansion-pinned-faves-2026-10-02{position:sticky;top:8px;z-index:60;margin:16px 0 10px}
 .expansion-pinned-faves-2026-10-02-board{position:relative;background-color:color-mix(in srgb,var(--gold2) 20%,var(--paper));background-image:radial-gradient(color-mix(in srgb,var(--ink) 10%,transparent) 1.2px,transparent 1.3px);background-size:18px 18px;border:2px solid var(--line);border-radius:20px;padding:16px 14px 12px;box-shadow:var(--shadow);overflow:hidden}
@@ -18319,6 +18357,82 @@ function download(name,text){var blob=new Blob([text],{type:'text/plain;charset=
 })();
 </script>
 
+<script id="homey-house-interactions">
+(function(){
+'use strict';
+var d=document;
+var affirmations=[
+  'You do not have to rush your sparkle. Cozy progress still counts.',
+  'Rest is not quitting — it is your batteries getting a warm blanket.',
+  'Your ideas belong at the table, exactly as bright and silly as they are.',
+  'A tiny kind thing can make a whole room feel lighter.',
+  'You are allowed to be proud, comfy, and completely yourself.'
+];
+var quotes=[
+  '“Make today a little softer, a little sillier, and completely yours.”',
+  '“Home is where the snacks know your name.”',
+  '“Kind hearts make the warmest rooms.”',
+  '“No limits, just fun — and maybe one more cozy cushion.”',
+  '“Even the quietest little light can make a window glow.”'
+];
+var ai=0,qi=0;
+function nextText(list,index,el){index=(index+1)%list.length;if(el){el.textContent=list[index];}return index;}
+var affirmButton=d.getElementById('newCouchAffirmation');
+if(affirmButton){affirmButton.addEventListener('click',function(){ai=nextText(affirmations,ai,d.getElementById('couchAffirmation'));});}
+var quoteButton=d.getElementById('newWindowQuote');
+if(quoteButton){quoteButton.addEventListener('click',function(){qi=nextText(quotes,qi,d.getElementById('windowSeatQuote'));});}
+Array.prototype.forEach.call(d.querySelectorAll('.house-room[href^="#"]'),function(link){
+  link.addEventListener('click',function(event){
+    var id=link.getAttribute('href').slice(1),target=d.getElementById(id);
+    if(!target||id==='home')return;
+    event.preventDefault();
+    Array.prototype.forEach.call(d.querySelectorAll('.content-hub'),function(hub){hub.style.contentVisibility='visible';});
+    void d.body.offsetHeight;
+    try{history.pushState(null,'','#'+id);}catch(e){location.hash=id;}
+    target.scrollIntoView({block:'start',behavior:'auto'});
+    requestAnimationFrame(function(){target.scrollIntoView({block:'start',behavior:'auto'});});
+  });
+});
+function roomFor(text){
+  if(/kitchen|cook|snack|food|breakfast|restaurant|tea|bites|zip-fizz/.test(text))return 'Kitchen';
+  if(/bath|pamper|glow|beauty|skin|fashion|dress/.test(text))return 'Bathroom & Dressing Room';
+  if(/bed|sleep|dream|cozy|asmr|blanket|meditat|affirm|healing|moon/.test(text))return 'Cozy Bedroom';
+  if(/pet|animal|farm|garden|herb|nature|axolotl/.test(text))return 'Garden Room';
+  if(/vault|library|archive|memory|throwback|retro|history/.test(text))return 'Treasure Attic';
+  if(/game|arcade|giggle|silly|comedy|prank|mystery|carnival|challenge|quiz|poll/.test(text))return 'Basement Playroom';
+  if(/movie|tv|watch|music|song|concert|story|chat|social|video|clip|radio/.test(text))return 'Living Room';
+  if(/business|money|shop|directory|tech|software|internet/.test(text))return 'Home Office';
+  return 'Front Parlor';
+}
+Array.prototype.forEach.call(d.querySelectorAll('.content-hub'),function(hub){
+  if(hub.querySelector(':scope > .room-nameplate'))return;
+  var heading=hub.querySelector('h2,h3');
+  var room=roomFor(((hub.id||'')+' '+(hub.className||'')+' '+(heading?heading.textContent:'')).toLowerCase());
+  var plate=d.createElement('div');plate.className='room-nameplate';plate.setAttribute('aria-hidden','true');plate.textContent='Welcome to the '+room;hub.insertBefore(plate,hub.firstChild);
+});
+var fireButton=d.getElementById('fireplaceToggle'),fireStage=d.getElementById('fireplaceStage'),fireStatus=d.getElementById('fireplaceStatus');
+var fireCtx=null,fireSource=null,fireGain=null,fireFilter=null,fireTimer=null,lit=false;
+function stopFire(){
+  lit=false;if(fireTimer){clearInterval(fireTimer);fireTimer=null;}
+  if(fireGain&&fireCtx){try{fireGain.gain.cancelScheduledValues(fireCtx.currentTime);fireGain.gain.setTargetAtTime(.0001,fireCtx.currentTime,.05);}catch(e){}}
+  if(fireSource){try{fireSource.stop(fireCtx.currentTime+.18);}catch(e){}fireSource=null;}
+  if(fireCtx){setTimeout(function(){try{fireCtx.close();}catch(e){}fireCtx=null;fireGain=null;fireFilter=null;},240);}
+  if(fireStage)fireStage.classList.remove('is-lit');if(fireButton){fireButton.setAttribute('aria-pressed','false');fireButton.textContent='Light the fireplace';}if(fireStatus)fireStatus.textContent='The hearth is quiet.';
+}
+function startFire(){
+  var C=window.AudioContext||window.webkitAudioContext;if(!C){if(fireStatus)fireStatus.textContent='Audio is unavailable here, but the cozy glow still works.';fireStage.classList.add('is-lit');return;}
+  try{
+    fireCtx=new C();var len=fireCtx.sampleRate*2,buf=fireCtx.createBuffer(1,len,fireCtx.sampleRate),data=buf.getChannelData(0);
+    for(var i=0;i<len;i++){var fade=1-(i%Math.floor(fireCtx.sampleRate*.11))/Math.floor(fireCtx.sampleRate*.11);data[i]=(Math.random()*2-1)*(.16+.84*fade*fade);}
+    fireSource=fireCtx.createBufferSource();fireSource.buffer=buf;fireSource.loop=true;fireFilter=fireCtx.createBiquadFilter();fireFilter.type='bandpass';fireFilter.frequency.value=720;fireFilter.Q.value=.55;fireGain=fireCtx.createGain();fireGain.gain.value=.045;fireSource.connect(fireFilter).connect(fireGain).connect(fireCtx.destination);fireSource.start();
+    fireTimer=setInterval(function(){if(!lit||!fireCtx||!fireFilter)return;fireFilter.frequency.setTargetAtTime(520+Math.random()*650,fireCtx.currentTime,.08);fireGain.gain.setTargetAtTime(.025+Math.random()*.035,fireCtx.currentTime,.06);},180);
+    lit=true;fireStage.classList.add('is-lit');fireButton.setAttribute('aria-pressed','true');fireButton.textContent='Quiet the fireplace';fireStatus.textContent='Soft crackles are warming the room.';
+  }catch(e){if(fireStatus)fireStatus.textContent='The audio fireplace is unavailable here, so the hearth is glowing quietly.';fireStage.classList.add('is-lit');}
+}
+if(fireButton){fireButton.addEventListener('click',function(){if(lit)stopFire();else startFire();});}
+window.addEventListener('pagehide',stopFire);
+})();
+</script>
 <style id="kiki-global-silly-sounds-styles">
 /* Global silly sounds + Hub 109 big soundboard */
 .kiki-sound-toggle{position:fixed;right:calc(12px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:2147483647;width:54px;height:54px;padding:0;border:3px solid var(--paper);border-radius:50%;display:grid;place-items:center;background:var(--plum);color:#fff;box-shadow:0 8px 24px rgba(35,18,42,.28);font-size:1.45rem;line-height:1;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;pointer-events:auto}.kiki-sound-toggle:hover{filter:brightness(1.1)}.kiki-sound-toggle:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.kiki-sound-toggle[aria-pressed="false"]{background:var(--muted)}
