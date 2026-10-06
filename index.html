@@ -1000,6 +1000,79 @@ paint();var firstKey=gate.querySelector('[data-pin-digit]');if(firstKey)firstKey
 <header class="hero"><img class="banner" src="https://grogusmom1989-creator.github.io/liam/assets/06cd88e0ffe08a808e6804ddd8a28202ae90d371a245bb0b15a27a4f66086325.webp" alt="The Plush Crew welcoming everyone with balloons, bunting, and confetti" loading="lazy" decoding="async"><div class="hero-copy"><h1>Kiki's Healing Universe of Everything</h1><p class="welcome-rotation"><span id="rotatingWelcome" class="welcome-message">Hey, Kiki’s Crew — grab your sparkle and come have some fun!</span></p><p>One Direction Healing HQ’s joyful all-ages universe — bright, kind, and made for everyone, while the music, stories, characters, and fun stay playful and silly for the Healers, Kiki’s Crew, the Charmers, and the Gigglers — packed with music, stories, original characters, creative ideas, and kindness.</p><p class="spark">✨ Kindness is leadership. Silliness is always invited. ✨</p><div class="home-actions"><button id="celebrateBtn" class="pillbtn" type="button">Celebrate! 🎉</button><button id="surpriseMeBtn" class="pillbtn secondary" type="button">Surprise Me! 🎲</button><span id="surpriseStatus" class="surprise-status" aria-live="polite"></span></div></div></header>
 <section class="moodbar" aria-labelledby="mood-title"><img id="currentMood" class="current-mood" src="https://grogusmom1989-creator.github.io/liam/assets/9d4a35a4f94a5aacb1a9f75f32c5cc089527246980926da6619d0d4fd30dd58f.webp" alt="Happy mood icon" loading="lazy" decoding="async"><strong id="mood-title">Pick today’s vibe</strong><button class="mood" data-mood="happy" aria-pressed="true"><img src="https://grogusmom1989-creator.github.io/liam/assets/9d4a35a4f94a5aacb1a9f75f32c5cc089527246980926da6619d0d4fd30dd58f.webp" alt="" loading="lazy" decoding="async"> <span>Happy</span></button><button class="mood" data-mood="cozy" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/e43670634a969441722bcad26818379441fad5c63224ee2579e25e0f9356f0ec.webp" alt="" loading="lazy" decoding="async"> <span>Cozy</span></button><button class="mood" data-mood="boss" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/3061fe7fd3d4ddfa495013ef00cc5fa53e49dc4275dd869a22fed497752b2a57.webp" alt="" loading="lazy" decoding="async"> <span>Boss</span></button><button class="mood" data-mood="silly" aria-pressed="false"><img src="https://grogusmom1989-creator.github.io/liam/assets/9dcb01f61f4da6bf60b6577b37c6aded7be004e1e72603bfab3746ad1fd53ea6.webp" alt="" loading="lazy" decoding="async"> <span>Silly</span></button></section>
 <main id="main">
+<section id="featured-media-spotlight" class="section featured-media-spotlight" aria-labelledby="featured-media-title">
+<style>
+#featured-media-spotlight{margin-top:28px;scroll-margin-top:20px}
+#featured-media-spotlight .spotlight-shell{position:relative;overflow:hidden;border:2px solid color-mix(in srgb,var(--pink) 42%,var(--line));border-radius:30px 10px 30px 10px;background:color-mix(in srgb,var(--pink2) 8%,var(--paper));box-shadow:var(--shadow)}
+#featured-media-spotlight .spotlight-head{display:flex;align-items:end;justify-content:space-between;gap:18px;padding:clamp(20px,4vw,34px) clamp(20px,4vw,38px) 18px}
+#featured-media-spotlight .spotlight-kicker{margin:0 0 4px;color:var(--pink);font-weight:900}
+#featured-media-spotlight h2{margin:0;color:var(--plum);font:800 clamp(1.8rem,4vw,2.8rem)/1.05 "Baloo 2",sans-serif}
+#featured-media-spotlight .spotlight-intro{max-width:680px;margin:8px 0 0;color:var(--muted);font-weight:700}
+#featured-media-spotlight .spotlight-auto-note{flex:0 0 auto;margin:0;padding:8px 12px;border-radius:10px 18px 10px 18px;background:var(--gold2);color:#392411;font-weight:900;font-size:.84rem}
+#featured-media-spotlight .spotlight-slide{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);min-height:410px;border-top:1px solid var(--line)}
+#featured-media-spotlight .spotlight-slide[hidden]{display:none}
+#featured-media-spotlight .spotlight-stage{min-width:0;padding:14px;background:#140d19;display:grid;place-items:center}
+#featured-media-spotlight .spotlight-stage video{width:100%;height:100%;max-height:560px;aspect-ratio:16/9;object-fit:contain;border-radius:18px 6px 18px 6px;background:#09070b}
+#featured-media-spotlight .spotlight-audio-stage{grid-template-rows:minmax(0,1fr) auto;gap:12px}
+#featured-media-spotlight .spotlight-audio-stage img{display:block;width:100%;height:100%;max-height:430px;object-fit:cover;object-position:center 30%;border-radius:18px 6px 18px 6px}
+#featured-media-spotlight .spotlight-stage audio{width:min(100%,620px)}
+#featured-media-spotlight .spotlight-copy{padding:clamp(22px,4vw,42px);display:flex;flex-direction:column;justify-content:center;background:var(--paper)}
+#featured-media-spotlight .spotlight-type{align-self:flex-start;margin:0 0 14px;padding:6px 10px;border-radius:999px;background:var(--mint);color:var(--plum);font-size:.78rem;font-weight:900}
+#featured-media-spotlight .spotlight-copy h3{margin:0;color:var(--plum);font:800 clamp(1.55rem,3vw,2.25rem)/1.08 "Baloo 2",sans-serif}
+#featured-media-spotlight .spotlight-copy p{margin:12px 0 0}
+#featured-media-spotlight .spotlight-route{margin-top:20px;align-self:flex-start}
+#featured-media-spotlight .spotlight-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:16px clamp(20px,4vw,38px);border-top:1px solid var(--line);background:color-mix(in srgb,var(--gold2) 15%,var(--paper))}
+#featured-media-spotlight .spotlight-arrow,#featured-media-spotlight .spotlight-toggle{min-height:42px;border:1px solid var(--line);border-radius:11px;background:var(--paper);color:var(--plum);padding:8px 13px;font-weight:900}
+#featured-media-spotlight .spotlight-arrow:hover,#featured-media-spotlight .spotlight-toggle:hover{background:var(--mint)}
+#featured-media-spotlight .spotlight-arrow:focus-visible,#featured-media-spotlight .spotlight-toggle:focus-visible,#featured-media-spotlight .spotlight-dot:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#featured-media-spotlight .spotlight-dots{display:flex;align-items:center;gap:8px;margin-right:auto}
+#featured-media-spotlight .spotlight-dot{width:13px;height:13px;padding:0;border:2px solid var(--plum);border-radius:50%;background:transparent}
+#featured-media-spotlight .spotlight-dot[aria-current="true"]{background:var(--plum);box-shadow:0 0 0 3px color-mix(in srgb,var(--plum) 18%,transparent)}
+#featured-media-spotlight .spotlight-status{flex:1 1 100%;margin:0;color:var(--muted);font-size:.82rem;font-weight:800}
+@media(max-width:760px){#featured-media-spotlight .spotlight-head{align-items:flex-start;flex-direction:column}#featured-media-spotlight .spotlight-slide{grid-template-columns:1fr;min-height:0}#featured-media-spotlight .spotlight-stage{min-height:260px}#featured-media-spotlight .spotlight-copy{padding:21px}#featured-media-spotlight .spotlight-controls{padding:14px 18px}}
+@media(max-width:480px){#featured-media-spotlight .spotlight-stage{min-height:210px;padding:8px}#featured-media-spotlight .spotlight-arrow{flex:1 1 42%}#featured-media-spotlight .spotlight-toggle{width:100%}#featured-media-spotlight .spotlight-dots{order:-1;width:100%;justify-content:center;margin:0 0 2px}}
+</style>
+<div class="spotlight-shell">
+<div class="spotlight-head"><div><p class="spotlight-kicker">Kiki’s spotlight is spinning</p><h2 id="featured-media-title">Featured Song &amp; Video</h2><p class="spotlight-intro">One joyful pick takes center stage, then the spotlight rolls to the next song or video automatically.</p></div><p class="spotlight-auto-note">Fresh feature every 12 seconds</p></div>
+<div class="spotlight-track">
+<article class="spotlight-slide" data-spotlight-slide aria-label="Featured song 1 of 4">
+<div class="spotlight-stage spotlight-audio-stage"><img src="assets/406f651ff4177161c5008380d97b6d5d930c5bedc7b8cf9ecbe91d6cea8ded9c.jpg" alt="The Plush Crew singing together about a missing sock" loading="eager" decoding="async"><audio controls preload="none" aria-label="Play Missing Sock Shuffle"><source src="assets/1edfe0051be978be2bc2811cc8e531cc3e9995bfff97e0d18dc71ee748c54a8a.mp3" type="audio/mpeg">Your browser does not support this audio.</audio></div>
+<div class="spotlight-copy"><span class="spotlight-type">Featured song · Plush Crew</span><h3>Missing Sock Shuffle</h3><p>The dryer ate another one, so the Plush Crew turned the mystery into a clean, silly sing-along and a brand-new dance move.</p><a class="linkbtn spotlight-route" href="#hub-silly-song-jukebox">Open the Silly Song Jukebox →</a></div>
+</article>
+<article class="spotlight-slide" data-spotlight-slide aria-label="Featured video 2 of 4" hidden>
+<div class="spotlight-stage"><video controls playsinline preload="none" poster="assets/3c9f8df91fd6feb7fb4b43c3c8fbd414382aa3efdda78634dbb2c959d472a054.jpg" aria-label="Play Try-It Sunday cozy beauty haul"><source src="assets/5d4483e4c9bc66c597389405e309a7d46047dc3a7d25dce7a608c14a20e10d36.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+<div class="spotlight-copy"><span class="spotlight-type">Featured video · Try-It Sunday</span><h3>Cozy Beauty Haul</h3><p>A quick, colorful beauty try-out with relaxed Sunday energy and Kiki’s curious creator spirit.</p><a class="linkbtn spotlight-route" href="#library-fresh-videos">Visit the video library →</a></div>
+</article>
+<article class="spotlight-slide" data-spotlight-slide aria-label="Featured video 3 of 4" hidden>
+<div class="spotlight-stage"><video controls playsinline preload="none" poster="assets/0dedb107dc818729b7fbc37982518172e6a8d422272eaaefb5a354ab22f09d06.jpg" aria-label="Play Try-It Sunday silly gadget unboxing"><source src="assets/07c72babe839dd3e1c873c3f5e6ed13280fc63e6e38cfa36ccd6837521a2cab6.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+<div class="spotlight-copy"><span class="spotlight-type">Featured video · Unboxing fun</span><h3>Silly Gadget Unboxing</h3><p>A tiny mystery gadget gets the full Kiki treatment: curiosity, comedy, and a delightfully dramatic reveal.</p><a class="linkbtn spotlight-route" href="#surprise-hub">Find more surprises →</a></div>
+</article>
+<article class="spotlight-slide" data-spotlight-slide aria-label="Featured video 4 of 4" hidden>
+<div class="spotlight-stage"><video controls playsinline preload="none" poster="assets/58e4aafd21b9a427ed8a6d93f1edd3c6f81d6a25164eba1e7326476cf9f3a375.jpg" aria-label="Play Silly Skits Cookie Jar Rules"><source src="assets/c2ba43a2fd3e4dbe46440161ba68db37bb5d1af0435df008b3861be6856ff97a.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+<div class="spotlight-copy"><span class="spotlight-type">Featured video · Silly skit</span><h3>Cookie Jar Rules</h3><p>The rules sound simple until snack logic, dramatic objections, and glorious nonsense take over the kitchen.</p><a class="linkbtn spotlight-route" href="#hub-giggle-factory">Enter the Giggle Factory →</a></div>
+</article>
+</div>
+<div class="spotlight-controls" aria-label="Featured media controls"><button class="spotlight-arrow" id="spotlightPrev" type="button">← Previous</button><div class="spotlight-dots" id="spotlightDots" aria-label="Choose a featured song or video"></div><button class="spotlight-arrow" id="spotlightNext" type="button">Next →</button><button class="spotlight-toggle" id="spotlightToggle" type="button" aria-pressed="false">Pause rotation</button><p class="spotlight-status" id="spotlightStatus" aria-live="polite">Showing feature 1 of 4 · rotating automatically</p></div>
+</div>
+<script>
+(function(){
+var root=document.getElementById('featured-media-spotlight');if(!root)return;
+var slides=Array.prototype.slice.call(root.querySelectorAll('[data-spotlight-slide]'));
+var dotsBox=document.getElementById('spotlightDots'),prev=document.getElementById('spotlightPrev'),next=document.getElementById('spotlightNext'),toggle=document.getElementById('spotlightToggle'),status=document.getElementById('spotlightStatus');
+var names=['Missing Sock Shuffle','Cozy Beauty Haul','Silly Gadget Unboxing','Cookie Jar Rules'];
+var index=Math.floor(Date.now()/21600000)%slides.length,paused=false,timer=null;
+function stopMedia(slide){Array.prototype.forEach.call(slide.querySelectorAll('audio,video'),function(media){if(!media.paused)media.pause();});}
+function setStatus(note){status.textContent='Showing feature '+(index+1)+' of '+slides.length+' · '+(note||(paused?'rotation paused':'rotating automatically'));}
+function show(nextIndex,note){index=(nextIndex+slides.length)%slides.length;slides.forEach(function(slide,i){if(i!==index)stopMedia(slide);slide.hidden=i!==index;});Array.prototype.forEach.call(dotsBox.children,function(dot,i){dot.setAttribute('aria-current',i===index?'true':'false');});setStatus(note);}
+function start(){if(timer)window.clearInterval(timer);if(!paused)timer=window.setInterval(function(){if(!document.hidden)show(index+1);},12000);}
+slides.forEach(function(slide,i){var dot=document.createElement('button');dot.className='spotlight-dot';dot.type='button';dot.setAttribute('aria-label','Show '+names[i]);dot.setAttribute('aria-current','false');dot.addEventListener('click',function(){show(i);start();});dotsBox.appendChild(dot);Array.prototype.forEach.call(slide.querySelectorAll('audio,video'),function(media){media.addEventListener('play',function(){slides.forEach(function(other){if(other!==slide)stopMedia(other);});paused=true;toggle.setAttribute('aria-pressed','true');toggle.textContent='Resume rotation';if(timer)window.clearInterval(timer);setStatus('rotation paused while this feature plays');});});});
+prev.addEventListener('click',function(){show(index-1);start();});next.addEventListener('click',function(){show(index+1);start();});
+toggle.addEventListener('click',function(){paused=!paused;toggle.setAttribute('aria-pressed',String(paused));toggle.textContent=paused?'Resume rotation':'Pause rotation';setStatus();start();});
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&!paused){index=Math.floor(Date.now()/12000)%slides.length;show(index);start();}});
+show(index);start();
+})();
+</script>
+</section>
 <section id="topic-trails" class="section topic-trails" aria-labelledby="topic-trails-title">
 <style>
 #topic-trails{scroll-margin-top:24px}
