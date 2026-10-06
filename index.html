@@ -19201,4 +19201,81 @@ document.querySelectorAll('.fan80-open').forEach(function(button){button.addEven
 if(close)close.addEventListener('click',function(){dialog.close()});if(dialog)dialog.addEventListener('click',function(event){if(event.target===dialog)dialog.close()});
 })();
 </script>
+<style id="monthly-layout-rotation-styles">
+/* Monthly Mix-Up: deterministic layout rotation, refreshed from the viewer's calendar month. */
+:root{--monthly-coral:#d85c73;--monthly-teal:#227c73;--monthly-sun:#e0a11a}
+.monthly-front-door-banner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;margin:24px 0 34px;padding:16px 19px;border:2px solid color-mix(in srgb,var(--monthly-accent,var(--pink)) 48%,var(--line));border-radius:26px 8px 26px 8px;background:linear-gradient(115deg,color-mix(in srgb,var(--monthly-accent,var(--pink)) 15%,var(--paper)),var(--paper));box-shadow:7px 8px 0 color-mix(in srgb,var(--monthly-accent,var(--pink)) 16%,transparent);overflow:hidden}.monthly-front-door-banner::after{content:"✦  ✦  ✦";position:absolute;right:18px;bottom:-5px;color:color-mix(in srgb,var(--monthly-accent,var(--pink)) 28%,transparent);font-size:2.25rem;letter-spacing:.12em;pointer-events:none}.monthly-front-door-copy{position:relative;z-index:1}.monthly-front-door-copy small{display:block;color:var(--monthly-accent,var(--pink));font-weight:950}.monthly-front-door-copy strong{display:block;margin-top:2px;color:var(--plum);font:900 clamp(1.25rem,3vw,1.8rem)/1.08 "Baloo 2",sans-serif}.monthly-front-door-mark{position:relative;z-index:1;display:grid;place-items:center;flex:0 0 auto;width:52px;height:52px;border-radius:50% 40% 50% 40%;background:var(--monthly-accent,var(--pink));color:#fff;font-size:1.45rem;transform:rotate(7deg)}
+.monthly-layout-badge{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:8px 12px;border:2px solid color-mix(in srgb,var(--monthly-accent,var(--pink)) 44%,var(--line));border-radius:16px 6px 16px 6px;background:color-mix(in srgb,var(--monthly-accent,var(--pink)) 11%,var(--paper));color:var(--plum);font:900 .82rem/1.2 "Baloo 2",sans-serif;box-shadow:4px 4px 0 color-mix(in srgb,var(--monthly-accent,var(--pink)) 18%,transparent)}
+.monthly-home-first{outline:4px solid color-mix(in srgb,var(--monthly-accent,var(--pink)) 38%,transparent);outline-offset:5px}.hub-directory-head .monthly-layout-badge{margin-left:auto}.monthly-hub-spotlight{--monthly-accent:var(--hub-accent,var(--pink));position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:13px;align-items:center;margin:18px 0 8px;padding:14px 16px;border:2px dashed color-mix(in srgb,var(--monthly-accent) 48%,var(--line));border-radius:21px 7px 21px 7px;background:linear-gradient(110deg,color-mix(in srgb,var(--monthly-accent) 13%,var(--paper)),var(--paper));box-shadow:5px 6px 0 color-mix(in srgb,var(--monthly-accent) 14%,transparent)}
+.monthly-hub-spotlight::after{content:"";position:absolute;right:12%;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--gold2);box-shadow:32px 10px 0 var(--pink2),-34px 15px 0 color-mix(in srgb,var(--monthly-accent) 65%,var(--paper))}.monthly-spotlight-spark{display:grid;place-items:center;width:44px;height:44px;border-radius:50% 42% 50% 42%;background:var(--monthly-accent);color:#fff;font-size:1.25rem;transform:rotate(-6deg)}.monthly-spotlight-copy{min-width:0}.monthly-spotlight-copy small{display:block;color:var(--monthly-accent);font-weight:950}.monthly-spotlight-copy strong{display:block;margin-top:2px;color:var(--plum);font:900 1.06rem/1.15 "Baloo 2",sans-serif;overflow-wrap:anywhere}.monthly-spotlight-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:8px 12px;border:1px solid color-mix(in srgb,var(--monthly-accent) 48%,var(--line));border-radius:12px 5px 12px 5px;background:var(--paper);color:var(--plum);font-weight:950;text-decoration:none;white-space:nowrap}.monthly-spotlight-link:hover,.monthly-spotlight-link:focus-visible{outline:3px solid var(--focus);outline-offset:2px;background:color-mix(in srgb,var(--monthly-accent) 12%,var(--paper))}
+/* Six visual rhythms cycle in calendar order without changing hub identities or content. */
+body[data-monthly-layout="0"]{--monthly-accent:var(--pink)}body[data-monthly-layout="0"] .hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+body[data-monthly-layout="1"]{--monthly-accent:var(--monthly-teal)}body[data-monthly-layout="1"] .hub-grid{grid-template-columns:repeat(3,minmax(0,1fr))}body[data-monthly-layout="1"] .hub-card:nth-child(5n+1){grid-column:span 2}body[data-monthly-layout="1"] .content-hub{border-radius:9px 30px 9px 30px}body[data-monthly-layout="1"] .monthly-hub-spotlight{border-style:solid;border-radius:7px 24px 7px 24px}
+body[data-monthly-layout="2"]{--monthly-accent:var(--monthly-sun)}body[data-monthly-layout="2"] .hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-monthly-layout="2"] .hub-card:nth-child(6n+1){grid-column:1/-1}body[data-monthly-layout="2"] .monthly-hub-spotlight{max-width:780px;margin-left:auto;margin-right:auto;transform:rotate(-.25deg)}
+body[data-monthly-layout="3"]{--monthly-accent:#287bb3}body[data-monthly-layout="3"] .hub-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}body[data-monthly-layout="3"] .hub-card{padding:18px;border-radius:8px 22px 8px 22px}body[data-monthly-layout="3"] .hub-card:nth-child(7n+1),body[data-monthly-layout="3"] .hub-card:nth-child(7n+2){grid-column:span 2}body[data-monthly-layout="3"] .content-hub::before{height:12px;background:repeating-linear-gradient(90deg,var(--hub-accent) 0 24px,transparent 24px 34px)}
+body[data-monthly-layout="4"]{--monthly-accent:#b64f7d}body[data-monthly-layout="4"] .hub-grid{grid-template-columns:repeat(3,minmax(0,1fr))}body[data-monthly-layout="4"] .hub-card:nth-child(4n){grid-column:span 2}body[data-monthly-layout="4"] .monthly-hub-spotlight{grid-template-columns:minmax(0,1fr) auto}body[data-monthly-layout="4"] .monthly-spotlight-spark{position:absolute;right:18px;top:-13px}body[data-monthly-layout="4"] .content-hub{box-shadow:9px 10px 0 color-mix(in srgb,var(--hub-accent) 12%,transparent),var(--shadow)}
+body[data-monthly-layout="5"]{--monthly-accent:#8a5ca8}body[data-monthly-layout="5"] .hub-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}body[data-monthly-layout="5"] .hub-card:nth-child(odd){transform:translateY(7px)}body[data-monthly-layout="5"] .hub-card:nth-child(even){transform:translateY(-7px)}body[data-monthly-layout="5"] .monthly-hub-spotlight{border-style:dotted;background:linear-gradient(120deg,color-mix(in srgb,var(--gold2) 18%,var(--paper)),color-mix(in srgb,var(--monthly-accent) 12%,var(--paper)))}
+@media(max-width:1040px){body[data-monthly-layout="1"] .hub-grid,body[data-monthly-layout="3"] .hub-grid,body[data-monthly-layout="4"] .hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-monthly-layout="3"] .hub-card:nth-child(7n+1),body[data-monthly-layout="3"] .hub-card:nth-child(7n+2),body[data-monthly-layout="4"] .hub-card:nth-child(4n){grid-column:auto}}
+@media(max-width:700px){.monthly-front-door-banner{margin:18px 0 28px;padding:14px 15px;border-radius:20px 7px 20px 7px}.monthly-front-door-banner::after{display:none}.monthly-front-door-mark{width:44px;height:44px}.hub-directory-head .monthly-layout-badge{margin-left:0}.monthly-hub-spotlight{grid-template-columns:auto minmax(0,1fr)}.monthly-spotlight-link{grid-column:1/-1;width:100%;white-space:normal}.monthly-spotlight-spark{width:39px;height:39px}body[data-monthly-layout] .hub-grid{grid-template-columns:1fr}body[data-monthly-layout] .hub-card,body[data-monthly-layout] .hub-card:nth-child(n){grid-column:auto;transform:none}body[data-monthly-layout="4"] .monthly-hub-spotlight{grid-template-columns:minmax(0,1fr)}body[data-monthly-layout="4"] .monthly-spotlight-spark{display:none}}
+@media(prefers-reduced-motion:reduce){body[data-monthly-layout="2"] .monthly-hub-spotlight{transform:none}}
+</style>
+<script id="monthly-layout-rotation">
+(function(){
+'use strict';
+var d=document,now=new Date(),monthNumber=now.getMonth(),cycle=(now.getFullYear()*12+monthNumber)%6;
+var monthName;
+try{monthName=new Intl.DateTimeFormat(undefined,{month:'long'}).format(now)}catch(error){monthName=['January','February','March','April','May','June','July','August','September','October','November','December'][monthNumber]}
+var names=['Confetti Welcome','Playful Switcheroo','Sunshine Shuffle','Color-Pop Parade','Cozy Curves','Starry Zigzag'];
+d.body.setAttribute('data-monthly-layout',String(cycle));
+function directStops(hub){return Array.prototype.filter.call(hub.children,function(child){
+ if(!child.id||child.classList.contains('monthly-hub-spotlight'))return false;
+ var tag=child.tagName;return tag==='SECTION'||tag==='ARTICLE'||tag==='ASIDE'||(tag==='DIV'&&child.classList.contains('expansion'));
+})}
+function rotate(items,amount){if(!items.length)return items;amount=((amount%items.length)+items.length)%items.length;return items.slice(amount).concat(items.slice(0,amount))}
+function arrangement(items,pattern,offset){
+ var list=items.slice(),out=[],left=0,right=list.length-1,i;
+ if(pattern===0)return rotate(list,offset);
+ if(pattern===1)return rotate(list.reverse(),offset);
+ if(pattern===2){for(i=0;i<list.length;i+=2)out.push(list[i]);for(i=1;i<list.length;i+=2)out.push(list[i]);return rotate(out,offset)}
+ if(pattern===3){for(i=1;i<list.length;i+=2)out.push(list[i]);for(i=0;i<list.length;i+=2)out.push(list[i]);return rotate(out,offset)}
+ if(pattern===4){while(left<=right){out.push(list[left++]);if(left<=right)out.push(list[right--])}return rotate(out,offset)}
+ while(left<=right){out.push(list[right--]);if(left<=right)out.push(list[left++])}return rotate(out,offset);
+}
+/* Recompose the front porch from the same existing sections; no hub or content is created or removed. */
+var main=d.getElementById('main');
+var frontDoorIds=['home','topic-trails','expansion-new-this-week-2026-10-02','kiki-birthday-countdown','universe-map','hub-directory','going-live','fresh-fun','support-kiki','expansion-universe-search-2026-10-02','expansion-crosshub-tags-2026-10-02','expansion-sitemap-2026-10-02'];
+if(main){
+ var frontDoor=frontDoorIds.map(function(id){return d.getElementById(id)}).filter(function(item){return !!item&&item.parentElement===main});
+ var firstHub=main.querySelector(':scope > .content-hub');
+ arrangement(frontDoor,cycle,monthNumber+cycle).forEach(function(item,index){item.classList.toggle('monthly-home-first',index===0);main.insertBefore(item,firstHub)});
+ var banner=d.createElement('aside');banner.className='monthly-front-door-banner';banner.setAttribute('aria-label',monthName+' universe mix');
+ var bannerCopy=d.createElement('span');bannerCopy.className='monthly-front-door-copy';var bannerSmall=d.createElement('small');bannerSmall.textContent=monthName+'’s universe mix';var bannerStrong=d.createElement('strong');bannerStrong.textContent=names[cycle];bannerCopy.append(bannerSmall,bannerStrong);
+ var bannerMark=d.createElement('span');bannerMark.className='monthly-front-door-mark';bannerMark.setAttribute('aria-hidden','true');bannerMark.textContent='✦';banner.append(bannerCopy,bannerMark);main.insertBefore(banner,main.firstElementChild);
+}
+/* The original Home hub keeps its heading and intro, while its feature cards trade places monthly. */
+var home=d.getElementById('home');if(home){
+ var homeFeatures=Array.prototype.filter.call(home.children,function(child){return child.matches('section[id],article,.hub1-expansion')});
+ arrangement(homeFeatures,(cycle+2)%6,monthNumber).forEach(function(item){home.appendChild(item)});
+}
+var hubs=Array.prototype.slice.call(d.querySelectorAll('.content-hub'));
+hubs.forEach(function(hub,hubIndex){
+ var stops=directStops(hub);if(stops.length<2)return;
+ stops=arrangement(stops,(cycle+hubIndex)%6,(monthNumber+hubIndex)%stops.length);
+ var returnRoute=hub.querySelector(':scope > .hub-return');stops.forEach(function(stop){hub.insertBefore(stop,returnRoute||null)});
+ var heading=hub.querySelector(':scope > .hub-heading');if(!heading)return;
+ var chosen=stops[0],chosenHeading=chosen&&chosen.querySelector('h1,h2,h3,h4'),chosenTitle=chosenHeading?chosenHeading.textContent.replace(/\s+/g,' ').trim():(chosen?chosen.id.replace(/-/g,' '):'');
+ if(!chosen||!chosenTitle)return;
+ var spotlight=d.createElement('aside');spotlight.className='monthly-hub-spotlight';spotlight.setAttribute('aria-label',monthName+' first stop');
+ var spark=d.createElement('span');spark.className='monthly-spotlight-spark';spark.setAttribute('aria-hidden','true');spark.textContent='✦';
+ var copy=d.createElement('span');copy.className='monthly-spotlight-copy';var small=d.createElement('small');small.textContent=monthName+' first stop';var strong=d.createElement('strong');strong.textContent=chosenTitle;copy.append(small,strong);
+ var link=d.createElement('a');link.className='monthly-spotlight-link';link.href='#'+chosen.id;link.textContent='Jump in →';spotlight.append(spark,copy,link);heading.insertAdjacentElement('afterend',spotlight);
+});
+var grid=d.querySelector('#hub-directory .hub-grid');if(grid){
+ var cards=Array.prototype.slice.call(grid.children),shuffled=arrangement(cards,cycle,(monthNumber+cycle)%Math.max(1,cards.length));shuffled.forEach(function(card){grid.appendChild(card)});
+}
+var directoryHead=d.querySelector('#hub-directory .hub-directory-head');if(directoryHead){
+ var badge=d.createElement('p');badge.className='monthly-layout-badge';badge.setAttribute('aria-label','Current monthly layout');badge.textContent='✦ '+monthName+' · '+names[cycle];directoryHead.appendChild(badge);
+}
+})();
+</script>
 </body></html>
