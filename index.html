@@ -844,8 +844,29 @@ body{background:linear-gradient(180deg,color-mix(in srgb,var(--pink2) 5%,var(--b
 @media(max-width:480px){.cozy-house-home{padding:14px 10px 22px;border-radius:22px 7px 22px 7px}.house-cutaway{gap:6px;padding:6px;border-width:5px}.house-room{min-height:128px;padding:12px 10px 11px}.house-room strong{font-size:.98rem;padding:5px 7px}.house-room small{font-size:.76rem;line-height:1.25}.room-window{width:45px;height:39px;border-width:4px}.room-furnishing{transform:scale(.7)}.room-attic,.room-basement{min-height:110px}.house-yard{gap:8px}.yard-room{min-height:112px}.house-nook{padding:16px}.content-hub{padding:16px 12px;border-radius:20px 6px 20px 6px}.room-nameplate{margin-top:-30px;padding:8px 11px}}
 @media(prefers-reduced-motion:reduce){.house-roof::after,.house-smoke,.fireplace-stage.is-lit .fireplace-flame{animation:none}.house-room{transition:none}}
 </style>
+<style id="kiki-pin-lock-styles">
+/* Royal PIN welcome gate */
+body.kiki-locked{overflow:hidden}.kiki-pin-lock{position:fixed;inset:0;z-index:2147483647;display:grid;place-items:center;min-height:100dvh;padding:max(22px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(22px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));overflow-y:auto;background:radial-gradient(circle at 50% 12%,#8e3c8f 0 10%,transparent 38%),linear-gradient(145deg,#241230,#56205f 58%,#7b315f);color:#fff}.kiki-pin-lock[hidden]{display:none}.kiki-pin-lock::before,.kiki-pin-lock::after{content:"";position:fixed;width:170px;height:170px;border:2px solid rgba(255,218,126,.36);transform:rotate(45deg);pointer-events:none}.kiki-pin-lock::before{left:-92px;top:-92px;box-shadow:0 0 0 16px rgba(255,218,126,.08)}.kiki-pin-lock::after{right:-92px;bottom:-92px;box-shadow:0 0 0 16px rgba(255,218,126,.08)}.kiki-pin-card{width:min(100%,440px);padding:clamp(24px,6vw,38px);border:2px solid #f3ca65;border-radius:28px 10px 28px 10px;background:#fffafc;color:#321b3c;box-shadow:0 28px 70px rgba(12,4,18,.42),inset 0 0 0 6px rgba(243,202,101,.16);text-align:center}.kiki-pin-crown{display:grid;place-items:center;width:74px;height:62px;margin:0 auto 14px;border-radius:45% 45% 18px 18px;background:#f3ca65;color:#4c2157;font-size:2.25rem;box-shadow:0 8px 0 #b77b22}.kiki-pin-card h1{max-width:360px;margin:0 auto;color:#5a2365;font:800 clamp(1.8rem,7vw,2.55rem)/1.02 "Baloo 2",sans-serif}.kiki-pin-subtitle{margin:10px 0 17px;color:#684f70;font-weight:800}.kiki-pin-dots{display:flex;justify-content:center;gap:13px;min-height:28px;margin-bottom:18px}.kiki-pin-dot{width:18px;height:18px;border:2px solid #9a5a8d;border-radius:50%;background:transparent;box-shadow:inset 0 0 0 3px #fffafc}.kiki-pin-dot.is-filled{background:#7b315f}.kiki-pin-pad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:min(100%,300px);margin:auto}.kiki-pin-key{min-height:58px;border:1px solid #e5cadf;border-radius:15px 6px 15px 6px;background:#fff;color:#4c2157;font:900 1.2rem/1 "Baloo 2",sans-serif;box-shadow:0 5px 0 #dfc1d7;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.kiki-pin-key:hover{background:#fff1f8}.kiki-pin-key:active{transform:translateY(3px);box-shadow:0 2px 0 #dfc1d7}.kiki-pin-key:focus-visible{outline:3px solid #2a67d1;outline-offset:3px}.kiki-pin-key[data-action]{font-size:.92rem;color:#6d3975}.kiki-pin-message{min-height:1.5em;margin:18px 0 0;color:#7b315f;font-weight:900}.kiki-pin-help{margin:8px 0 0;color:#725c7b;font-size:.85rem;font-weight:800}.kiki-pin-card.is-wrong{animation:kikiPinShake .38s ease}.kiki-pin-card.is-unlocking{animation:kikiPinOpen .34s ease forwards}@keyframes kikiPinShake{0%,100%{transform:translateX(0)}22%{transform:translateX(-10px) rotate(-1deg)}45%{transform:translateX(9px) rotate(1deg)}68%{transform:translateX(-6px)}85%{transform:translateX(4px)}}@keyframes kikiPinOpen{to{opacity:0;transform:scale(.96)}}@media(max-width:420px){.kiki-pin-card{padding:23px 18px}.kiki-pin-key{min-height:54px}.kiki-pin-crown{width:66px;height:56px;font-size:2rem}}@media(prefers-color-scheme:dark){.kiki-pin-card{background:#29172e;color:#fff4fb;box-shadow:0 28px 70px rgba(0,0,0,.56),inset 0 0 0 6px rgba(255,207,99,.12)}.kiki-pin-card h1{color:#ffe49a}.kiki-pin-subtitle,.kiki-pin-help{color:#d9bed9}.kiki-pin-key{background:#38203e;color:#fff4fb;border-color:#633c63;box-shadow:0 5px 0 #1d0e22}.kiki-pin-key:hover{background:#47264c}.kiki-pin-dot{border-color:#ffc95e;box-shadow:inset 0 0 0 3px #29172e}.kiki-pin-dot.is-filled{background:#ffc95e}.kiki-pin-message{color:#ffe49a}}@media(prefers-reduced-motion:reduce){.kiki-pin-card.is-wrong,.kiki-pin-card.is-unlocking{animation:none}}
+</style>
 </head>
-<body data-mood="happy"><a class="skip" href="#main">Skip to the fun</a>
+<body class="kiki-locked" data-mood="happy">
+<div class="kiki-pin-lock" id="kikiPinLock" role="dialog" aria-modal="true" aria-labelledby="kikiPinTitle" aria-describedby="kikiPinSubtitle kikiPinHelp">
+  <div class="kiki-pin-card" id="kikiPinCard">
+    <div class="kiki-pin-crown" aria-hidden="true">👑</div>
+    <h1 id="kikiPinTitle">The Kiki Empire is protected 👑🔐</h1>
+    <p class="kiki-pin-subtitle" id="kikiPinSubtitle">Enter the 4-digit royal PIN to step inside.</p>
+    <div class="kiki-pin-dots" id="kikiPinDots" aria-label="No PIN digits entered"><span class="kiki-pin-dot"></span><span class="kiki-pin-dot"></span><span class="kiki-pin-dot"></span><span class="kiki-pin-dot"></span></div>
+    <div class="kiki-pin-pad" id="kikiPinPad" aria-label="PIN keypad">
+      <button class="kiki-pin-key" type="button" data-digit="1" aria-label="1">1</button><button class="kiki-pin-key" type="button" data-digit="2" aria-label="2">2</button><button class="kiki-pin-key" type="button" data-digit="3" aria-label="3">3</button>
+      <button class="kiki-pin-key" type="button" data-digit="4" aria-label="4">4</button><button class="kiki-pin-key" type="button" data-digit="5" aria-label="5">5</button><button class="kiki-pin-key" type="button" data-digit="6" aria-label="6">6</button>
+      <button class="kiki-pin-key" type="button" data-digit="7" aria-label="7">7</button><button class="kiki-pin-key" type="button" data-digit="8" aria-label="8">8</button><button class="kiki-pin-key" type="button" data-digit="9" aria-label="9">9</button>
+      <button class="kiki-pin-key" type="button" data-action="clear">Clear</button><button class="kiki-pin-key" type="button" data-digit="0" aria-label="0">0</button><button class="kiki-pin-key" type="button" data-action="backspace" aria-label="Delete last digit">⌫</button>
+    </div>
+    <p class="kiki-pin-message" id="kikiPinMessage" role="status" aria-live="polite">Ready for your royal code.</p>
+    <p class="kiki-pin-help" id="kikiPinHelp">Forgot PIN? Ask Kiki!</p>
+  </div>
+</div>
+<a class="skip" href="#main">Skip to the fun</a>
 <div class="wrap"><div class="topline"><a class="back" href="#home">← Back to the welcome</a><a class="pillbtn" href="#fake-call-prank">Fake Call Prank</a><a class="pillbtn" href="#kiki-isms">Kiki’s Dictionary</a><span class="handle">@onedirectionhealinghq</span></div>
 <section id="cozy-house-home" class="cozy-house-home" aria-labelledby="cozy-house-title">
 <div class="house-welcome"><div><h2 id="cozy-house-title">Come into Kiki’s cozy house</h2><p>Every room opens a different corner of the universe. Pick a door, follow the sparkle, and make yourself right at home.</p></div><span class="house-key">No limits, just fun!</span></div>
@@ -18875,6 +18896,27 @@ document.querySelectorAll('[data-silly-sound]').forEach(function(button){button.
 document.addEventListener('click',function(event){var target=event.target.closest&&event.target.closest('button,a,.hub-card,.map-landmark,[role="button"],summary,input[type="button"],input[type="submit"],input[type="checkbox"],input[type="range"],select');if(!target||target===toggle||target.closest('[data-silly-sound]')||target.closest('.g109-sound')||!enabled)return;var now=Date.now();if(now-lastGlobalAt<70)return;lastGlobalAt=now;play(randomName())});
 window.KikiSillySounds={play:play,random:function(){return play(randomName())},isEnabled:function(){return enabled}};
 renderToggle();
+})();
+</script>
+<script id="kiki-pin-lock-interactions">
+(function(){
+'use strict';
+var lock=document.getElementById('kikiPinLock'),card=document.getElementById('kikiPinCard'),pad=document.getElementById('kikiPinPad'),dots=Array.prototype.slice.call(document.querySelectorAll('.kiki-pin-dot')),message=document.getElementById('kikiPinMessage'),entered='',checking=false;
+var pinHash='9113b98df80f877c7a2ee5d865a04c9514b4e9bf25a49d315b0b15f115d2f0d2';
+if(!lock||!card||!pad)return;
+var protectedNodes=Array.prototype.slice.call(document.body.children).filter(function(node){return node!==lock&&node.tagName!=='SCRIPT'});
+protectedNodes.forEach(function(node){node.inert=true;node.setAttribute('aria-hidden','true')});
+function paintDots(){dots.forEach(function(dot,index){dot.classList.toggle('is-filled',index<entered.length)});document.getElementById('kikiPinDots').setAttribute('aria-label',entered.length+' of 4 PIN digits entered')}
+function setPadDisabled(disabled){Array.prototype.forEach.call(pad.querySelectorAll('button'),function(button){button.disabled=disabled})}
+function digest(value){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(value)).then(function(buffer){return Array.prototype.map.call(new Uint8Array(buffer),function(byte){return byte.toString(16).padStart(2,'0')}).join('')})}
+function unlock(){card.classList.add('is-unlocking');message.textContent='Welcome to The Kiki Empire!';setTimeout(function(){lock.hidden=true;document.body.classList.remove('kiki-locked');protectedNodes.forEach(function(node){node.inert=false;node.removeAttribute('aria-hidden')});var first=document.querySelector('.skip, a, button');if(first)first.focus()},330)}
+function wrong(){checking=false;setPadDisabled(false);entered='';paintDots();message.textContent='Try again!';card.classList.remove('is-wrong');void card.offsetWidth;card.classList.add('is-wrong');setTimeout(function(){card.classList.remove('is-wrong')},430)}
+function verify(){if(checking||entered.length!==4)return;checking=true;setPadDisabled(true);message.textContent='Checking the royal code…';if(!window.crypto||!crypto.subtle||!window.TextEncoder){checking=false;setPadDisabled(false);message.textContent='This lock needs a secure browser. Please reload and try again.';return}digest(entered).then(function(hash){if(hash===pinHash)unlock();else wrong()}).catch(function(){checking=false;setPadDisabled(false);message.textContent='The lock could not check the code. Please reload and try again.'})}
+function addDigit(digit){if(checking||entered.length>=4)return;entered+=digit;message.textContent='';paintDots();if(entered.length===4)verify()}
+function clear(){if(checking)return;entered='';paintDots();message.textContent='Ready for your royal code.'}
+pad.addEventListener('click',function(event){var button=event.target.closest('button');if(!button)return;if(button.dataset.digit!==undefined)addDigit(button.dataset.digit);else if(button.dataset.action==='clear')clear();else if(button.dataset.action==='backspace'&&!checking){entered=entered.slice(0,-1);paintDots();message.textContent=entered?'':'Ready for your royal code.'}});
+document.addEventListener('keydown',function(event){if(lock.hidden)return;if(/^\d$/.test(event.key)){event.preventDefault();addDigit(event.key)}else if(event.key==='Backspace'){event.preventDefault();if(!checking){entered=entered.slice(0,-1);paintDots()}}else if(event.key==='Escape'){event.preventDefault();clear()}});
+paintDots();var firstKey=pad.querySelector('button');if(firstKey)firstKey.focus();
 })();
 </script>
 
