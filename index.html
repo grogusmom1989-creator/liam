@@ -38,6 +38,7 @@ input,select,textarea{width:100%}
 <a href="#posters" style="background:#FFD700;color:#000;">Posters 🖼️<span class="small">Restore</span></a>
 <a href="#liam" style="background:#ff4444;color:#fff;border:2px solid #FFD700;">Liam ❤️<span class="small">I Miss U</span></a>
 <a href="#backup" style="background:#00FF88;color:#000;border:2px solid #fff;">Backup 💾<span class="small">Recover</span></a>
+<a href="#junkdrawer" style="background:#888;color:#fff;border:2px dashed #FFD700;">Junk 🗄️<span class="small">Drawer</span></a>
 </nav>
 
 <section id="home" style="border-color:#ff4444;">
@@ -133,6 +134,19 @@ input,select,textarea{width:100%}
 <div id="recreateStatus" style="font-size:7px; background:#000; border-radius:6px; padding:6px; margin-top:4px; border:1px solid #FFD700;">Recreate All: Ready — Tap to recreate everything you deleted by mistake — Cam + Bre + Liam + Posters + Tributes + Hard Work + Bank + Rewards + Dazzly + Geodes — Family forever</div>
 <div id="backupSummary" style="font-size:7px; background:#000; border-radius:6px; padding:6px; margin-top:4px;">Backup: 0 backups — Last: never</div>
 <div id="contentSummary" style="font-size:7px; background:#000; border-radius:6px; padding:6px; margin-top:4px;">Posters: 0 — Tributes I miss and love you: 0 — Bank: $0</div></div>
+
+<section id="junkdrawer" style="border:2px dashed #FFD700;"><h2 style="color:#FFD700;">🗄️ Junk Drawer — Random Stuff That Didn't Fit Anywhere Else — No Limits Just Fun</h2>
+<p style="font-size:8px;">Everyone needs a junk drawer! Random ideas, silly notes, stuff that doesn't have a home yet — it all lives here until it finds one. Nothing homeless, even the homeless stuff! 😂</p>
+<div style="margin-top:6px;">
+<textarea id="junkText" placeholder="Toss anything in here... random ideas, silly notes, stuff to sort later — the junk drawer accepts ALL! 🗄️✨" style="background:#000;color:#fff;border:2px dashed #FFD700;border-radius:6px;padding:6px;font-size:8px;width:100%;height:60px;"></textarea>
+<div class="grid2" style="margin-top:4px;">
+<button onclick="tossInJunkDrawer()" style="background:#888;color:#fff;">Toss It In 🗄️</button>
+<button onclick="exportJunkDrawer()" style="background:#00FF88;">Export Junk CSV 💚</button>
+</div>
+<div id="junkList" style="font-size:7px;margin-top:6px;background:#000;border-radius:6px;padding:6px;max-height:120px;overflow:auto;border:1px dashed #888;">Junk drawer — empty — toss something in! 🗄️</div>
+</div>
+<div style="margin-top:6px;" class="card"><div style="color:#FFD700;font-weight:900;font-size:9px;">🎲 Random Junk Generator — For When You're Bored</div><button onclick="randomJunk()" style="background:linear-gradient(90deg,#888,#FFD700);width:100%;margin-top:4px;">Generate Random Junk 🎲🗄️</button><div id="randomJunkResult" style="font-size:8px;margin-top:4px;background:#000;border-radius:4px;padding:6px;">Tap for a random silly junk drawer surprise!</div></div>
+</section>
 </section>
 
 <script>
@@ -245,7 +259,7 @@ window.addEventListener('DOMContentLoaded', function(){
  if(gg){ var sample=[{n:'Strip That Down 444Hz $44',c:'#ff4444'},{n:'Boss Gold $111',c:'#FFD700'},{n:'History 777Hz $44',c:'#bb88ff'},{n:'Cam Gaming $33',c:'#00FFFF'},{n:'Bre Rose 528Hz $33',c:'#FF69B4'},{n:'Family Gold $111',c:'#FFD700'}]; sample.forEach(function(s){ var card=document.createElement('div'); card.className='card'; card.style.borderColor=s.c; card.innerHTML='<div style="color:'+s.c+';font-weight:900;font-size:8px;">💎 '+s.n+'</div><button style="background:'+s.c+';margin-top:4px;" onclick="bank(22,\'Geode\',0)">Bank $22 💎</button>'; gg.appendChild(card) }) }
  var pg=document.getElementById('portalGrid');
  if(pg){ for(var i=0;i<14;i++){ var card=document.createElement('div'); card.className='card'; card.innerHTML='<div style="font-weight:900;font-size:8px;">🌟 Portal '+(i+1)+' $11-$111</div><button onclick="bank(11,\'Portal '+(i+1)+'\',0)">Bank $11 🌟</button>'; pg.appendChild(card) } }
- renderPosters(); renderHardWork(); renderLiamTributes(); updateUI(); updateBackupUI()
+ renderPosters(); renderHardWork(); renderLiamTributes(); renderJunkDrawer(); updateUI(); updateBackupUI()
 })
 
 function recreateAllFamily(){
@@ -325,6 +339,33 @@ function recreateAllFamily(){
  bank(111,'Recreate All Family Forever — 12 posters + 7 tributes I miss and love you + 10/10 hard work + Bank $1111 + Rewards $333 — Recovered Deleted By Mistake',0)
  earnReward(111,'Recreate All Reward — $111 — Family Forever Recovered — Never Lost Again')
  alert('RECREATE ALL DONE — Recovered Everything Deleted By Mistake — Posters: '+currentPosters.length+' — Tributes: '+currentTributes.length+' — Hard Work: 10/10 — Bank: $'+currentTotal+' — Family forever recovered — Never lost again')
+}
+
+var junkItems=JSON.parse(localStorage.getItem('junkDrawer')||'[]')
+function tossInJunkDrawer(){
+ var el=document.getElementById('junkText'); var text=el&&el.value?el.value.trim():''
+ if(!text){ alert('Toss something in the junk drawer first! 🗄️'); return }
+ junkItems.push({id:Date.now(), text:text, date:new Date().toLocaleString()})
+ localStorage.setItem('junkDrawer', JSON.stringify(junkItems))
+ if(el) el.value=''
+ renderJunkDrawer()
+ bank(11,'Junk Drawer — Tossed in: '+text.substring(0,30)+' — No Limits Just Fun',0)
+}
+function renderJunkDrawer(){
+ var el=document.getElementById('junkList'); if(!el) return
+ if(!junkItems.length){ el.innerHTML='Junk drawer — empty — toss something in! 🗄️'; return }
+ el.innerHTML=junkItems.slice(-20).reverse().map(function(j){ return '<div style="border-left:2px dashed #FFD700;padding:3px 6px;margin:3px 0;background:#111;">🗄️ '+j.date+' — '+j.text+'</div>' }).join('')
+}
+function exportJunkDrawer(){
+ var csv='ID,Text,Date\n'; junkItems.forEach(function(j){ csv+=j.id+',"'+String(j.text).replace(/"/g,'""')+'","'+j.date+'"\n' })
+ var blob=new Blob([csv],{type:'text/csv'}); var url=URL.createObjectURL(blob); var a=document.createElement('a'); a.href=url; a.download='junk-drawer-'+new Date().toISOString().slice(0,10)+'.csv'; a.click()
+ bank(11,'Junk Drawer Exported '+junkItems.length+' items',0)
+}
+function randomJunk(){
+ var surprises=['A rubber band ball 🎾','Three mismatched socks 🧦','A coupon from 2019 🎟️','A single AAA battery 🔋','Glitter. Just... glitter ✨','A key that opens nothing 🔑','Fortune cookie fortune: "You will bank $111 today" 🥠','A doodle of a cat wearing a crown 🐱👑','Expired gift card with $0.37 left 💳','A poem about pizza 🍕','Mystery USB drive (do not plug in) 💾','Half a friendship bracelet 💕','A rock that looks like a potato 🥔','Someone\'s grocery list: milk, eggs, WORLD DOMINATION 📝','A kazoo 🎺','Bubble wrap (pop it!) 🫧']
+ var s=surprises[Math.floor(Math.random()*surprises.length)]
+ var el=document.getElementById('randomJunkResult'); if(el) el.innerHTML='🎲 You found: <b>'+s+'</b> — Only in the junk drawer! 🗄️✨'
+ earnReward(11,'Random Junk Surprise — '+s.substring(0,20))
 }
 </script>
 </body>
